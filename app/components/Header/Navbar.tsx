@@ -58,29 +58,30 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-8">
+    <nav className="relative z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div className="mx-auto flex h-[72px] w-full max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:h-24 lg:px-8">
 
         {/* Logo */}
-
-        <Link href="/" className="flex items-center">
+        <Link
+          href="/"
+          className="flex min-w-0 items-center"
+        >
           <Image
             src="/images/logo-header.png"
             alt="Estudio Dental Catalunya"
             width={250}
             height={70}
             priority
-            className="h-16 w-auto"
+            className="h-12 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[220px] lg:h-16 lg:max-w-none"
           />
         </Link>
 
-        {/* Menú */}
-
-        <div className="hidden xl:flex items-center gap-10">
+        {/* Menú escritorio */}
+        <div className="hidden xl:flex items-center gap-8">
 
           <Link
             href="/"
-            className="font-medium text-slate-700 transition hover:text-cyan-600"
+            className="whitespace-nowrap font-medium text-slate-700 transition hover:text-cyan-600"
           >
             Inicio
           </Link>
@@ -90,8 +91,10 @@ export default function Navbar() {
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
-
-            <button className="flex items-center gap-2 font-medium text-slate-700 transition hover:text-cyan-600">
+            <button
+              type="button"
+              className="flex items-center gap-2 whitespace-nowrap font-medium text-slate-700 transition hover:text-cyan-600"
+            >
               Tratamientos
 
               <ChevronDown
@@ -104,11 +107,9 @@ export default function Navbar() {
 
             {open && (
               <div className="absolute left-0 top-full z-[999] w-[360px] pt-2">
-
                 <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl">
 
                   <div className="border-b border-slate-100 bg-slate-50 px-6 py-5">
-
                     <h3 className="text-lg font-bold text-slate-900">
                       Tratamientos
                     </h3>
@@ -116,11 +117,9 @@ export default function Navbar() {
                     <p className="mt-1 text-sm text-slate-500">
                       Todas nuestras especialidades odontológicas
                     </p>
-
                   </div>
 
                   <div className="py-3">
-
                     {treatments.map((item) => (
                       <Link
                         key={item.href}
@@ -131,48 +130,43 @@ export default function Navbar() {
                         {item.title}
                       </Link>
                     ))}
-
                   </div>
 
                 </div>
-
               </div>
             )}
-
           </div>
 
-          
           <Link
             href="/nosotros"
-            className="font-medium text-slate-700 transition hover:text-cyan-600"
+            className="whitespace-nowrap font-medium text-slate-700 transition hover:text-cyan-600"
           >
             Nosotros
           </Link>
 
           <AppointmentButton
-            className="font-medium text-slate-700 transition hover:text-cyan-600"
+            className="whitespace-nowrap font-medium text-slate-700 transition hover:text-cyan-600"
           >
             Contacto
           </AppointmentButton>
 
         </div>
 
-        {/* Botones derecha */}
-
-        <div className="hidden lg:flex items-center gap-4">
+        {/* Botones escritorio */}
+        <div className="hidden xl:flex items-center gap-3">
 
           <Link
             href="https://wa.me/34640317047?text=Hola,%20me%20gustaría%20pedir%20una%20cita."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full border border-green-500 px-5 py-3 font-semibold text-green-600 transition-all duration-300 hover:bg-green-500 hover:text-white"
+            className="flex items-center gap-2 whitespace-nowrap rounded-full border border-green-500 px-5 py-3 font-semibold text-green-600 transition-all duration-300 hover:bg-green-500 hover:text-white"
           >
             <MessageCircle size={18} />
             <span>WhatsApp</span>
           </Link>
 
           <AppointmentButton
-            className="flex items-center gap-2 rounded-full bg-cyan-600 px-7 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-cyan-700"
+            className="flex items-center gap-2 whitespace-nowrap rounded-full bg-cyan-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-cyan-700"
           >
             <Calendar size={18} />
             <span>Primera visita gratuita</span>
