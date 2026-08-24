@@ -104,10 +104,6 @@ export default function MobileMenu() {
 
           <hr className="my-5" />
 
-          <Link href="/equipo" onClick={closeMenu} className="py-3 text-lg">
-            Equipo
-          </Link>
-
           <Link href="/nosotros" onClick={closeMenu} className="py-3 text-lg">
             Nosotros
           </Link>

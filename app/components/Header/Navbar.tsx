@@ -141,13 +141,7 @@ export default function Navbar() {
 
           </div>
 
-          <Link
-            href="/equipo"
-            className="font-medium text-slate-700 transition hover:text-cyan-600"
-          >
-            Equipo
-          </Link>
-
+          
           <Link
             href="/nosotros"
             className="font-medium text-slate-700 transition hover:text-cyan-600"
