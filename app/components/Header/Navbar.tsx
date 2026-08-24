@@ -86,7 +86,7 @@ export default function Navbar() {
           </Link>
 
           <div
-            className="relative pb-5"
+            className="relative"
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
