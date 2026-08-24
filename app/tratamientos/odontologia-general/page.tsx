@@ -12,9 +12,10 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { generalDentistryData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Odontología General en Sant Boi de Llobregat",
+  title: "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
   description:
-    "Revisiones dentales, limpiezas profesionales, empastes y tratamientos conservadores para mantener una boca sana en Sant Boi de Llobregat.",
+    "Especialistas en odontología general en Sant Boi de Llobregat. Prevención, revisiones, empastes y tratamientos personalizados para cuidar tu salud bucodental.",
 
   alternates: {
     canonical:
@@ -23,9 +24,13 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Odontología General en Sant Boi de Llobregat",
+
     description:
-      "Prevención, diagnóstico y tratamientos conservadores para cuidar la salud bucodental de toda la familia.",
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
+      "Cuidamos la salud de tu boca mediante revisiones, prevención y tratamientos conservadores totalmente personalizados.",
+
+    url:
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
+
     images: [
       {
         url: "/images/tratamientos/odontologia-general/hero-odontologia-general.jpg",
@@ -35,9 +40,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Odontología General en Sant Boi de Llobregat",
+
     description:
-      "Especialistas en revisiones, empastes, limpiezas y odontología preventiva.",
+      "Prevención, revisiones y tratamientos conservadores para mantener una sonrisa sana durante toda la vida.",
+
     images: [
       "/images/tratamientos/odontologia-general/hero-odontologia-general.jpg",
     ],
@@ -47,7 +55,6 @@ export const metadata: Metadata = {
 export default function GeneralDentistryPage() {
   return (
     <main>
-
       <TreatmentHero {...generalDentistryData.hero} />
 
       <TreatmentIntro {...generalDentistryData.intro} />
@@ -56,7 +63,7 @@ export default function GeneralDentistryPage() {
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Cada tratamiento comienza con una revisión completa y un diagnóstico personalizado para detectar cualquier problema de forma precoz y planificar el tratamiento más adecuado con un enfoque preventivo y conservador."
+        subtitle="Comenzamos con una revisión completa y un diagnóstico personalizado para detectar cualquier problema de forma precoz y diseñar el tratamiento más adecuado para mantener tu salud bucodental."
       />
 
       <TreatmentTechnology {...generalDentistryData.technology} />
@@ -66,7 +73,6 @@ export default function GeneralDentistryPage() {
       <TreatmentFAQ {...generalDentistryData.faq} />
 
       <TreatmentCTA {...generalDentistryData.cta} />
-
     </main>
   );
 }

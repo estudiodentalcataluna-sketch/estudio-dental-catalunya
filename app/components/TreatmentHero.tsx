@@ -12,7 +12,7 @@ export default function TreatmentHero({
   image,
 }: TreatmentHeroProps) {
   return (
-    <section className="relative h-[700px] overflow-hidden">
+    <section className="relative min-h-[720px] overflow-hidden">
 
       {/* Imagen */}
 
@@ -21,49 +21,106 @@ export default function TreatmentHero({
         alt={title}
         fill
         priority
+        quality={85}
+        sizes="100vw"
         className="object-cover object-center"
       />
 
+      {/* Overlay */}
+
+      <div className="absolute inset-0 bg-black/20" />
+
       {/* Degradado */}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/45 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/55 to-transparent" />
+
+      {/* Blur inferior */}
+
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/70 to-transparent" />
 
       {/* Contenido */}
 
-      <div className="relative z-10 flex h-full items-center">
+      <div className="relative z-10 flex min-h-[720px] items-center">
 
         <div className="mx-auto w-full max-w-7xl px-8">
 
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
 
-            <span className="inline-block rounded-full bg-cyan-500/20 border border-cyan-400/40 px-5 py-2 text-cyan-300 uppercase tracking-[0.25em] text-sm font-semibold backdrop-blur">
+            <span className="inline-flex items-center rounded-full border border-cyan-300/40 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-200 backdrop-blur-xl">
+
               Tratamientos dentales
+
             </span>
 
-            <h1 className="mt-8 text-5xl md:text-7xl font-extrabold leading-tight text-white">
+            <h1 className="mt-8 text-5xl font-black leading-tight text-white md:text-7xl xl:text-8xl">
+
               {title}
+
             </h1>
 
-            <p className="mt-8 text-xl leading-9 text-slate-200">
-              {subtitle}
-            </p>
+            <p className="mt-8 max-w-3xl text-xl leading-9 text-slate-100 md:text-2xl">
 
-            <div className="mt-12 flex flex-wrap gap-5">
+              {subtitle}
+
+            </p>
+                        {/* Beneficios rápidos */}
+
+            <div className="mt-10 flex flex-wrap gap-4">
+
+              <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
+
+                ✓ Primera visita gratuita
+
+              </div>
+
+              <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
+
+                ✓ Radiografías incluidas
+
+              </div>
+
+              <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
+
+                ✓ Planificación digital
+
+              </div>
+
+              <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
+
+                ✓ Financiación hasta 24 meses
+
+              </div>
+
+            </div>
+
+            {/* Botones */}
+
+            <div className="mt-14 flex flex-wrap gap-5">
 
               <a
                 href="#contacto"
-                className="rounded-full bg-cyan-600 px-9 py-4 text-white font-semibold shadow-xl transition-all duration-300 hover:scale-105 hover:bg-cyan-700"
+                className="inline-flex items-center gap-3 rounded-full bg-cyan-600 px-10 py-5 text-lg font-bold text-white shadow-2xl transition duration-300 hover:scale-105 hover:bg-cyan-700"
               >
-                Solicitar cita
+                Primera visita gratuita
+
+              </a>
+
+              <a
+                href="tel:+34930067281"
+                className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-10 py-5 text-lg font-semibold text-white backdrop-blur-xl transition hover:bg-white hover:text-slate-900"
+              >
+                930 067 281
+
               </a>
 
               <a
                 href="https://wa.me/34640317047?text=Hola,%20me%20gustaría%20información."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-white/40 bg-white/10 px-9 py-4 text-white font-semibold backdrop-blur transition-all duration-300 hover:bg-white hover:text-slate-900"
+                className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-10 py-5 text-lg font-semibold text-white backdrop-blur-xl transition hover:bg-white hover:text-slate-900"
               >
                 WhatsApp
+
               </a>
 
             </div>
@@ -73,6 +130,10 @@ export default function TreatmentHero({
         </div>
 
       </div>
+
+      {/* Degradado inferior */}
+
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
 
     </section>
   );

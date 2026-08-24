@@ -1,152 +1,135 @@
 export const generalDentistryData = {
-
   hero: {
-
     title: "Odontología General en Sant Boi de Llobregat",
 
     subtitle:
-      "Cuidamos la salud de tu boca mediante revisiones, prevención y tratamientos conservadores adaptados a cada paciente.",
+      "Cuidamos tu salud bucodental mediante revisiones periódicas, tratamientos conservadores y un enfoque preventivo totalmente personalizado.",
 
-    image: "/images/tratamientos/odontologia-general/hero-odontologia-general.jpg",
-
+    image:
+      "/images/tratamientos/odontologia-general/hero-odontologia-general.jpg",
   },
 
   intro: {
-
     badge: "Odontología General",
 
     title: "La base para mantener una sonrisa sana durante toda la vida",
 
     description1:
-      "La odontología general engloba los tratamientos destinados a prevenir, diagnosticar y tratar las patologías más frecuentes de la boca, permitiendo conservar los dientes naturales en las mejores condiciones.",
+      "La odontología general reúne los tratamientos destinados a prevenir, diagnosticar y tratar los problemas bucodentales más frecuentes. Las revisiones periódicas permiten detectar alteraciones en fases iniciales y actuar antes de que evolucionen hacia tratamientos más complejos.",
 
     description2:
-      "En Estudio Dental Catalunya apostamos por una odontología mínimamente invasiva basada en la prevención, el diagnóstico precoz y los tratamientos conservadores para mantener la salud bucodental a largo plazo.",
+      "En Estudio Dental Catalunya apostamos por una odontología conservadora y personalizada, priorizando siempre la prevención y el mantenimiento de los dientes naturales mediante tratamientos adaptados a las necesidades de cada paciente.",
 
-    image: "/images/tratamientos/odontologia-general/intro-odontologia-general.jpg",
-
+    image:
+      "/images/tratamientos/odontologia-general/intro-odontologia-general.jpg",
   },
 
   benefits: {
-
     title: "Beneficios de la odontología general",
 
     description:
-      "Las revisiones periódicas y los tratamientos preventivos ayudan a mantener una boca sana y evitar tratamientos más complejos en el futuro.",
+      "Mantener una buena salud bucodental comienza con la prevención, las revisiones periódicas y un tratamiento precoz cuando aparece cualquier problema.",
 
     benefits: [
-
-      "Prevención de enfermedades dentales.",
-      "Detección precoz de problemas.",
-      "Conservación de los dientes naturales.",
-      "Mejora de la salud bucodental.",
-      "Tratamientos mínimamente invasivos.",
-      "Seguimiento personalizado.",
-
+      "Previene enfermedades dentales y de las encías.",
+      "Permite detectar problemas de forma precoz.",
+      "Conserva los dientes naturales durante más tiempo.",
+      "Reduce la necesidad de tratamientos complejos.",
+      "Mejora la salud y la función de la boca.",
+      "Favorece una sonrisa sana y duradera.",
     ],
-
   },
-    technology: {
 
-    title: "Prevención, diagnóstico y seguimiento personalizado",
+  technology: {
+    title: "Tecnología para un diagnóstico más preciso",
 
     subtitle:
-      "Cada paciente es diferente. Por ello realizamos un estudio completo para mantener la salud bucodental mediante tratamientos preventivos y conservadores adaptados a cada necesidad.",
+      "Combinamos experiencia clínica con tecnología de diagnóstico para ofrecer tratamientos más precisos, cómodos y personalizados.",
 
     items: [
-
       {
-        title: "Revisiones periódicas",
+        title: "Revisión clínica completa",
         description:
-          "Las revisiones permiten detectar de forma precoz cualquier problema dental antes de que evolucione.",
+          "Evaluamos el estado de dientes, encías, mordida y tejidos orales para detectar cualquier alteración desde sus primeras fases.",
       },
 
       {
         title: "Radiología digital",
         description:
-          "Las imágenes digitales facilitan un diagnóstico más preciso con una mínima exposición a la radiación.",
+          "Las radiografías digitales permiten obtener un diagnóstico preciso con una menor exposición a la radiación.",
       },
 
       {
-        title: "Tratamientos conservadores",
+        title: "Diagnóstico personalizado",
         description:
-          "Siempre buscamos conservar al máximo la estructura natural del diente mediante técnicas mínimamente invasivas.",
+          "Cada paciente recibe un plan de tratamiento adaptado a sus necesidades clínicas y objetivos de salud bucodental.",
       },
 
       {
-        title: "Seguimiento continuo",
+        title: "Seguimiento preventivo",
         description:
-          "Establecemos un plan de revisiones personalizado para mantener la salud de la boca a largo plazo.",
+          "Las revisiones periódicas y el mantenimiento ayudan a conservar una boca sana y prevenir futuras complicaciones.",
       },
-
     ],
-
   },
 
   indications: {
-
-    title: "¿Cuándo acudir a una revisión de odontología general?",
+    title: "¿Cuándo acudir a una revisión dental?",
 
     subtitle:
-      "Las revisiones periódicas son fundamentales para prevenir enfermedades y mantener una buena salud bucodental.",
+      "Aunque no exista dolor, las revisiones periódicas permiten detectar problemas antes de que produzcan síntomas y facilitan tratamientos mucho más conservadores.",
 
     items: [
-
       "Revisiones dentales periódicas.",
-      "Limpiezas profesionales.",
-      "Caries dentales.",
-      "Dolor o sensibilidad dental.",
-      "Control de empastes y restauraciones.",
-      "Prevención de enfermedades bucodentales.",
-
+      "Caries o sensibilidad dental.",
+      "Dolor o molestias al masticar.",
+      "Sangrado de encías.",
+      "Fracturas o desgaste dental.",
+      "Prevención y mantenimiento de la salud oral.",
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre odontología general",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de acudir a una revisión.",
+      "Estas son algunas de las dudas más habituales relacionadas con las revisiones y los tratamientos conservadores.",
 
     faqs: [
-
       {
         question: "¿Cada cuánto tiempo debo acudir al dentista?",
+
         answer:
-          "Lo recomendable es realizar una revisión cada seis meses, aunque la frecuencia puede variar según las necesidades de cada paciente y el estado de su salud bucodental.",
+          "Lo recomendable es realizar una revisión al menos una vez al año, aunque en algunos pacientes puede ser aconsejable acudir con mayor frecuencia según su situación clínica.",
       },
 
       {
-        question: "¿Por qué son importantes las revisiones periódicas?",
+        question: "¿Es importante acudir aunque no tenga molestias?",
+
         answer:
-          "Permiten detectar caries, enfermedades de las encías y otros problemas en fases iniciales, cuando los tratamientos suelen ser más sencillos y conservadores.",
+          "Sí. Muchas enfermedades dentales y periodontales evolucionan sin producir síntomas en sus fases iniciales. Detectarlas a tiempo permite realizar tratamientos más sencillos y conservadores.",
       },
 
       {
         question: "¿Qué tratamientos incluye la odontología general?",
+
         answer:
-          "Incluye revisiones, limpiezas profesionales, empastes, tratamiento de caries, control de restauraciones y otras actuaciones destinadas a mantener la salud de la boca.",
+          "Incluye revisiones, diagnóstico, empastes, tratamiento de caries, control de la salud de las encías, prevención y otros procedimientos destinados a mantener una buena salud bucodental.",
       },
 
       {
-        question: "¿Puedo prevenir la mayoría de los problemas dentales?",
+        question: "¿Cómo puedo prevenir los problemas dentales?",
+
         answer:
-          "Sí. Una buena higiene oral, una alimentación equilibrada y las revisiones periódicas ayudan a prevenir gran parte de las enfermedades bucodentales.",
-
+          "Manteniendo una buena higiene oral, siguiendo una alimentación equilibrada, realizando limpiezas profesionales cuando sean necesarias y acudiendo periódicamente a revisión.",
       },
-
     ],
-
   },
 
   cta: {
-
-    title: "Cuida tu sonrisa con revisiones periódicas",
+    title: "Cuida tu sonrisa con una revisión personalizada",
 
     description:
-      "Solicita una primera visita y realizaremos una valoración completa para ayudarte a mantener una boca sana mediante un tratamiento preventivo y personalizado.",
-
+      "Solicita tu primera visita y realizaremos un estudio completo para valorar el estado de tu salud bucodental y recomendarte el tratamiento más adecuado para mantener una sonrisa sana durante muchos años.",
   },
-
 };

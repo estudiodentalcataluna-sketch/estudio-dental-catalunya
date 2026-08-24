@@ -1,150 +1,135 @@
 export const pediatricData = {
-
   hero: {
-
     title: "Odontopediatría en Sant Boi de Llobregat",
 
     subtitle:
-      "Cuidamos la salud bucodental de los más pequeños con tratamientos preventivos y personalizados en un entorno cercano, tranquilo y adaptado a cada etapa de su crecimiento.",
+      "Cuidamos la salud bucodental de bebés, niños y adolescentes mediante revisiones, prevención y tratamientos adaptados a cada etapa de su desarrollo.",
 
-    image: "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
-
+    image:
+      "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
   },
 
   intro: {
-
     badge: "Odontopediatría",
 
     title: "La mejor prevención comienza desde la infancia",
 
     description1:
-      "La odontopediatría se encarga de prevenir, diagnosticar y tratar los problemas bucodentales de bebés, niños y adolescentes. Las revisiones periódicas ayudan a detectar cualquier alteración de forma precoz y favorecen un correcto desarrollo de la dentición.",
+      "La odontopediatría es la especialidad encargada de prevenir, diagnosticar y tratar los problemas bucodentales de bebés, niños y adolescentes. Un seguimiento adecuado desde edades tempranas favorece un correcto desarrollo de la dentición y ayuda a prevenir futuros problemas.",
 
     description2:
-      "En Estudio Dental Catalunya ofrecemos una atención cercana y adaptada a cada niño, creando una experiencia positiva para que acudan al dentista con confianza y tranquilidad desde pequeños.",
+      "En Estudio Dental Catalunya ofrecemos una atención cercana y adaptada a cada niño, creando un ambiente de confianza para que cada visita al dentista sea una experiencia positiva y tranquila.",
 
-    image: "/images/tratamientos/odontopediatria/intro-odontopediatria.jpg",
-
+    image:
+      "/images/tratamientos/odontopediatria/intro-odontopediatria.jpg",
   },
 
   benefits: {
-
     title: "Beneficios de la odontopediatría",
 
     description:
-      "Las revisiones periódicas durante la infancia ayudan a mantener una boca sana y a prevenir futuros problemas dentales.",
+      "Las revisiones periódicas y la prevención son fundamentales para mantener una boca sana desde los primeros años de vida.",
 
     benefits: [
-
-      "Prevención de caries infantiles.",
-      "Control del desarrollo dental.",
-      "Detección precoz de alteraciones.",
-      "Educación en hábitos de higiene oral.",
-      "Aplicación de tratamientos preventivos.",
-      "Genera confianza y elimina el miedo al dentista.",
-
+      "Previene la aparición de caries infantiles.",
+      "Controla el correcto desarrollo dental.",
+      "Favorece buenos hábitos de higiene oral.",
+      "Detecta problemas de forma precoz.",
+      "Reduce la necesidad de tratamientos complejos.",
+      "Ayuda a que los niños pierdan el miedo al dentista.",
     ],
-
   },
-    technology: {
 
-    title: "Prevención y seguimiento adaptados a cada etapa",
+  technology: {
+    title: "Un cuidado adaptado a cada etapa del crecimiento",
 
     subtitle:
-      "Cada niño es diferente. Por eso realizamos un seguimiento personalizado para controlar el desarrollo de la dentición y prevenir problemas futuros desde edades tempranas.",
+      "Realizamos revisiones periódicas y un seguimiento personalizado para acompañar el desarrollo de la boca del niño y actuar de forma preventiva cuando sea necesario.",
 
     items: [
-
       {
         title: "Revisiones periódicas",
         description:
-          "Controlamos el crecimiento y desarrollo de los dientes para detectar cualquier alteración de forma precoz.",
+          "Controlamos la erupción de los dientes y el desarrollo de la dentición para detectar cualquier alteración de forma precoz.",
       },
 
       {
-        title: "Diagnóstico preventivo",
+        title: "Diagnóstico precoz",
         description:
-          "Valoramos el riesgo de caries, la erupción dental y la evolución de la mordida en cada etapa del crecimiento.",
+          "Identificamos posibles problemas dentales o de mordida en sus primeras fases para facilitar tratamientos más sencillos.",
       },
 
       {
-        title: "Educación en higiene oral",
+        title: "Prevención personalizada",
         description:
-          "Enseñamos tanto a los niños como a sus familias las pautas necesarias para mantener una correcta salud bucodental.",
+          "Asesoramos sobre higiene oral, alimentación y hábitos saludables para reducir el riesgo de caries y otras enfermedades bucodentales.",
       },
 
       {
-        title: "Tratamiento personalizado",
+        title: "Atención cercana",
         description:
-          "Adaptamos cada tratamiento a la edad y necesidades del niño para conseguir una experiencia cómoda y positiva.",
+          "Adaptamos cada visita a la edad y necesidades del niño para crear una experiencia positiva y generar confianza desde el primer momento.",
       },
-
     ],
-
   },
 
   indications: {
-
     title: "¿Cuándo acudir al odontopediatra?",
 
     subtitle:
-      "Las revisiones periódicas permiten prevenir problemas y controlar el correcto desarrollo de la dentición infantil.",
+      "Las revisiones periódicas permiten controlar el desarrollo de la dentición y detectar posibles alteraciones antes de que aparezcan complicaciones.",
 
     items: [
-
       "Primera revisión dental.",
-      "Prevención de caries.",
+      "Caries infantiles.",
       "Dolor o sensibilidad dental.",
       "Traumatismos dentales.",
-      "Control del recambio dental.",
-      "Seguimiento del desarrollo de la mordida.",
-
+      "Alteraciones en la erupción de los dientes.",
+      "Control preventivo del desarrollo bucodental.",
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre odontopediatría",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales de las familias antes de acudir a la consulta.",
+      "Estas son algunas de las dudas más habituales de los padres sobre la salud bucodental infantil.",
 
     faqs: [
-
       {
-        question: "¿Cuándo debe ser la primera visita al odontopediatra?",
+        question: "¿Cuándo debe realizarse la primera visita al dentista?",
+
         answer:
-          "Se recomienda realizar la primera revisión cuando aparecen los primeros dientes o, como máximo, alrededor del primer año de vida. De este modo podemos detectar posibles problemas de forma precoz y orientar a las familias sobre los cuidados adecuados.",
+          "Se recomienda realizar la primera revisión cuando aparece el primer diente o, como máximo, durante el primer año de vida para controlar el desarrollo de la boca y ofrecer pautas preventivas.",
       },
 
       {
-        question: "¿Cada cuánto tiempo debe acudir un niño al dentista?",
+        question: "¿Es importante tratar los dientes de leche?",
+
         answer:
-          "Lo habitual es realizar revisiones periódicas para controlar el desarrollo de la dentición y prevenir la aparición de caries u otros problemas bucodentales.",
+          "Sí. Los dientes temporales son fundamentales para la masticación, el habla y el correcto desarrollo de la dentición permanente. Mantenerlos sanos ayuda a prevenir problemas futuros.",
       },
 
       {
-        question: "¿Cómo se pueden prevenir las caries infantiles?",
+        question: "¿Cómo prevenir las caries en los niños?",
+
         answer:
-          "Una buena higiene oral, una alimentación equilibrada, revisiones periódicas y los tratamientos preventivos cuando están indicados ayudan a reducir el riesgo de caries en la infancia.",
+          "Una correcta higiene oral, una alimentación equilibrada, limitar el consumo de azúcares y acudir a revisiones periódicas son las mejores medidas para prevenir las caries infantiles.",
       },
 
       {
-        question: "¿Qué ocurre si un diente de leche se rompe o recibe un golpe?",
-        answer:
-          "Es importante acudir al dentista lo antes posible para valorar el alcance del traumatismo y comprobar que el desarrollo del diente definitivo no se haya visto afectado.",
-      },
+        question: "¿Cada cuánto tiempo deben hacerse revisiones?",
 
+        answer:
+          "La frecuencia dependerá de las necesidades de cada niño, aunque habitualmente recomendamos realizar revisiones periódicas para controlar la evolución de su salud bucodental.",
+      },
     ],
-
   },
-    cta: {
 
-    title: "Cuidamos la sonrisa de los más pequeños desde el primer día",
+  cta: {
+    title: "Cuida la sonrisa de los más pequeños desde hoy",
 
     description:
-      "Solicita una primera visita y realizaremos una revisión personalizada para cuidar la salud bucodental de tu hijo y acompañar su desarrollo con un enfoque preventivo.",
-
+      "Solicita una primera visita y realizaremos una revisión completa para valorar el desarrollo bucodental de tu hijo y ofrecerte las mejores pautas de prevención y cuidado.",
   },
-
 };

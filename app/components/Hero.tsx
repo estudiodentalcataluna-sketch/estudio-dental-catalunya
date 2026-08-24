@@ -9,32 +9,33 @@ import {
   Phone,
   Star,
   ArrowRight,
+  MapPin,
 } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative isolate min-h-screen overflow-hidden">
-
       {/* Imagen */}
 
       <Image
         src="/images/clinic.jpg"
-        alt="Equipo de Estudio Dental Catalunya"
+        alt="Clínica dental Estudio Dental Catalunya en Sant Boi de Llobregat"
         fill
         priority
-        quality={75}
+        quality={80}
+        sizes="100vw"
         className="object-cover object-center"
       />
 
-      {/* Overlay muy suave */}
+      {/* Overlay */}
 
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/25" />
 
       {/* Degradado */}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/35 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-950/45 to-transparent" />
 
-      {/* Blur inferior */}
+      {/* Fade inferior */}
 
       <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-white via-white/70 to-transparent" />
 
@@ -50,48 +51,48 @@ export default function Hero() {
 
             <div className="inline-flex items-center gap-3 rounded-full border border-cyan-300/40 bg-white/10 px-6 py-3 backdrop-blur-xl">
 
-              <span className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse" />
+              <MapPin className="h-4 w-4 text-cyan-300" />
 
-              <span className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-200">
+              <span className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">
 
-                Clínica Dental Privada · Sant Boi de Llobregat
+                Clínica Dental en Sant Boi de Llobregat
 
               </span>
 
             </div>
 
-            {/* Título */}
+            {/* H1 SEO */}
 
             <h1 className="mt-10 text-5xl font-black leading-[1.05] text-white md:text-7xl xl:text-8xl">
 
-              Recupera la sonrisa
+              Implantes Dentales,
 
               <span className="block text-cyan-300">
 
-                que siempre has querido.
+                Ortodoncia y Estética Dental
 
               </span>
 
             </h1>
 
-            {/* Texto */}
+            {/* Subtítulo */}
 
             <p className="mt-10 max-w-3xl text-xl leading-9 text-slate-100 md:text-2xl">
 
-              En <strong>Estudio Dental Catalunya</strong> combinamos
-              experiencia, tecnología de última generación y un trato cercano
-              para ofrecer tratamientos personalizados con resultados naturales
-              y duraderos.
+              En <strong>Estudio Dental Catalunya</strong> ayudamos a recuperar
+              la salud y la estética de tu sonrisa mediante tratamientos
+              personalizados de implantología, ortodoncia invisible,
+              odontología general y estética dental con tecnología digital de
+              última generación.
 
             </p>
-
-            {/* Beneficios */}
+                        {/* Beneficios rápidos */}
 
             <div className="mt-10 flex flex-wrap gap-4">
 
               <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
 
-                ✓ Primera visita gratuita
+                ✓ Primera visita gratuita + radiografías
 
               </div>
 
@@ -103,13 +104,13 @@ export default function Hero() {
 
               <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
 
-                ✓ Clínica privada
+                ✓ Clínica dental privada
 
               </div>
 
               <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
 
-                ✓ Tecnología digital
+                ✓ Tecnología digital avanzada
 
               </div>
 
@@ -123,7 +124,7 @@ export default function Hero() {
                 href="#contacto"
                 className="inline-flex items-center gap-3 rounded-full bg-cyan-600 px-10 py-5 text-lg font-bold text-white shadow-2xl transition duration-300 hover:scale-105 hover:bg-cyan-700"
               >
-                Primera visita gratuita
+                Reservar primera visita gratuita
 
                 <ArrowRight size={22} />
 
@@ -135,7 +136,7 @@ export default function Hero() {
               >
                 <Phone size={22} />
 
-                Llamar ahora
+                930 067 281
 
               </a>
 
@@ -171,7 +172,7 @@ export default function Hero() {
 
                 <p className="mt-2 text-slate-200">
 
-                  Profesionales
+                  Profesionales especializados
 
                 </p>
 
@@ -198,28 +199,23 @@ export default function Hero() {
                 <div className="flex items-center gap-2 text-yellow-400">
 
                   <Star fill="currentColor" />
-
                   <Star fill="currentColor" />
-
                   <Star fill="currentColor" />
-
                   <Star fill="currentColor" />
-
                   <Star fill="currentColor" />
 
                 </div>
 
                 <p className="mt-2 text-slate-200">
 
-                  Pacientes satisfechos
+                  Atención personalizada
 
                 </p>
 
               </div>
 
             </div>
-
-            {/* Tarjetas */}
+                        {/* Tarjetas */}
 
             <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
 
@@ -231,19 +227,22 @@ export default function Hero() {
 
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-white">
+                <h2 className="mt-6 text-2xl font-bold text-white">
 
                   Primera visita gratuita
 
-                </h3>
+                </h2>
 
                 <p className="mt-4 leading-8 text-slate-200">
 
-                  Diagnóstico personalizado y plan de tratamiento sin compromiso.
+                  Incluye radiografías digitales, diagnóstico personalizado y
+                  plan de tratamiento sin compromiso.
 
                 </p>
 
-              </div>              <div className="rounded-3xl border border-white/15 bg-white/10 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15">
+              </div>
+
+              <div className="rounded-3xl border border-white/15 bg-white/10 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15">
 
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/20">
 
@@ -251,15 +250,16 @@ export default function Hero() {
 
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-white">
+                <h2 className="mt-6 text-2xl font-bold text-white">
 
-                  Financiación flexible
+                  Financiación a medida
 
-                </h3>
+                </h2>
 
                 <p className="mt-4 leading-8 text-slate-200">
 
-                  Hasta 24 meses para que puedas empezar tu tratamiento cuando lo necesites.
+                  Financiación flexible de hasta 24 meses para que puedas
+                  comenzar tu tratamiento sin preocupaciones.
 
                 </p>
 
@@ -273,15 +273,16 @@ export default function Hero() {
 
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-white">
+                <h2 className="mt-6 text-2xl font-bold text-white">
 
-                  Clínica privada
+                  Clínica dental privada
 
-                </h3>
+                </h2>
 
                 <p className="mt-4 leading-8 text-slate-200">
 
-                  Un equipo estable que te acompaña desde el diagnóstico hasta el final del tratamiento.
+                  Atención cercana, tiempos de espera reducidos y un mismo
+                  equipo acompañándote durante todo el tratamiento.
 
                 </p>
 
@@ -295,23 +296,24 @@ export default function Hero() {
 
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-white">
+                <h2 className="mt-6 text-2xl font-bold text-white">
 
                   Todas las especialidades
 
-                </h3>
+                </h2>
 
                 <p className="mt-4 leading-8 text-slate-200">
 
-                  Implantología, ortodoncia, estética dental, cirugía oral, endodoncia y mucho más en un mismo centro.
+                  Implantes dentales, ortodoncia, Invisalign®, estética dental,
+                  cirugía oral, endodoncia, periodoncia y odontología general en
+                  un mismo centro.
 
                 </p>
 
               </div>
 
             </div>
-
-          </div>
+                      </div>
 
         </div>
 

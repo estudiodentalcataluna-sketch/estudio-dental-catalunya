@@ -2,10 +2,10 @@ export const veneersData = {
 
   hero: {
 
-    title: "Carillas Dentales en Sant Boi de Llobregat",
+    title: "Carillas dentales en Sant Boi de Llobregat",
 
     subtitle:
-      "Transforma tu sonrisa mediante carillas dentales personalizadas que mejoran el color, la forma y la armonía de tus dientes con un resultado totalmente natural.",
+      "Mejora el color, la forma y la armonía de tu sonrisa mediante carillas dentales de porcelana o composite totalmente personalizadas. Diseñamos sonrisas naturales adaptadas a cada paciente utilizando planificación digital.",
 
     image: "/images/tratamientos/carillas-dentales/hero-carillas-dentales.jpg",
 
@@ -15,13 +15,13 @@ export const veneersData = {
 
     badge: "Carillas Dentales",
 
-    title: "Una sonrisa más armónica con un tratamiento mínimamente invasivo",
+    title: "Transforma tu sonrisa con un tratamiento totalmente personalizado",
 
     description1:
-      "Las carillas dentales son finas láminas que se colocan sobre la parte visible del diente para mejorar su forma, tamaño, color o pequeñas irregularidades, consiguiendo una sonrisa más estética y equilibrada.",
+      "Las carillas dentales son una solución estética mínimamente invasiva que permite mejorar el color, la forma, el tamaño y pequeñas imperfecciones de los dientes, consiguiendo una sonrisa más armónica y natural sin alterar su personalidad.",
 
     description2:
-      "En Estudio Dental Catalunya diseñamos cada tratamiento de forma totalmente personalizada para obtener un resultado natural que respete la expresión y las facciones de cada paciente.",
+      "En Estudio Dental Catalunya realizamos un estudio personalizado mediante planificación digital para diseñar unas carillas adaptadas a cada paciente. Trabajamos con carillas de porcelana y carillas de composite, seleccionando siempre la opción más adecuada según las necesidades funcionales y estéticas de cada sonrisa.",
 
     image: "/images/tratamientos/carillas-dentales/intro-carillas-dentales.jpg",
 
@@ -32,51 +32,51 @@ export const veneersData = {
     title: "Ventajas de las carillas dentales",
 
     description:
-      "Las carillas permiten transformar la sonrisa de forma rápida, conservadora y con resultados altamente estéticos.",
+      "Las carillas dentales permiten mejorar la estética de la sonrisa de forma conservadora, consiguiendo resultados naturales, resistentes y totalmente personalizados.",
 
     benefits: [
 
       "Mejoran el color de los dientes.",
-      "Corrigen pequeñas fracturas o desgastes.",
-      "Armonizan la forma dental.",
+      "Corrigen fracturas y pequeños desgastes.",
+      "Armonizan la forma y el tamaño dental.",
       "Cierran pequeños espacios entre dientes.",
       "Resultados naturales y duraderos.",
-      "Tratamiento completamente personalizado.",
+      "Tratamiento totalmente personalizado.",
 
     ],
 
   },
     technology: {
 
-    title: "Precisión y planificación para un resultado natural",
+    title: "Tecnología para diseñar una sonrisa completamente personalizada",
 
     subtitle:
-      "Cada sonrisa es única. Por ello utilizamos herramientas digitales que nos permiten diseñar unas carillas totalmente adaptadas a la forma del rostro y de los dientes de cada paciente.",
+      "La combinación de planificación digital, materiales de alta calidad y un estudio personalizado nos permite conseguir carillas dentales con una estética natural, una excelente integración y resultados duraderos.",
 
     items: [
 
       {
         title: "Escáner intraoral",
         description:
-          "Realizamos impresiones digitales cómodas y precisas para diseñar las carillas sin necesidad de utilizar moldes tradicionales.",
+          "Realizamos impresiones digitales precisas y cómodas sin necesidad de utilizar moldes tradicionales, mejorando la precisión del tratamiento.",
       },
 
       {
         title: "Planificación digital",
         description:
-          "Estudiamos la sonrisa, la mordida y la armonía facial para conseguir un resultado equilibrado y completamente personalizado.",
+          "Analizamos la sonrisa, la mordida y las proporciones faciales para diseñar unas carillas totalmente adaptadas a cada paciente.",
       },
 
       {
-        title: "Materiales de alta estética",
+        title: "Carillas de porcelana y composite",
         description:
-          "Trabajamos con porcelana y composites de última generación que ofrecen una excelente estética, resistencia y durabilidad.",
+          "Seleccionamos el material más adecuado para cada caso buscando siempre la mejor combinación entre estética, resistencia y conservación del diente.",
       },
 
       {
-        title: "Diseño personalizado",
+        title: "Odontología mínimamente invasiva",
         description:
-          "Cada carilla se fabrica de forma individual para integrarse perfectamente con el resto de la sonrisa y mantener un aspecto completamente natural.",
+          "Siempre intentamos preservar la mayor cantidad posible de estructura dental sana mediante técnicas conservadoras y tratamientos personalizados.",
       },
 
     ],
@@ -88,16 +88,16 @@ export const veneersData = {
     title: "¿Cuándo están indicadas las carillas dentales?",
 
     subtitle:
-      "Las carillas son una excelente opción para mejorar diferentes alteraciones estéticas de la sonrisa.",
+      "Las carillas dentales permiten mejorar numerosos aspectos de la sonrisa cuando el objetivo es conseguir una estética más armónica y natural.",
 
     items: [
 
-      "Dientes manchados o con alteraciones de color.",
+      "Dientes con alteraciones de color.",
       "Pequeñas fracturas o desgastes.",
       "Separación entre dientes (diastemas).",
       "Dientes con formas irregulares.",
-      "Desigualdad en el tamaño de los dientes.",
-      "Mejorar la armonía de la sonrisa.",
+      "Desigualdad en el tamaño dental.",
+      "Mejorar la armonía y la estética de la sonrisa.",
 
     ],
 
@@ -107,32 +107,41 @@ export const veneersData = {
     title: "Preguntas frecuentes sobre carillas dentales",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales antes de comenzar un tratamiento con carillas.",
+      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar un tratamiento con carillas dentales en nuestra clínica de Sant Boi de Llobregat.",
 
     faqs: [
 
       {
-        question: "¿Las carillas tienen un aspecto natural?",
+        question: "¿Las carillas dentales tienen un aspecto natural?",
         answer:
-          "Sí. Cada carilla se diseña de forma personalizada para adaptarse al color, forma y proporciones de la sonrisa, consiguiendo un resultado completamente natural.",
+          "Sí. Cada tratamiento se diseña de forma totalmente personalizada para respetar la forma del rostro, las proporciones faciales y la expresión de cada paciente. Nuestro objetivo es conseguir una sonrisa bonita, armónica y completamente natural.",
       },
 
       {
-        question: "¿Qué tipos de carillas existen?",
+        question: "¿Qué diferencia hay entre las carillas de porcelana y las de composite?",
         answer:
-          "Principalmente trabajamos con carillas de porcelana y de composite. La elección depende de las necesidades estéticas, funcionales y de las características de cada paciente.",
+          "Ambas permiten mejorar la estética de la sonrisa. La elección depende de las necesidades funcionales y estéticas de cada paciente, por lo que tras el estudio personalizado te recomendaremos la opción más adecuada para tu caso.",
       },
 
       {
-        question: "¿Las carillas son un tratamiento duradero?",
+        question: "¿Cuánto duran las carillas dentales?",
         answer:
-          "Con una correcta higiene oral, revisiones periódicas y un buen mantenimiento, las carillas pueden mantenerse en perfecto estado durante muchos años.",
+          "Con una buena higiene oral, revisiones periódicas y un correcto mantenimiento, las carillas dentales pueden conservarse en perfecto estado durante muchos años.",
+
       },
 
       {
-        question: "¿Es necesario desgastar los dientes?",
+        question: "¿Es necesario desgastar los dientes para colocar carillas?",
         answer:
-          "En muchos casos el desgaste es mínimo o incluso innecesario. Siempre buscamos realizar tratamientos lo más conservadores posibles respetando la estructura dental.",
+          "No siempre. Siempre que es posible realizamos tratamientos mínimamente invasivos, conservando la mayor cantidad de estructura dental sana.",
+
+      },
+
+      {
+        question: "¿Las carillas pueden corregir todos los problemas estéticos?",
+        answer:
+          "Las carillas son una excelente solución para mejorar el color, la forma, pequeñas fracturas o separaciones entre dientes. Durante la primera visita valoraremos tu caso para recomendar el tratamiento más adecuado.",
+
       },
 
     ],
@@ -141,10 +150,10 @@ export const veneersData = {
 
   cta: {
 
-    title: "Diseña la sonrisa que siempre has querido",
+    title: "Consigue una sonrisa más armónica y natural",
 
     description:
-      "Solicita una primera visita y estudiaremos tu caso para crear unas carillas dentales totalmente personalizadas y conseguir una sonrisa armónica y natural.",
+      "Solicita tu primera visita gratuita con radiografías incluidas. Estudiaremos tu sonrisa de forma personalizada y diseñaremos el tratamiento con carillas dentales que mejor se adapte a tus necesidades y objetivos.",
 
   },
 

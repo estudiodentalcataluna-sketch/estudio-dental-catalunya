@@ -1,151 +1,135 @@
-export const prosthesesData = {
-
+export const prostheticsData = {
   hero: {
-
     title: "Prótesis Dentales en Sant Boi de Llobregat",
 
     subtitle:
-      "Recupera la función, la comodidad y la estética de tu sonrisa mediante prótesis dentales totalmente personalizadas y adaptadas a tus necesidades.",
+      "Recupera la función, la comodidad y la estética de tu sonrisa mediante prótesis dentales fijas o removibles totalmente personalizadas.",
 
-    image: "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
-
+    image:
+      "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
   },
 
   intro: {
-
     badge: "Prótesis Dentales",
 
-    title: "Recupera tu sonrisa y vuelve a disfrutar de cada día",
+    title: "Recupera tu sonrisa y vuelve a disfrutar de cada momento",
 
     description1:
-      "Las prótesis dentales permiten sustituir uno o varios dientes perdidos para recuperar la función masticatoria, mejorar la estética y devolver la comodidad al hablar y sonreír.",
+      "Las prótesis dentales permiten sustituir uno o varios dientes perdidos, recuperando la capacidad de masticar, hablar y sonreír con naturalidad. Cada tratamiento se diseña de forma personalizada para adaptarse a las necesidades funcionales y estéticas de cada paciente.",
 
     description2:
-      "En Estudio Dental Catalunya diseñamos prótesis completamente personalizadas, tanto fijas como removibles, buscando siempre un resultado funcional, cómodo y con una apariencia totalmente natural.",
+      "En Estudio Dental Catalunya realizamos un estudio completo para elegir la solución más adecuada, ya sea mediante prótesis fijas, removibles o rehabilitaciones sobre implantes, buscando siempre un resultado cómodo, estable y natural.",
 
-    image: "/images/tratamientos/protesis-dentales/intro-protesis-dentales.jpg",
-
+    image:
+      "/images/tratamientos/protesis-dentales/intro-protesis-dentales.jpg",
   },
 
   benefits: {
-
     title: "Beneficios de las prótesis dentales",
 
     description:
-      "Una prótesis bien diseñada mejora la calidad de vida y permite recuperar la función y la estética de la sonrisa.",
+      "Una prótesis bien planificada mejora la calidad de vida al recuperar la funcionalidad y la estética de la sonrisa.",
 
     benefits: [
-
       "Recupera la capacidad de masticación.",
-      "Mejora la estética facial.",
-      "Favorece una correcta pronunciación.",
-      "Aumenta la comodidad al comer.",
-      "Soluciones fijas y removibles.",
+      "Mejora la estética de la sonrisa.",
+      "Facilita una correcta pronunciación.",
+      "Aporta mayor comodidad en el día a día.",
+      "Ayuda a mantener la armonía facial.",
       "Tratamientos totalmente personalizados.",
-
     ],
-
   },
-    technology: {
 
-    title: "Prótesis diseñadas para cada paciente",
+  technology: {
+    title: "Tecnología para una rehabilitación precisa",
 
     subtitle:
-      "Cada rehabilitación comienza con un estudio personalizado para diseñar una prótesis cómoda, funcional y con una estética completamente natural.",
+      "Utilizamos herramientas digitales para planificar cada prótesis con precisión y conseguir una adaptación excelente tanto en funcionalidad como en estética.",
 
     items: [
-
-      {
-        title: "Estudio personalizado",
-        description:
-          "Analizamos tu situación clínica para elegir la solución protésica más adecuada según tus necesidades.",
-      },
-
       {
         title: "Escáner intraoral",
         description:
-          "Las impresiones digitales permiten fabricar prótesis con un ajuste mucho más preciso y cómodo.",
+          "Realizamos impresiones digitales cómodas y precisas sin necesidad de utilizar moldes tradicionales.",
       },
 
       {
-        title: "Diseño personalizado",
+        title: "Planificación personalizada",
         description:
-          "Cada prótesis se adapta a la forma de tu sonrisa para conseguir una integración estética y funcional.",
+          "Analizamos cada caso para seleccionar el tipo de prótesis que mejor se adapte a las necesidades del paciente.",
       },
 
       {
-        title: "Seguimiento y ajustes",
+        title: "Materiales de alta calidad",
         description:
-          "Tras la colocación realizamos revisiones para garantizar la adaptación, la comodidad y el correcto funcionamiento de la prótesis.",
+          "Trabajamos con materiales resistentes, biocompatibles y de gran estética para conseguir resultados duraderos.",
       },
 
+      {
+        title: "Seguimiento clínico",
+        description:
+          "Revisamos periódicamente la adaptación y el estado de la prótesis para garantizar su correcto funcionamiento a lo largo del tiempo.",
+      },
     ],
-
   },
 
   indications: {
-
-    title: "¿Cuándo están indicadas las prótesis dentales?",
+    title: "¿Cuándo está indicada una prótesis dental?",
 
     subtitle:
-      "Las prótesis permiten recuperar dientes perdidos y mejorar tanto la función como la estética de la sonrisa.",
+      "Las prótesis dentales permiten recuperar dientes perdidos y restaurar la función de la boca en numerosas situaciones.",
 
     items: [
-
       "Pérdida de uno o varios dientes.",
-      "Ausencia completa de dientes.",
-      "Recuperar la función masticatoria.",
-      "Mejorar la pronunciación.",
-      "Rehabilitación tras extracciones.",
-      "Recuperar la estética de la sonrisa.",
-
+      "Ausencia completa de piezas dentales.",
+      "Dificultad para masticar.",
+      "Problemas estéticos derivados de la pérdida dental.",
+      "Rehabilitación tras implantes dentales.",
+      "Sustitución de prótesis antiguas o deterioradas.",
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre prótesis dentales",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales antes de comenzar un tratamiento de rehabilitación dental.",
+      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar el tratamiento.",
 
     faqs: [
-
       {
-        question: "¿Qué tipo de prótesis necesito?",
+        question: "¿Qué tipos de prótesis dentales existen?",
+
         answer:
-          "Depende del número de dientes perdidos, del estado de tu boca y de tus necesidades. Tras el estudio inicial te recomendaremos la opción más adecuada, ya sea fija o removible.",
+          "Dependiendo de cada caso, podemos realizar prótesis fijas, removibles o rehabilitaciones sobre implantes. Tras el estudio inicial te recomendaremos la opción más adecuada.",
       },
 
       {
         question: "¿Las prótesis dentales resultan cómodas?",
+
         answer:
-          "Sí. Las prótesis actuales están diseñadas para ofrecer una gran comodidad y adaptarse de forma precisa a la boca del paciente, facilitando la masticación y el habla.",
+          "Sí. Las prótesis actuales están diseñadas para ofrecer una adaptación cómoda y natural. Durante los primeros días puede ser necesario un breve periodo de adaptación.",
       },
 
       {
         question: "¿Cuánto dura una prótesis dental?",
+
         answer:
-          "Con un buen mantenimiento, una correcta higiene oral y revisiones periódicas, las prótesis dentales pueden mantenerse en perfecto estado durante muchos años.",
+          "Su duración depende del tipo de prótesis, del mantenimiento y de los hábitos de cada paciente. Con revisiones periódicas y una correcta higiene pueden mantenerse en buen estado durante muchos años.",
       },
 
       {
-        question: "¿Necesitan algún cuidado especial?",
+        question: "¿Cómo debo cuidar una prótesis dental?",
+
         answer:
-          "Sí. Es importante mantener una buena higiene diaria y acudir a las revisiones recomendadas para comprobar el estado de la prótesis y realizar los ajustes necesarios si fueran precisos.",
+          "Es importante mantener una buena higiene diaria y acudir a las revisiones periódicas para comprobar su estado y realizar los ajustes necesarios cuando sea preciso.",
       },
-
     ],
-
   },
 
   cta: {
-
-    title: "Recupera la función y la estética de tu sonrisa",
+    title: "Recupera la funcionalidad y la confianza al sonreír",
 
     description:
-      "Solicita una primera visita y estudiaremos tu caso para ofrecerte la prótesis dental que mejor se adapte a tus necesidades y te permita volver a sonreír con total confianza.",
-
+      "Solicita tu primera visita y realizaremos un estudio personalizado para diseñar la prótesis dental que mejor se adapte a tus necesidades y recuperar una sonrisa cómoda, funcional y natural.",
   },
-
 };

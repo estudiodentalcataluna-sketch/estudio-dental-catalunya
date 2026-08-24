@@ -5,7 +5,7 @@ export const aestheticData = {
     title: "Estética Dental en Sant Boi de Llobregat",
 
     subtitle:
-      "Mejoramos la armonía, el color y la forma de tu sonrisa mediante tratamientos personalizados que combinan salud, funcionalidad y estética natural.",
+      "Mejora la estética de tu sonrisa mediante tratamientos personalizados de estética dental. Conseguimos resultados naturales, armónicos y adaptados a cada paciente gracias a la planificación digital.",
 
     image: "/images/tratamientos/estetica-dental/hero-estetica-dental.jpg",
 
@@ -15,13 +15,13 @@ export const aestheticData = {
 
     badge: "Estética Dental",
 
-    title: "Diseñamos sonrisas naturales adaptadas a cada paciente",
+    title: "Consigue una sonrisa natural, armónica y completamente personalizada",
 
     description1:
-      "La estética dental reúne diferentes tratamientos destinados a mejorar la apariencia de la sonrisa respetando siempre la salud bucodental. Cada caso se estudia de forma individual para conseguir un resultado equilibrado, natural y completamente personalizado.",
+      "La estética dental engloba diferentes tratamientos destinados a mejorar el color, la forma, el tamaño y la armonía de los dientes, siempre respetando la salud bucodental. Cada sonrisa es única y por eso diseñamos tratamientos completamente personalizados.",
 
     description2:
-      "En Estudio Dental Catalunya utilizamos planificación digital y materiales de alta calidad para conseguir sonrisas armónicas que respeten la personalidad y las facciones de cada paciente.",
+      "En Estudio Dental Catalunya utilizamos planificación digital, materiales de alta calidad y un enfoque conservador para conseguir sonrisas naturales que mejoren la estética sin perder la personalidad de cada paciente.",
 
     image: "/images/tratamientos/estetica-dental/intro-estetica-dental.jpg",
 
@@ -32,107 +32,117 @@ export const aestheticData = {
     title: "Beneficios de la estética dental",
 
     description:
-      "Los tratamientos estéticos permiten mejorar la sonrisa de forma conservadora, consiguiendo resultados naturales y duraderos.",
+      "Los tratamientos de estética dental permiten mejorar la apariencia de la sonrisa de forma conservadora, recuperando la confianza y consiguiendo resultados duraderos y naturales.",
 
     benefits: [
 
-      "Mejora la apariencia de la sonrisa.",
+      "Mejora la estética de la sonrisa.",
       "Resultados naturales y personalizados.",
       "Aumenta la confianza al sonreír.",
-      "Corrige pequeñas imperfecciones.",
+      "Corrige pequeñas imperfecciones dentales.",
       "Tratamientos mínimamente invasivos.",
-      "Combinación de diferentes técnicas según cada caso.",
+      "Combinación de diferentes técnicas según cada paciente.",
 
     ],
 
   },
     technology: {
 
-    title: "Tecnología para diseñar una sonrisa personalizada",
+    title: "Tecnología para conseguir una sonrisa estética y natural",
 
     subtitle:
-      "La planificación digital nos permite estudiar cada caso en detalle y elegir el tratamiento estético más adecuado para conseguir un resultado natural y equilibrado.",
+      "Combinamos tecnología digital y materiales de última generación para planificar cada tratamiento de estética dental con la máxima precisión y obtener resultados naturales, duraderos y totalmente personalizados.",
 
     items: [
 
       {
         title: "Escáner intraoral",
         description:
-          "Realizamos impresiones digitales precisas y cómodas para planificar cada tratamiento sin utilizar moldes tradicionales.",
+          "Capturamos una impresión digital precisa de tu sonrisa sin necesidad de utilizar los incómodos moldes tradicionales.",
       },
 
       {
         title: "Planificación digital",
         description:
-          "Analizamos la sonrisa, la proporción dental y la armonía facial para diseñar un resultado totalmente personalizado.",
+          "Analizamos la sonrisa, las proporciones faciales y la posición de los dientes para diseñar un tratamiento completamente personalizado.",
       },
 
       {
         title: "Materiales de alta estética",
         description:
-          "Trabajamos con materiales de última generación que ofrecen un aspecto natural, gran resistencia y excelente integración con los dientes.",
+          "Utilizamos materiales cerámicos y restauradores de última generación que reproducen el color, la translucidez y el aspecto natural del diente.",
       },
 
       {
-        title: "Tratamientos mínimamente invasivos",
+        title: "Odontología mínimamente invasiva",
         description:
-          "Siempre buscamos conservar al máximo la estructura dental utilizando las técnicas más conservadoras posibles.",
+          "Siempre priorizamos conservar la mayor cantidad posible de estructura dental sana utilizando técnicas conservadoras y seguras.",
       },
 
     ],
 
   },
-
-  indications: {
+    indications: {
 
     title: "¿Cuándo está indicada la estética dental?",
 
     subtitle:
-      "Los tratamientos estéticos permiten mejorar diferentes aspectos de la sonrisa adaptándose a las necesidades de cada paciente.",
+      "Los tratamientos de estética dental permiten mejorar numerosos aspectos de la sonrisa adaptándose siempre a las necesidades y objetivos de cada paciente.",
 
     items: [
 
-      "Dientes oscurecidos o pigmentados.",
-      "Pequeñas fracturas o desgastes.",
+      "Dientes oscurecidos o con manchas.",
+      "Pequeñas fracturas o desgastes dentales.",
       "Separación entre dientes.",
-      "Alteraciones en la forma dental.",
+      "Alteraciones en la forma o tamaño de los dientes.",
       "Sonrisa poco armónica.",
-      "Mejorar la confianza al sonreír.",
+      "Mejorar la confianza y la estética al sonreír.",
 
     ],
 
   },
-    faq: {
+
+  faq: {
 
     title: "Preguntas frecuentes sobre estética dental",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar un tratamiento estético.",
+      "Estas son algunas de las dudas más habituales antes de comenzar un tratamiento de estética dental en nuestra clínica de Sant Boi de Llobregat.",
 
     faqs: [
 
       {
-        question: "¿Los resultados se ven naturales?",
+        question: "¿Los resultados de la estética dental son naturales?",
         answer:
-          "Sí. Nuestro objetivo es conseguir una sonrisa armónica y natural, adaptada a las facciones y características de cada paciente, evitando resultados artificiales.",
+          "Sí. Nuestro objetivo es conseguir una sonrisa armónica y natural, respetando la forma del rostro, las proporciones faciales y la personalidad de cada paciente. Buscamos mejorar la sonrisa sin que parezca artificial.",
       },
 
       {
         question: "¿Cuánto duran los tratamientos de estética dental?",
         answer:
-          "Depende del tratamiento realizado y de los cuidados posteriores. Con una buena higiene oral y revisiones periódicas los resultados pueden mantenerse durante muchos años.",
+          "Depende del tratamiento realizado y de los hábitos de cada paciente. Con una buena higiene oral y revisiones periódicas, los resultados pueden mantenerse durante muchos años.",
+
       },
 
       {
-        question: "¿Es necesario realizar varios tratamientos a la vez?",
+        question: "¿Necesitaré combinar varios tratamientos?",
         answer:
-          "No siempre. Tras el estudio inicial diseñamos un plan totalmente personalizado y valoramos qué tratamientos son realmente necesarios para conseguir el resultado deseado.",
+          "No siempre. Tras realizar un estudio personalizado te explicaremos qué tratamiento o combinación de tratamientos permitirá conseguir el mejor resultado para tu sonrisa.",
+
       },
 
       {
-        question: "¿La estética dental puede mejorar la confianza al sonreír?",
+        question: "¿La estética dental solo mejora la apariencia?",
         answer:
-          "Sí. Muchos pacientes experimentan una mejora importante en su autoestima y seguridad al sentirse más cómodos con la apariencia de su sonrisa.",
+          "Además de mejorar la estética, muchos tratamientos ayudan a recuperar la función, corregir pequeños desgastes y aumentar la confianza y la seguridad al sonreír.",
+
+      },
+
+      {
+        question: "¿El tratamiento es doloroso?",
+        answer:
+          "La mayoría de tratamientos de estética dental son mínimamente invasivos y se realizan de forma cómoda para el paciente. Siempre adaptamos el procedimiento para que la experiencia sea lo más confortable posible.",
+
       },
 
     ],
@@ -141,10 +151,10 @@ export const aestheticData = {
 
   cta: {
 
-    title: "Descubre el potencial de tu sonrisa",
+    title: "Consigue la sonrisa que siempre has querido",
 
     description:
-      "Solicita una primera visita y estudiaremos tu caso para diseñar un tratamiento de estética dental totalmente personalizado y adaptado a tus objetivos.",
+      "Solicita tu primera visita gratuita con radiografías incluidas. Estudiaremos tu sonrisa de forma personalizada y diseñaremos el tratamiento de estética dental más adecuado para conseguir un resultado natural y totalmente adaptado a ti.",
 
   },
 

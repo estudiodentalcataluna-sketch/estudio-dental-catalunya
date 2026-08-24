@@ -12,9 +12,10 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { periodonticsData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Periodoncia en Sant Boi de Llobregat",
+  title: "Periodoncia en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
   description:
-    "Tratamiento de gingivitis y periodontitis en Sant Boi de Llobregat. Cuidamos la salud de tus encías para conservar tus dientes y prevenir complicaciones.",
+    "Especialistas en periodoncia en Sant Boi de Llobregat. Tratamos la gingivitis y la periodontitis para cuidar la salud de tus encías y conservar tus dientes.",
 
   alternates: {
     canonical:
@@ -23,23 +24,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Periodoncia en Sant Boi de Llobregat",
+
     description:
-      "Especialistas en prevención y tratamiento de enfermedades de las encías mediante un enfoque personalizado y mínimamente invasivo.",
+      "Tratamientos personalizados para prevenir y tratar la gingivitis y la periodontitis, manteniendo unas encías sanas y una sonrisa saludable.",
+
     url: "https://www.estudiodentalcatalunya.es/tratamientos/periodoncia",
+
     images: [
       {
         url: "/images/tratamientos/periodoncia/hero-periodoncia.jpg",
       },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Periodoncia en Sant Boi de Llobregat",
-    description:
-      "Tratamientos personalizados para mantener unas encías sanas y conservar tus dientes.",
-    images: [
-      "/images/tratamientos/periodoncia/hero-periodoncia.jpg",
     ],
   },
 };
@@ -47,8 +41,7 @@ export const metadata: Metadata = {
 export default function PeriodonticsPage() {
   return (
     <main>
-
-      <TreatmentHero {...periodonticsData.hero} />
+            <TreatmentHero {...periodonticsData.hero} />
 
       <TreatmentIntro {...periodonticsData.intro} />
 
@@ -56,14 +49,13 @@ export default function PeriodonticsPage() {
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Realizamos un estudio completo del estado de las encías para diagnosticar la enfermedad periodontal y planificar un tratamiento personalizado que permita detener su evolución."
+        subtitle="Comenzamos con un estudio periodontal completo para valorar el estado de las encías, diagnosticar la enfermedad y planificar el tratamiento más adecuado para detener su evolución y preservar la salud bucodental."
       />
 
       <TreatmentTechnology {...periodonticsData.technology} />
 
       <TreatmentIndications {...periodonticsData.indications} />
-
-      <TreatmentFAQ {...periodonticsData.faq} />
+            <TreatmentFAQ {...periodonticsData.faq} />
 
       <TreatmentCTA {...periodonticsData.cta} />
 

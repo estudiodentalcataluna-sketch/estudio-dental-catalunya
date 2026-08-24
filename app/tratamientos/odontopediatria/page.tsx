@@ -12,9 +12,10 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { pediatricData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Odontopediatría en Sant Boi de Llobregat",
+  title: "Odontopediatría en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
   description:
-    "Especialistas en odontopediatría en Sant Boi de Llobregat. Cuidamos la salud bucodental de bebés, niños y adolescentes mediante un enfoque preventivo y personalizado.",
+    "Especialistas en odontopediatría en Sant Boi de Llobregat. Cuidamos la salud bucodental de bebés, niños y adolescentes mediante tratamientos preventivos y personalizados.",
 
   alternates: {
     canonical:
@@ -23,9 +24,13 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Odontopediatría en Sant Boi de Llobregat",
+
     description:
-      "Prevención, revisiones y tratamientos dentales infantiles para cuidar la sonrisa de los más pequeños.",
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
+      "Tratamientos de odontopediatría para prevenir, diagnosticar y cuidar la salud bucodental infantil desde los primeros años.",
+
+    url:
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
+
     images: [
       {
         url: "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
@@ -35,19 +40,21 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Odontopediatría en Sant Boi de Llobregat",
+
     description:
-      "Tratamientos de odontopediatría adaptados a cada etapa del crecimiento infantil.",
+      "Prevención, revisiones y tratamientos adaptados para cuidar la sonrisa de los más pequeños.",
+
     images: [
       "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
     ],
   },
 };
 
-export default function PediatricPage() {
+export default function PediatricDentistryPage() {
   return (
     <main>
-
       <TreatmentHero {...pediatricData.hero} />
 
       <TreatmentIntro {...pediatricData.intro} />
@@ -56,7 +63,7 @@ export default function PediatricPage() {
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Cada niño recibe una atención personalizada basada en la prevención, el seguimiento del desarrollo dental y la creación de una experiencia positiva para que acuda al dentista con confianza."
+        subtitle="Comenzamos con una revisión adaptada a la edad del niño para valorar el desarrollo de su boca, detectar posibles problemas de forma precoz y establecer un plan preventivo totalmente personalizado."
       />
 
       <TreatmentTechnology {...pediatricData.technology} />
@@ -66,7 +73,6 @@ export default function PediatricPage() {
       <TreatmentFAQ {...pediatricData.faq} />
 
       <TreatmentCTA {...pediatricData.cta} />
-
     </main>
   );
 }

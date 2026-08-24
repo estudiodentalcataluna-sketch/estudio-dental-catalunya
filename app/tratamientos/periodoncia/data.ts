@@ -1,151 +1,133 @@
 export const periodonticsData = {
-
   hero: {
-
     title: "Periodoncia en Sant Boi de Llobregat",
 
     subtitle:
-      "Cuidamos la salud de tus encías para prevenir y tratar enfermedades periodontales que pueden comprometer la estabilidad de tus dientes.",
+      "Cuidamos la salud de tus encías para prevenir la pérdida dental mediante un diagnóstico precoz y tratamientos periodontales personalizados.",
 
     image: "/images/tratamientos/periodoncia/hero-periodoncia.jpg",
-
   },
 
   intro: {
-
     badge: "Periodoncia",
 
-    title: "La salud de las encías es la base de una sonrisa sana",
+    title: "La salud de tus encías es la base de una sonrisa sana",
 
     description1:
-      "La periodoncia es la especialidad encargada de prevenir, diagnosticar y tratar enfermedades de las encías como la gingivitis y la periodontitis. Detectarlas a tiempo es fundamental para evitar la pérdida de soporte de los dientes.",
+      "La periodoncia es la especialidad encargada de prevenir, diagnosticar y tratar las enfermedades que afectan a las encías y al hueso que sostiene los dientes, como la gingivitis y la periodontitis.",
 
     description2:
-      "En Estudio Dental Catalunya realizamos un estudio periodontal personalizado para recuperar la salud de las encías y ayudarte a mantener tus dientes durante muchos años.",
+      "En Estudio Dental Catalunya realizamos un estudio periodontal personalizado para detectar el problema en sus fases iniciales y aplicar el tratamiento más adecuado con el objetivo de conservar tus dientes durante el mayor tiempo posible.",
 
     image: "/images/tratamientos/periodoncia/intro-periodoncia.jpg",
-
   },
 
   benefits: {
-
     title: "Beneficios del tratamiento periodontal",
 
     description:
-      "Un tratamiento periodontal adecuado ayuda a conservar la salud de las encías y proteger los dientes a largo plazo.",
+      "Un tratamiento periodontal realizado a tiempo ayuda a conservar la salud de las encías y prevenir complicaciones futuras.",
 
     benefits: [
-
-      "Elimina la inflamación de las encías.",
-      "Reduce el sangrado gingival.",
-      "Controla la infección periodontal.",
-      "Ayuda a conservar los dientes.",
-      "Mejora el aliento.",
-      "Favorece una mejor salud bucodental.",
-
+      "Detiene la progresión de la enfermedad periodontal.",
+      "Reduce la inflamación y el sangrado de las encías.",
+      "Ayuda a conservar los dientes naturales.",
+      "Elimina la infección bacteriana.",
+      "Mejora el aliento y la salud bucodental.",
+      "Previene la pérdida de hueso de soporte.",
     ],
-
   },
-    technology: {
 
-    title: "Diagnóstico y tratamiento periodontal personalizado",
+  technology: {
+    title: "Diagnóstico preciso para cuidar tus encías",
 
     subtitle:
-      "Cada paciente presenta una situación diferente. Realizamos un estudio completo para detectar el grado de afectación de las encías y planificar el tratamiento más adecuado.",
+      "Utilizamos técnicas de diagnóstico y seguimiento que nos permiten detectar las enfermedades periodontales de forma precoz y planificar tratamientos personalizados.",
 
     items: [
-
       {
-        title: "Diagnóstico periodontal",
+        title: "Exploración periodontal",
         description:
-          "Valoramos el estado de las encías, el hueso de soporte y la presencia de bolsas periodontales para establecer un diagnóstico preciso.",
+          "Evaluamos el estado de las encías, la presencia de bolsas periodontales y el nivel de soporte de cada diente.",
       },
 
       {
         title: "Radiología digital",
         description:
-          "Las imágenes digitales nos permiten evaluar la pérdida ósea y controlar la evolución del tratamiento con mayor precisión.",
+          "Analizamos el hueso que rodea los dientes para valorar el grado de afectación periodontal con mayor precisión.",
       },
 
       {
-        title: "Tratamientos conservadores",
+        title: "Tratamientos mínimamente invasivos",
         description:
-          "Nuestro objetivo es eliminar la infección, estabilizar la enfermedad periodontal y conservar los dientes naturales siempre que sea posible.",
+          "Aplicamos técnicas conservadoras para eliminar la infección y preservar al máximo los tejidos sanos.",
       },
 
       {
-        title: "Mantenimiento periodontal",
+        title: "Programa de mantenimiento",
         description:
-          "Tras el tratamiento realizamos revisiones periódicas para mantener la salud de las encías y prevenir recaídas.",
+          "Realizamos controles periódicos y limpiezas profesionales para mantener la enfermedad periodontal bajo control a largo plazo.",
       },
-
     ],
-
   },
 
   indications: {
-
     title: "¿Cuándo acudir al periodoncista?",
 
     subtitle:
-      "Es importante acudir a revisión ante cualquier signo que pueda indicar una enfermedad de las encías.",
+      "Algunos signos pueden indicar la presencia de una enfermedad periodontal y es importante tratarlos cuanto antes.",
 
     items: [
-
-      "Sangrado al cepillarse.",
+      "Sangrado de encías.",
       "Encías inflamadas o enrojecidas.",
       "Mal aliento persistente.",
-      "Movilidad dental.",
       "Retracción de las encías.",
-      "Diagnóstico de gingivitis o periodontitis.",
-
+      "Movilidad dental.",
+      "Sensibilidad por exposición de la raíz.",
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre periodoncia",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar un tratamiento periodontal.",
+      "Estas son algunas de las dudas más habituales sobre las enfermedades de las encías y su tratamiento.",
 
     faqs: [
+      {
+        question: "¿Qué diferencia hay entre gingivitis y periodontitis?",
+
+        answer:
+          "La gingivitis es una inflamación superficial de las encías que puede revertirse con un tratamiento adecuado. La periodontitis es una fase más avanzada en la que también se ve afectado el hueso que sostiene los dientes.",
+      },
 
       {
         question: "¿Por qué sangran las encías al cepillarme?",
+
         answer:
-          "El sangrado suele ser uno de los primeros signos de inflamación de las encías. Es importante acudir a revisión para detectar el problema cuanto antes y evitar que evolucione.",
+          "El sangrado suele ser uno de los primeros signos de inflamación de las encías. Es recomendable acudir a una revisión para identificar la causa y evitar que el problema avance.",
       },
 
       {
-        question: "¿La periodontitis puede hacer que pierda los dientes?",
+        question: "¿La periodontitis se puede curar?",
+
         answer:
-          "Sí. Si no se trata, la periodontitis puede destruir progresivamente el hueso que sostiene los dientes, llegando a provocar movilidad e incluso la pérdida de las piezas dentales.",
+          "La periodontitis es una enfermedad crónica, pero puede mantenerse controlada mediante un tratamiento adecuado y un programa de mantenimiento periódico.",
       },
 
       {
-        question: "¿El tratamiento periodontal duele?",
-        answer:
-          "Los tratamientos se realizan con anestesia local cuando es necesario para garantizar la máxima comodidad. Tras la sesión pueden aparecer pequeñas molestias que suelen desaparecer en poco tiempo.",
-      },
+        question: "¿Cómo puedo prevenir las enfermedades de las encías?",
 
-      {
-        question: "¿La enfermedad periodontal puede volver a aparecer?",
         answer:
-          "Sí. Por ello son fundamentales el mantenimiento periodontal, las revisiones periódicas y una correcta higiene oral para mantener la enfermedad controlada a largo plazo.",
+          "Una buena higiene oral, las revisiones periódicas y las limpiezas profesionales son fundamentales para prevenir la aparición y progresión de la enfermedad periodontal.",
       },
-
     ],
-
   },
 
   cta: {
-
-    title: "Recupera la salud de tus encías",
+    title: "Cuida tus encías antes de que el problema avance",
 
     description:
-      "Solicita una primera visita y realizaremos un estudio periodontal personalizado para prevenir, diagnosticar y tratar cualquier enfermedad de las encías antes de que avance.",
-
+      "Solicita tu primera visita y realizaremos un estudio periodontal completo para diagnosticar el estado de tus encías y recomendarte el tratamiento más adecuado.",
   },
-
 };

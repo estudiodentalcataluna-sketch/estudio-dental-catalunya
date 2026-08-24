@@ -9,12 +9,13 @@ import TreatmentIndications from "@/app/components/TreatmentIndications";
 import TreatmentFAQ from "@/app/components/TreatmentFAQ";
 import TreatmentCTA from "@/app/components/TreatmentCTA";
 
-import { prosthesesData } from "./data";
+import { prostheticsData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Prótesis Dentales en Sant Boi de Llobregat",
+  title: "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
   description:
-    "Recupera la función y la estética de tu sonrisa mediante prótesis dentales fijas y removibles totalmente personalizadas en Sant Boi de Llobregat.",
+    "Especialistas en prótesis dentales en Sant Boi de Llobregat. Recupera la función y la estética de tu sonrisa mediante prótesis fijas y removibles totalmente personalizadas.",
 
   alternates: {
     canonical:
@@ -23,9 +24,13 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Prótesis Dentales en Sant Boi de Llobregat",
+
     description:
-      "Especialistas en prótesis dentales para recuperar la masticación, la comodidad y la estética de tu sonrisa.",
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+      "Recupera la funcionalidad y la estética de tu sonrisa mediante prótesis dentales personalizadas adaptadas a tus necesidades.",
+
+    url:
+      "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+
     images: [
       {
         url: "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
@@ -35,38 +40,39 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Prótesis Dentales en Sant Boi de Llobregat",
+
     description:
-      "Tratamientos personalizados con prótesis fijas y removibles para recuperar tu sonrisa.",
+      "Prótesis fijas y removibles diseñadas para recuperar la función, la comodidad y la estética de tu sonrisa.",
+
     images: [
       "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
     ],
   },
 };
 
-export default function ProsthesesPage() {
+export default function ProstheticsPage() {
   return (
     <main>
+      <TreatmentHero {...prostheticsData.hero} />
 
-      <TreatmentHero {...prosthesesData.hero} />
+      <TreatmentIntro {...prostheticsData.intro} />
 
-      <TreatmentIntro {...prosthesesData.intro} />
-
-      <TreatmentBenefits {...prosthesesData.benefits} />
+      <TreatmentBenefits {...prostheticsData.benefits} />
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Analizamos tu caso de forma personalizada para diseñar una prótesis totalmente adaptada a tu boca, recuperando la función, la comodidad y la estética de tu sonrisa."
+        subtitle="Realizamos un estudio personalizado para valorar tu situación clínica y diseñar la prótesis dental que mejor se adapte a tus necesidades, garantizando funcionalidad, comodidad y un resultado natural."
       />
 
-      <TreatmentTechnology {...prosthesesData.technology} />
+      <TreatmentTechnology {...prostheticsData.technology} />
 
-      <TreatmentIndications {...prosthesesData.indications} />
+      <TreatmentIndications {...prostheticsData.indications} />
 
-      <TreatmentFAQ {...prosthesesData.faq} />
+      <TreatmentFAQ {...prostheticsData.faq} />
 
-      <TreatmentCTA {...prosthesesData.cta} />
-
+      <TreatmentCTA {...prostheticsData.cta} />
     </main>
   );
 }

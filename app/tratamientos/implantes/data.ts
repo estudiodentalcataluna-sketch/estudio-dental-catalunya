@@ -1,150 +1,137 @@
 export const implantsData = {
-
   hero: {
-
     title: "Implantes dentales en Sant Boi de Llobregat",
 
     subtitle:
-      "Recupera la estética y la función de tu sonrisa mediante implantes dentales planificados digitalmente y realizados por un equipo especializado.",
+      "Recupera uno o varios dientes mediante implantes dentales con planificación digital, cirugía guiada y un tratamiento totalmente personalizado en Estudio Dental Catalunya. Primera visita gratuita con radiografías incluidas.",
 
     image: "/images/tratamientos/implantes/hero-implantes.jpg",
-
   },
 
   intro: {
-
     badge: "Implantología",
 
-    title: "Recupera tu sonrisa con una solución fija, segura y duradera",
+    title:
+      "La solución más segura para recuperar tu sonrisa de forma definitiva",
 
     description1:
-      "Los implantes dentales permiten sustituir uno o varios dientes perdidos mediante una raíz de titanio que se integra con el hueso para ofrecer una solución estable, cómoda y de aspecto completamente natural.",
+      "Los implantes dentales son la mejor alternativa para sustituir dientes perdidos de forma fija, estable y duradera. Están fabricados en titanio biocompatible, se integran con el hueso y permiten recuperar tanto la función como la estética de la sonrisa con un resultado muy natural.",
 
     description2:
-      "En Estudio Dental Catalunya planificamos cada caso mediante tecnología digital y un estudio personalizado para conseguir tratamientos más precisos, seguros y predecibles.",
+      "En Estudio Dental Catalunya, en Sant Boi de Llobregat, realizamos un estudio personalizado mediante radiología 3D, escáner intraoral y planificación digital para diseñar un tratamiento adaptado a cada paciente con la máxima precisión y seguridad.",
 
     image: "/images/tratamientos/implantes/intro-implantes.jpg",
-
   },
 
   benefits: {
-
-    title: "¿Por qué elegir un implante dental?",
+    title: "Ventajas de los implantes dentales",
 
     description:
-      "Los implantes son actualmente la mejor alternativa para sustituir dientes perdidos, recuperando la función y la estética de forma duradera.",
+      "Los implantes dentales permiten recuperar la calidad de vida, la comodidad al comer y la confianza al sonreír gracias a una solución fija y altamente predecible.",
 
     benefits: [
-
-      "Aspecto completamente natural.",
-      "Recupera la capacidad de masticación.",
-      "Evita la pérdida de hueso.",
-      "No daña los dientes vecinos.",
-      "Gran estabilidad y comodidad.",
-      "Resultados duraderos.",
-
+      "Recuperan la estética natural de la sonrisa.",
+      "Permiten masticar con total comodidad.",
+      "Evitan la pérdida progresiva de hueso.",
+      "No requieren desgastar los dientes vecinos.",
+      "Ofrecen una gran estabilidad y comodidad.",
+      "Son una solución muy duradera con un correcto mantenimiento.",
     ],
-
   },
-    technology: {
 
-    title: "Tecnología para una implantología más precisa",
+  technology: {
+    title: "Tecnología digital para una implantología más precisa",
 
     subtitle:
-      "La planificación digital y el uso de tecnología de última generación nos permiten ofrecer tratamientos más seguros, cómodos y predecibles.",
+      "Trabajamos con tecnología de última generación para planificar cada tratamiento con la máxima precisión, reducir riesgos y conseguir resultados más seguros, cómodos y predecibles.",
 
     items: [
-
       {
         title: "CBCT 3D",
         description:
-          "Estudio tridimensional del hueso para planificar la colocación del implante con la máxima precisión.",
+          "Realizamos un estudio tridimensional del hueso y de las estructuras anatómicas para planificar la colocación del implante con la máxima precisión.",
       },
 
       {
         title: "Escáner intraoral",
         description:
-          "Impresiones digitales rápidas, cómodas y mucho más precisas que los moldes tradicionales.",
+          "Sustituimos los moldes tradicionales por impresiones digitales mucho más cómodas, rápidas y precisas.",
       },
 
       {
         title: "Planificación digital",
         description:
-          "Analizamos cada caso antes del tratamiento para diseñar una rehabilitación completamente personalizada.",
+          "Antes de la cirugía analizamos cada caso mediante software específico para diseñar un tratamiento totalmente personalizado.",
       },
 
       {
         title: "Cirugía guiada",
         description:
-          "Cuando está indicada, utilizamos férulas quirúrgicas para aumentar la precisión durante la colocación de los implantes.",
+          "Cuando el caso lo requiere utilizamos cirugía guiada para colocar los implantes con una precisión milimétrica y una intervención menos invasiva.",
       },
-
     ],
-
   },
 
   indications: {
-
     title: "¿Cuándo están indicados los implantes dentales?",
 
     subtitle:
-      "Los implantes permiten recuperar la función y la estética en numerosas situaciones clínicas.",
+      "Los implantes dentales son una solución eficaz para recuperar la función y la estética de la sonrisa en numerosas situaciones clínicas.",
 
     items: [
-
-      "Pérdida de un diente.",
-      "Ausencia de varios dientes.",
-      "Rehabilitación de arcadas completas.",
-      "Sustitución de prótesis removibles.",
-      "Recuperar la capacidad de masticación.",
-      "Mejorar la estética de la sonrisa.",
-
+      "Sustituir un único diente perdido.",
+      "Reemplazar varios dientes ausentes.",
+      "Rehabilitar una arcada completa.",
+      "Fijar prótesis completas con mayor estabilidad.",
+      "Recuperar una masticación cómoda y eficaz.",
+      "Mejorar la estética y la confianza al sonreír.",
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre implantes dentales",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar su tratamiento.",
+      "Resolvemos algunas de las dudas más habituales antes de comenzar un tratamiento de implantología en nuestra clínica de Sant Boi de Llobregat.",
 
     faqs: [
-
       {
         question: "¿Duele colocarse un implante dental?",
         answer:
-          "La intervención se realiza con anestesia local, por lo que el procedimiento suele ser muy cómodo. Después del tratamiento es normal notar pequeñas molestias que habitualmente se controlan con la medicación pautada.",
+          "No. La colocación del implante se realiza con anestesia local y, en la mayoría de los casos, el procedimiento resulta muy cómodo para el paciente. Tras la intervención pueden aparecer ligeras molestias o inflamación durante unos días, que suelen controlarse fácilmente con la medicación prescrita.",
       },
 
       {
-        question: "¿Cuánto tiempo dura un implante dental?",
+        question: "¿Cuánto dura un implante dental?",
         answer:
-          "Con una buena higiene oral, revisiones periódicas y un correcto mantenimiento, un implante dental puede durar muchos años e incluso toda la vida.",
+          "Los implantes dentales están diseñados para durar muchos años. Con una correcta higiene oral, revisiones periódicas y un buen mantenimiento pueden mantenerse en perfecto estado durante décadas e incluso toda la vida.",
       },
 
       {
-        question: "¿Todo el mundo puede ponerse implantes?",
+        question: "¿Todo el mundo puede ponerse implantes dentales?",
         answer:
-          "La mayoría de pacientes pueden ser candidatos. Antes de comenzar realizamos un estudio personalizado para valorar la cantidad y calidad del hueso, así como el estado general de salud.",
+          "La mayoría de las personas son candidatas a un tratamiento de implantología. Antes de comenzar realizamos un estudio personalizado con radiología 3D para valorar la cantidad y calidad del hueso, además del estado general de salud del paciente.",
       },
 
       {
-        question: "¿Cuánto tarda el tratamiento completo?",
+        question: "¿Cuánto tiempo dura el tratamiento completo?",
         answer:
-          "Depende de cada caso. Tras el estudio inicial te explicaremos el plan de tratamiento y los tiempos aproximados según tus necesidades.",
+          "Depende de cada caso clínico. Tras la primera visita gratuita elaboraremos un plan de tratamiento personalizado donde explicaremos cada fase, los tiempos de cicatrización y la duración aproximada del proceso.",
       },
 
+      {
+        question:
+          "¿Qué ventajas tienen los implantes frente a una prótesis removible?",
+        answer:
+          "Los implantes ofrecen una mayor estabilidad, permiten masticar con normalidad, ayudan a conservar el hueso y proporcionan una sensación mucho más natural que una prótesis removible.",
+      },
     ],
-
   },
-    cta: {
 
-    title: "Recupera tu sonrisa con un tratamiento personalizado",
+  cta: {
+    title: "Recupera tu sonrisa con implantes dentales",
 
     description:
-      "Solicita tu primera visita y estudiaremos tu caso de forma personalizada para ofrecerte la mejor solución mediante implantología moderna y planificación digital.",
-
+      "Solicita tu primera visita gratuita con radiografías incluidas. Estudiaremos tu caso de forma personalizada y diseñaremos el tratamiento más adecuado para recuperar tu sonrisa con seguridad, comodidad y resultados naturales.",
   },
-
 };

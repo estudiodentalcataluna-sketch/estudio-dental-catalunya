@@ -19,16 +19,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.estudiodentalcatalunya.es"),
+  metadataBase: new URL("https://estudiodentalcatalunya.es"),
+
+  applicationName: "Estudio Dental Catalunya",
 
   title: {
     default:
-      "Estudio Dental Catalunya | Clínica Dental en Sant Boi de Llobregat",
+      "Clínica Dental en Sant Boi | Implantes, Ortodoncia y Estética Dental",
     template: "%s | Estudio Dental Catalunya",
   },
 
   description:
-    "Clínica dental privada en Sant Boi de Llobregat especializada en implantología, ortodoncia, estética dental, endodoncia y odontología integral. Primera visita gratuita con radiografías y diagnóstico.",
+    "Clínica dental en Sant Boi de Llobregat especializada en implantes dentales, ortodoncia, Invisalign, estética dental, endodoncia y odontología integral. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "dentista Sant Boi",
@@ -36,31 +38,41 @@ export const metadata: Metadata = {
     "implantes dentales Sant Boi",
     "ortodoncia Sant Boi",
     "Invisalign Sant Boi",
-    "estética dental",
-    "endodoncia",
-    "periodoncia",
-    "odontología",
-    "Neodent",
+    "estética dental Sant Boi",
+    "carillas dentales Sant Boi",
+    "blanqueamiento dental Sant Boi",
+    "endodoncia Sant Boi",
+    "periodoncia Sant Boi",
+    "odontología general Sant Boi",
+    "odontopediatría Sant Boi",
     "dentista Barcelona",
+    "Neodent",
   ],
 
   authors: [
     {
       name: "Estudio Dental Catalunya",
-      url: "https://www.estudiodentalcatalunya.es",
+      url: "https://estudiodentalcatalunya.es",
     },
   ],
 
   creator: "Estudio Dental Catalunya",
+
   publisher: "Estudio Dental Catalunya",
 
-  alternates: {
-    canonical: "https://www.estudiodentalcatalunya.es",
+  category: "Health",
+
+  referrer: "origin-when-cross-origin",
+    alternates: {
+    canonical: "https://estudiodentalcatalunya.es",
   },
 
   robots: {
     index: true,
     follow: true,
+
+    nocache: false,
+
     googleBot: {
       index: true,
       follow: true,
@@ -72,13 +84,19 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
+
     locale: "es_ES",
-    url: "https://www.estudiodentalcatalunya.es",
+
+    url: "https://estudiodentalcatalunya.es",
+
     siteName: "Estudio Dental Catalunya",
+
     title:
-      "Estudio Dental Catalunya | Clínica Dental en Sant Boi de Llobregat",
+      "Clínica Dental en Sant Boi | Implantes, Ortodoncia y Estética Dental",
+
     description:
-      "Especialistas en implantología, ortodoncia, estética dental y odontología integral.",
+      "Especialistas en implantología, ortodoncia, ortodoncia invisible, estética dental y odontología integral. Primera visita gratuita con radiografías.",
+
     images: [
       {
         url: "/images/og-image.jpg",
@@ -91,25 +109,36 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Estudio Dental Catalunya | Clínica Dental en Sant Boi de Llobregat",
+      "Clínica Dental en Sant Boi | Estudio Dental Catalunya",
+
     description:
       "Especialistas en implantología, ortodoncia, estética dental y odontología integral.",
+
     images: ["/images/og-image.jpg"],
   },
 
   icons: {
-    icon: [{ url: "/favicon.ico" }],
-    apple: [{ url: "/apple-touch-icon.png" }],
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+      },
+    ],
+
+    shortcut: ["/favicon.ico"],
   },
-
-  category: "health",
 };
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#0891b2",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -124,7 +153,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-white text-slate-900 antialiased">
-
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N23BCLM7XD"
           strategy="afterInteractive"
@@ -133,23 +161,27 @@ export default function RootLayout({
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
 
-            gtag('config', 'G-N23BCLM7XD');
+            gtag('config', 'G-N23BCLM7XD', {
+              anonymize_ip: true,
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
 
         <AppointmentProvider>
-
           <SeoSchema />
 
           <AppointmentModal />
 
           {children}
-
         </AppointmentProvider>
-
       </body>
     </html>
   );

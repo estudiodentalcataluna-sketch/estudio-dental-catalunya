@@ -12,9 +12,21 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { whiteningData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Blanqueamiento Dental en Sant Boi de Llobregat",
+  title:
+    "Blanqueamiento dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
   description:
-    "Recupera el blanco natural de tu sonrisa con un tratamiento de blanqueamiento dental profesional en Sant Boi de Llobregat. Resultados seguros, eficaces y personalizados.",
+    "Especialistas en blanqueamiento dental en Sant Boi de Llobregat. Recupera el color natural de tu sonrisa mediante un tratamiento profesional, seguro y personalizado. Primera visita gratuita con radiografías y diagnóstico.",
+
+  keywords: [
+    "blanqueamiento dental Sant Boi",
+    "blanquear dientes Sant Boi",
+    "blanqueamiento profesional",
+    "estética dental Sant Boi",
+    "sonrisa blanca",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
+  ],
 
   alternates: {
     canonical:
@@ -22,14 +34,38 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Blanqueamiento Dental en Sant Boi de Llobregat",
+    title:
+      "Blanqueamiento dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
+
     description:
-      "Tratamientos de blanqueamiento dental para conseguir una sonrisa más blanca, luminosa y natural.",
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+      "Consigue una sonrisa más blanca y luminosa mediante un tratamiento profesional de blanqueamiento dental completamente personalizado.",
+
+    url:
+      "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+
+    type: "article",
+
     images: [
       {
         url: "/images/tratamientos/blanqueamiento-dental/hero-blanqueamiento-dental.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Blanqueamiento dental en Sant Boi de Llobregat",
       },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Blanqueamiento dental | Estudio Dental Catalunya",
+
+    description:
+      "Recupera una sonrisa más blanca mediante un tratamiento profesional de blanqueamiento dental.",
+
+    images: [
+      "/images/tratamientos/blanqueamiento-dental/hero-blanqueamiento-dental.jpg",
     ],
   },
 };
@@ -46,7 +82,7 @@ export default function WhiteningPage() {
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Analizamos el color de tus dientes, comprobamos que tu boca esté completamente sana y planificamos un tratamiento personalizado para conseguir un resultado natural y duradero."
+        subtitle="Analizamos el estado de tu salud bucodental, valoramos el color de tus dientes y planificamos un tratamiento de blanqueamiento dental completamente personalizado para conseguir un resultado natural, seguro y duradero."
       />
 
       <TreatmentTechnology {...whiteningData.technology} />

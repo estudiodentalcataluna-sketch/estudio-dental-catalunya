@@ -13,6 +13,7 @@ import { endodonticsData } from "./data";
 
 export const metadata: Metadata = {
   title: "Endodoncia en Sant Boi de Llobregat",
+
   description:
     "Tratamientos de endodoncia en Sant Boi de Llobregat para eliminar la infección del nervio dental, aliviar el dolor y conservar el diente natural.",
 
@@ -23,9 +24,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Endodoncia en Sant Boi de Llobregat",
+
     description:
-      "Salvamos dientes dañados mediante tratamientos de endodoncia precisos, cómodos y conservadores.",
+      "Tratamientos de endodoncia para eliminar la infección del nervio dental y conservar el diente natural siempre que sea posible.",
+
     url: "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
+
     images: [
       {
         url: "/images/tratamientos/endodoncia/hero-endodoncia.jpg",
@@ -46,7 +50,7 @@ export default function EndodonticsPage() {
 
       <TreatmentProcess
         title="Nuestro proceso de tratamiento"
-        subtitle="Realizamos un diagnóstico preciso para localizar el origen de la infección y planificar una endodoncia conservadora que permita mantener el diente natural siempre que sea posible."
+        subtitle="Comenzamos con un estudio clínico y radiográfico para localizar el origen de la infección y planificar un tratamiento conservador que permita mantener el diente natural siempre que sea posible."
       />
 
       <TreatmentTechnology {...endodonticsData.technology} />

@@ -2,10 +2,10 @@ export const whiteningData = {
 
   hero: {
 
-    title: "Blanqueamiento Dental en Sant Boi de Llobregat",
+    title: "Blanqueamiento dental en Sant Boi de Llobregat",
 
     subtitle:
-      "Recupera el blanco natural de tu sonrisa mediante tratamientos de blanqueamiento dental seguros, eficaces y supervisados por profesionales.",
+      "Consigue una sonrisa más blanca y luminosa con un tratamiento de blanqueamiento dental profesional, personalizado y seguro realizado por nuestro equipo odontológico.",
 
     image: "/images/tratamientos/blanqueamiento-dental/hero-blanqueamiento-dental.jpg",
 
@@ -15,31 +15,32 @@ export const whiteningData = {
 
     badge: "Blanqueamiento Dental",
 
-    title: "Una sonrisa más luminosa de forma segura",
+    title: "Recupera el brillo natural de tu sonrisa con un tratamiento profesional",
 
     description1:
-      "El blanqueamiento dental permite aclarar varios tonos el color de los dientes eliminando manchas y pigmentaciones producidas por el paso del tiempo, determinados alimentos o hábitos como el tabaco.",
+      "El blanqueamiento dental es un tratamiento estético que permite aclarar el color de los dientes de forma segura, conservadora y controlada, eliminando manchas y devolviendo luminosidad a la sonrisa.",
 
     description2:
-      "En Estudio Dental Catalunya realizamos tratamientos personalizados adaptados a cada paciente para conseguir una sonrisa más brillante manteniendo siempre la salud del esmalte dental.",
+      "En Estudio Dental Catalunya realizamos un estudio previo para comprobar que tu boca se encuentra en buen estado antes del tratamiento. Diseñamos un protocolo personalizado para conseguir un resultado natural, uniforme y adaptado a cada paciente.",
 
-    image: "/images/tratamientos/blanqueamiento-dental/intro-blanqueamiento-dental.jpg",
+    image:
+      "/images/tratamientos/blanqueamiento-dental/intro-blanqueamiento-dental.jpg",
 
   },
 
   benefits: {
 
-    title: "Beneficios del blanqueamiento dental",
+    title: "Ventajas del blanqueamiento dental profesional",
 
     description:
-      "Es uno de los tratamientos estéticos más conservadores y efectivos para rejuvenecer la sonrisa.",
+      "Un tratamiento profesional permite mejorar el color de los dientes de forma segura y con resultados naturales.",
 
     benefits: [
 
       "Aclara el color de los dientes.",
-      "Elimina manchas y pigmentaciones.",
-      "Resultados naturales.",
-      "Tratamiento rápido y seguro.",
+      "Elimina manchas producidas por café, té o tabaco.",
+      "Resultados naturales y uniformes.",
+      "Tratamiento seguro bajo supervisión profesional.",
       "Mejora la estética de la sonrisa.",
       "Aumenta la confianza al sonreír.",
 
@@ -48,35 +49,36 @@ export const whiteningData = {
   },
     technology: {
 
-    title: "Tecnología para un blanqueamiento seguro y eficaz",
+    title: "Tecnología para un blanqueamiento más seguro y eficaz",
 
     subtitle:
-      "Cada tratamiento comienza con un estudio previo para valorar el estado de los dientes y elegir la técnica más adecuada para conseguir el mejor resultado.",
+      "Antes de comenzar el tratamiento realizamos una valoración personalizada para elegir el protocolo más adecuado y conseguir un resultado natural respetando la salud del esmalte.",
 
     items: [
 
       {
-        title: "Diagnóstico personalizado",
+        title: "Diagnóstico previo",
         description:
-          "Analizamos el color dental, el estado del esmalte y las posibles causas de las manchas antes de iniciar el tratamiento.",
+          "Realizamos una revisión completa para comprobar que dientes y encías se encuentran en buen estado antes de iniciar el tratamiento.",
+      },
+
+      {
+        title: "Estudio personalizado",
+        description:
+          "Analizamos el color inicial de los dientes, las posibles pigmentaciones y las expectativas del paciente para elegir el tratamiento más adecuado.",
       },
 
       {
         title: "Productos profesionales",
         description:
-          "Utilizamos materiales de uso exclusivamente odontológico que ofrecen resultados eficaces respetando la salud del esmalte.",
+          "Trabajamos con materiales de uso odontológico que ofrecen resultados eficaces respetando al máximo el esmalte dental.",
       },
 
       {
-        title: "Tratamiento supervisado",
+        title: "Seguimiento clínico",
         description:
-          "Todo el proceso es controlado por nuestro equipo para garantizar la máxima seguridad y minimizar la sensibilidad dental.",
-      },
+          "Controlamos la evolución del tratamiento y proporcionamos recomendaciones para mantener la sonrisa blanca durante más tiempo.",
 
-      {
-        title: "Resultados naturales",
-        description:
-          "Nuestro objetivo es conseguir una sonrisa más luminosa manteniendo un aspecto natural y acorde con cada paciente.",
       },
 
     ],
@@ -88,63 +90,64 @@ export const whiteningData = {
     title: "¿Cuándo está indicado un blanqueamiento dental?",
 
     subtitle:
-      "Es una excelente opción para pacientes que desean mejorar el color de su sonrisa de forma conservadora.",
+      "El blanqueamiento profesional está recomendado para personas que desean recuperar una sonrisa más blanca, luminosa y natural.",
 
     items: [
 
-      "Dientes amarillentos.",
-      "Manchas por café, té o vino.",
-      "Pigmentaciones por tabaco.",
-      "Oscurecimiento por el paso del tiempo.",
-      "Antes de un evento importante.",
+      "Dientes amarillentos u oscurecidos.",
+      "Manchas producidas por café, té o tabaco.",
+      "Pigmentaciones por el paso del tiempo.",
+      "Pérdida de brillo del esmalte.",
       "Mejorar la estética de la sonrisa.",
+      "Complemento a otros tratamientos estéticos.",
 
     ],
 
   },
     faq: {
 
-    title: "Preguntas frecuentes sobre blanqueamiento dental",
+    title: "Preguntas frecuentes sobre el blanqueamiento dental",
 
     subtitle:
-      "Estas son algunas de las dudas más habituales antes de realizar un tratamiento de blanqueamiento.",
+      "Estas son algunas de las dudas más habituales de nuestros pacientes antes de comenzar un tratamiento de blanqueamiento dental profesional.",
 
     faqs: [
 
       {
-        question: "¿El blanqueamiento dental daña los dientes?",
+        question: "¿El blanqueamiento dental daña el esmalte?",
         answer:
-          "No. Cuando el tratamiento está correctamente indicado y supervisado por un odontólogo, el esmalte dental no se daña y el procedimiento es completamente seguro.",
+          "No. Cuando el tratamiento se realiza bajo la supervisión de un odontólogo y con productos profesionales, es un procedimiento seguro que respeta la estructura del esmalte dental.",
       },
 
       {
-        question: "¿Cuánto duran los resultados?",
+        question: "¿Cuánto duran los resultados del blanqueamiento?",
         answer:
-          "La duración depende de los hábitos de cada paciente. Con una buena higiene oral y evitando el consumo frecuente de sustancias que pigmentan los dientes, los resultados pueden mantenerse durante mucho tiempo.",
+          "La duración depende de los hábitos de cada persona, como el consumo de café, té o tabaco, así como de una correcta higiene bucodental. Con un buen mantenimiento, los resultados pueden conservarse durante mucho tiempo.",
       },
 
       {
         question: "¿Produce sensibilidad dental?",
         answer:
-          "Algunos pacientes pueden notar una ligera sensibilidad temporal durante o después del tratamiento, aunque suele desaparecer en pocos días y se controla fácilmente siguiendo nuestras recomendaciones.",
+          "Algunos pacientes pueden notar una ligera sensibilidad temporal durante los primeros días, pero suele desaparecer rápidamente y existen productos específicos para minimizarla.",
+
       },
 
       {
-        question: "¿Todo el mundo puede realizarse un blanqueamiento?",
+        question: "¿Puedo realizarme un blanqueamiento si tengo coronas o empastes?",
         answer:
-          "Antes de comenzar realizamos una revisión para comprobar el estado de la boca y determinar si el tratamiento es el más adecuado para cada paciente.",
+          "Sí, aunque es importante saber que el blanqueamiento solo actúa sobre el diente natural. Durante la primera visita valoraremos tu caso y te explicaremos las opciones más adecuadas.",
+
       },
 
     ],
 
   },
+    cta: {
 
-  cta: {
-
-    title: "Recupera una sonrisa más blanca y luminosa",
+    title: "Consigue una sonrisa más blanca y luminosa",
 
     description:
-      "Solicita una primera visita y estudiaremos tu caso para ofrecerte un tratamiento de blanqueamiento dental seguro, eficaz y completamente personalizado.",
+      "Solicita tu primera visita gratuita con radiografías y diagnóstico incluidos. Valoraremos el estado de tu sonrisa y diseñaremos un tratamiento de blanqueamiento dental totalmente personalizado para conseguir un resultado natural, seguro y duradero.",
 
   },
 

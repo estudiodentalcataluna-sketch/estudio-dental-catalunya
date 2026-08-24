@@ -18,7 +18,7 @@ export const endodonticsData = {
     title: "Salvamos dientes que antes era necesario extraer",
 
     description1:
-      "La endodoncia es el tratamiento que permite eliminar la infección del interior del diente cuando la pulpa está dañada por una caries profunda, un traumatismo o una fractura. Gracias a este procedimiento es posible conservar la pieza dental y recuperar su función.",
+      "La endodoncia permite eliminar la infección del interior del diente cuando la pulpa está dañada por una caries profunda, un traumatismo o una fractura. Gracias a este tratamiento es posible conservar la pieza dental y recuperar su función.",
 
     description2:
       "En Estudio Dental Catalunya realizamos tratamientos de endodoncia mediante un diagnóstico preciso y tecnología digital para ofrecer procedimientos más cómodos, seguros y eficaces.",
@@ -41,7 +41,7 @@ export const endodonticsData = {
       "Evita la extracción.",
       "Elimina la infección interna.",
       "Recupera la función masticatoria.",
-      "Permite mantener la estética de la sonrisa.",
+      "Mantiene la estética de la sonrisa.",
 
     ],
 
@@ -58,7 +58,7 @@ export const endodonticsData = {
       {
         title: "Diagnóstico preciso",
         description:
-          "Realizamos un estudio completo para localizar el origen del dolor y valorar el estado del diente antes del tratamiento.",
+          "Realizamos un estudio completo para localizar el origen del dolor y valorar el estado del diente antes de iniciar el tratamiento.",
       },
 
       {
@@ -70,7 +70,7 @@ export const endodonticsData = {
       {
         title: "Tratamiento conservador",
         description:
-          "Nuestro objetivo es conservar la pieza dental siempre que sea posible, eliminando la infección y preservando su estructura.",
+          "Nuestro objetivo es conservar la pieza dental siempre que sea posible, eliminando la infección y preservando al máximo su estructura.",
       },
 
       {
@@ -114,37 +114,37 @@ export const endodonticsData = {
       {
         question: "¿La endodoncia duele?",
         answer:
-          "El tratamiento se realiza con anestesia local, por lo que normalmente no produce dolor. Su principal objetivo es precisamente eliminar el dolor causado por la infección del nervio dental.",
+          "El tratamiento se realiza con anestesia local, por lo que normalmente no produce dolor. Su principal objetivo es eliminar el dolor causado por la infección del nervio dental.",
       },
 
       {
         question: "¿Se puede salvar cualquier diente?",
         answer:
-          "En muchos casos sí. Tras realizar una exploración y las pruebas diagnósticas valoraremos si el diente puede conservarse mediante una endodoncia.",
+          "En muchos casos sí. Tras realizar una exploración clínica y las pruebas diagnósticas valoraremos si el diente puede conservarse mediante una endodoncia.",
       },
 
       {
         question: "¿Cuánto dura una endodoncia?",
         answer:
-          "Depende del número de raíces del diente y de la complejidad del caso. En la primera visita te informaremos del tratamiento previsto y del tiempo aproximado.",
+          "La duración depende del número de raíces del diente y de la complejidad de cada caso. Después del estudio inicial te explicaremos el tratamiento previsto y el tiempo aproximado.",
       },
 
       {
-        question: "¿Después de una endodoncia hay que colocar una corona?",
+        question: "¿Después de una endodoncia siempre hay que colocar una corona?",
         answer:
-          "No siempre. Dependerá del estado del diente y de la cantidad de estructura que conserve. Tras el tratamiento te indicaremos la mejor opción para proteger la pieza dental.",
-
+          "No siempre. Dependerá del estado del diente y de la cantidad de estructura que conserve. Tras finalizar el tratamiento te recomendaremos la mejor opción para proteger la pieza dental.",
       },
 
     ],
 
   },
-    cta: {
+
+  cta: {
 
     title: "No dejes que el dolor avance",
 
     description:
-      "Solicita una primera visita y valoraremos tu caso para ofrecerte el tratamiento más adecuado y conservar tu diente siempre que sea posible.",
+      "Solicita tu primera visita y estudiaremos tu caso para ofrecerte el tratamiento más adecuado y conservar tu diente natural siempre que sea posible.",
 
   },
 
