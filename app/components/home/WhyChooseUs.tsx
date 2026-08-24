@@ -8,6 +8,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import AppointmentButton from "../AppointmentButton";
+
 const items = [
   {
     icon: Users,
@@ -32,17 +34,15 @@ const items = [
 ];
 
 export default function WhyChooseUs() {
-
   return (
-
     <section className="relative overflow-hidden bg-slate-50 py-28">
-
       <div className="mx-auto max-w-7xl px-8">
+
+        {/* Introducción */}
 
         <div className="grid items-center gap-20 lg:grid-cols-2">
 
           <div>
-
             <span className="font-semibold uppercase tracking-[0.3em] text-cyan-600">
               ¿Por qué elegirnos?
             </span>
@@ -64,31 +64,25 @@ export default function WhyChooseUs() {
               con un único objetivo: cuidar de tu salud bucodental a largo
               plazo.
             </p>
-                        <div className="mt-10">
 
+            <div className="mt-10">
               <Link
                 href="/nosotros"
                 className="inline-flex items-center gap-3 rounded-full bg-cyan-600 px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-cyan-700"
               >
                 Conoce nuestra clínica
-
                 <ArrowRight size={20} />
-
               </Link>
-
             </div>
-
           </div>
+
+          {/* Imagen del equipo */}
 
           <div className="relative">
 
-            {/* Decoración */}
+            <div className="absolute -left-8 -top-8 h-44 w-44 rounded-full bg-cyan-300/30 blur-3xl" />
 
-            <div className="absolute -left-8 -top-8 h-44 w-44 rounded-full bg-cyan-300/30 blur-3xl"></div>
-
-            <div className="absolute -bottom-8 -right-8 h-52 w-52 rounded-full bg-cyan-500/20 blur-3xl"></div>
-
-            {/* Imagen */}
+            <div className="absolute -bottom-8 -right-8 h-52 w-52 rounded-full bg-cyan-500/20 blur-3xl" />
 
             <div className="relative overflow-hidden rounded-[34px] shadow-2xl">
 
@@ -100,11 +94,7 @@ export default function WhyChooseUs() {
                 className="h-[650px] w-full object-cover"
               />
 
-              {/* Degradado */}
-
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/15 to-transparent" />
-
-              {/* Tarjeta flotante */}
 
               <div className="absolute bottom-8 left-8 right-8 rounded-3xl border border-white/20 bg-white/10 p-7 backdrop-blur-xl">
 
@@ -124,28 +114,24 @@ export default function WhyChooseUs() {
                 </p>
 
               </div>
-
             </div>
-
           </div>
-
         </div>
 
-        <div className="mt-24 grid gap-8 md:grid-cols-2">
-                    {items.map((item) => {
+        {/* Beneficios */}
 
+        <div className="mt-24 grid gap-8 md:grid-cols-2">
+
+          {items.map((item) => {
             const Icon = item.icon;
 
             return (
-
               <article
                 key={item.title}
                 className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-2xl"
               >
 
-                {/* Luz decorativa */}
-
-                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-cyan-100 opacity-0 blur-3xl transition duration-500 group-hover:opacity-100"></div>
+                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-cyan-100 opacity-0 blur-3xl transition duration-500 group-hover:opacity-100" />
 
                 <div className="relative z-10">
 
@@ -159,29 +145,25 @@ export default function WhyChooseUs() {
                   </div>
 
                   <h3 className="mt-7 text-2xl font-bold text-slate-900">
-
                     {item.title}
-
                   </h3>
 
                   <p className="mt-5 leading-8 text-slate-600">
-
                     {item.text}
-
                   </p>
 
                 </div>
-
               </article>
-
             );
-
           })}
 
         </div>
 
+        {/* CTA */}
+
         <div className="mt-24 overflow-hidden rounded-[36px] bg-gradient-to-r from-cyan-600 via-cyan-700 to-slate-900 p-12 shadow-2xl">
-                    <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
+
+          <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
 
             <div className="max-w-3xl">
 
@@ -190,7 +172,8 @@ export default function WhyChooseUs() {
               </span>
 
               <h3 className="mt-5 text-4xl font-bold leading-tight text-white">
-                Queremos que vuelvas a sonreír con la tranquilidad de estar en buenas manos.
+                Queremos que vuelvas a sonreír con la tranquilidad de estar en
+                buenas manos.
               </h3>
 
               <p className="mt-6 text-lg leading-8 text-cyan-50">
@@ -203,30 +186,26 @@ export default function WhyChooseUs() {
 
             <div className="flex flex-wrap gap-5">
 
-              <Link
-                href="/contacto"
+              <AppointmentButton
                 className="rounded-full bg-white px-8 py-4 text-lg font-semibold text-cyan-700 transition duration-300 hover:scale-105 hover:bg-slate-100"
               >
                 Primera visita gratuita
-              </Link>
+              </AppointmentButton>
 
               <Link
                 href="https://wa.me/34640317047?text=Hola,%20me%20gustaría%20pedir%20información."
                 target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-white/30 px-8 py-4 text-lg font-semibold text-white transition duration-300 hover:bg-white hover:text-slate-900"
               >
                 Hablar por WhatsApp
               </Link>
 
             </div>
-
           </div>
-
         </div>
-              </div>
 
+      </div>
     </section>
-
   );
-
 }

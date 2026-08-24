@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import {
   MapPin,
   Phone,
@@ -10,6 +9,8 @@ import {
   MessageCircle,
   Calendar,
 } from "lucide-react";
+
+import AppointmentButton from "./AppointmentButton";
 
 const treatments = [
   { name: "Implantes Dentales", href: "/tratamientos/implantes" },
@@ -28,15 +29,13 @@ const treatments = [
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
-
       <div className="mx-auto max-w-7xl px-8 py-24">
 
         <div className="grid gap-14 lg:grid-cols-4">
 
-          {/* Logo */}
+          {/* Columna 1 — Logo y cita */}
 
           <div>
-
             <Image
               src="/images/logo-header.png"
               alt="Estudio Dental Catalunya"
@@ -56,35 +55,32 @@ export default function Footer() {
               <Link
                 href="https://wa.me/34640317047"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold transition hover:bg-green-600"
               >
                 <MessageCircle size={18} />
                 WhatsApp
               </Link>
 
-              <Link
-                href="/contacto"
+              <AppointmentButton
                 className="flex items-center gap-2 rounded-full bg-cyan-600 px-5 py-3 font-semibold transition hover:bg-cyan-700"
               >
                 <Calendar size={18} />
                 Primera visita
-              </Link>
+              </AppointmentButton>
 
             </div>
-
           </div>
-                    {/* Columna Tratamientos */}
+
+          {/* Columna 2 — Tratamientos */}
 
           <div>
-
             <h3 className="mb-7 text-xl font-bold">
               Tratamientos
             </h3>
 
             <div className="space-y-3">
-
               {treatments.map((item) => (
-
                 <Link
                   key={item.href}
                   href={item.href}
@@ -92,35 +88,30 @@ export default function Footer() {
                 >
                   {item.name}
                 </Link>
-
               ))}
-
             </div>
 
             <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
-
               <p className="text-sm leading-7 text-slate-400">
                 Tratamientos personalizados con diagnóstico digital,
                 planificación individualizada y tecnología de última generación.
               </p>
-
             </div>
-
           </div>
-                    {/* Columna Contacto */}
+                    {/* Columna 3 — Contacto */}
 
           <div>
-
             <h3 className="mb-7 text-xl font-bold">
               Contacto
             </h3>
 
             <div className="space-y-6">
 
-              <div className="flex gap-4">
+              {/* Dirección */}
 
+              <div className="flex gap-4">
                 <MapPin
-                  className="mt-1 text-cyan-400"
+                  className="mt-1 shrink-0 text-cyan-400"
                   size={20}
                 />
 
@@ -129,18 +120,17 @@ export default function Footer() {
                   <br />
                   08830 Sant Boi de Llobregat
                 </div>
-
               </div>
 
-              <div className="flex gap-4">
+              {/* Teléfonos */}
 
+              <div className="flex gap-4">
                 <Phone
-                  className="mt-1 text-cyan-400"
+                  className="mt-1 shrink-0 text-cyan-400"
                   size={20}
                 />
 
                 <div className="space-y-1 text-slate-400">
-
                   <Link
                     href="tel:+34930067281"
                     className="block transition hover:text-cyan-400"
@@ -154,15 +144,14 @@ export default function Footer() {
                   >
                     640 31 70 47
                   </Link>
-
                 </div>
-
               </div>
 
-              <div className="flex gap-4">
+              {/* Email */}
 
+              <div className="flex gap-4">
                 <Mail
-                  className="mt-1 text-cyan-400"
+                  className="mt-1 shrink-0 text-cyan-400"
                   size={20}
                 />
 
@@ -172,13 +161,13 @@ export default function Footer() {
                 >
                   estudiodentalcataluna@gmail.com
                 </Link>
-
               </div>
 
-              <div className="flex gap-4">
+              {/* Horario */}
 
+              <div className="flex gap-4">
                 <Clock3
-                  className="mt-1 text-cyan-400"
+                  className="mt-1 shrink-0 text-cyan-400"
                   size={20}
                 />
 
@@ -204,16 +193,13 @@ export default function Footer() {
                   10:00 - 14:00
 
                 </div>
-
               </div>
 
             </div>
-
           </div>
-                    {/* Columna Redes */}
+                    {/* Columna 4 — Redes y cita */}
 
           <div>
-
             <h3 className="mb-7 text-xl font-bold">
               Síguenos
             </h3>
@@ -228,6 +214,7 @@ export default function Footer() {
               <Link
                 href="https://instagram.com/edental.catalunya"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-fit items-center gap-3 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 px-6 py-3 font-semibold transition duration-300 hover:scale-105"
               >
                 <Camera size={20} />
@@ -237,6 +224,7 @@ export default function Footer() {
               <Link
                 href="https://wa.me/34640317047"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-fit items-center gap-3 rounded-full bg-green-500 px-6 py-3 font-semibold transition duration-300 hover:bg-green-600"
               >
                 <MessageCircle size={20} />
@@ -244,6 +232,8 @@ export default function Footer() {
               </Link>
 
             </div>
+
+            {/* Bloque de cita */}
 
             <div className="mt-10 rounded-2xl border border-cyan-900/40 bg-cyan-950/30 p-6">
 
@@ -256,13 +246,12 @@ export default function Footer() {
                 tratamiento más adecuado para ti.
               </p>
 
-              <Link
-                href="/contacto"
+              <AppointmentButton
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 font-semibold text-white transition hover:bg-cyan-700"
               >
                 <Calendar size={18} />
                 Primera visita gratuita
-              </Link>
+              </AppointmentButton>
 
             </div>
 
@@ -271,7 +260,8 @@ export default function Footer() {
         </div>
 
         {/* Línea inferior */}
-                <div className="mt-20 border-t border-slate-800 pt-10">
+
+        <div className="mt-20 border-t border-slate-800 pt-10">
 
           <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
 
@@ -319,6 +309,5 @@ export default function Footer() {
       </div>
 
     </footer>
-
   );
 }
