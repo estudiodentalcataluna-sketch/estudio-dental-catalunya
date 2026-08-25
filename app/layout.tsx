@@ -25,18 +25,19 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Clínica Dental en Sant Boi | Implantes, Ortodoncia y Estética Dental",
+      "Clínica Dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
     template: "%s | Estudio Dental Catalunya",
   },
 
   description:
-    "Clínica dental en Sant Boi de Llobregat especializada en implantes dentales, ortodoncia, Invisalign, estética dental, endodoncia y odontología integral. Primera visita gratuita con radiografías y diagnóstico.",
+    "Clínica dental en Sant Boi de Llobregat especializada en implantes dentales, ortodoncia, ortodoncia invisible, estética dental y odontología integral. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "dentista Sant Boi",
     "clínica dental Sant Boi",
     "implantes dentales Sant Boi",
     "ortodoncia Sant Boi",
+    "ortodoncia invisible Sant Boi",
     "Invisalign Sant Boi",
     "estética dental Sant Boi",
     "carillas dentales Sant Boi",
@@ -46,7 +47,6 @@ export const metadata: Metadata = {
     "odontología general Sant Boi",
     "odontopediatría Sant Boi",
     "dentista Barcelona",
-    "Neodent",
   ],
 
   authors: [
@@ -57,20 +57,19 @@ export const metadata: Metadata = {
   ],
 
   creator: "Estudio Dental Catalunya",
-
   publisher: "Estudio Dental Catalunya",
 
   category: "Health",
 
   referrer: "origin-when-cross-origin",
-    alternates: {
+
+  alternates: {
     canonical: "https://estudiodentalcatalunya.es",
   },
 
   robots: {
     index: true,
     follow: true,
-
     nocache: false,
 
     googleBot: {
@@ -84,25 +83,22 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-
     locale: "es_ES",
-
     url: "https://estudiodentalcatalunya.es",
-
     siteName: "Estudio Dental Catalunya",
 
     title:
-      "Clínica Dental en Sant Boi | Implantes, Ortodoncia y Estética Dental",
+      "Clínica Dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Especialistas en implantología, ortodoncia, ortodoncia invisible, estética dental y odontología integral. Primera visita gratuita con radiografías.",
+      "Clínica dental en Sant Boi especializada en implantes dentales, ortodoncia, estética dental y odontología integral. Primera visita gratuita con radiografías y diagnóstico.",
 
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Estudio Dental Catalunya",
+        alt: "Estudio Dental Catalunya - Clínica Dental en Sant Boi de Llobregat",
       },
     ],
   },
@@ -111,18 +107,23 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Clínica Dental en Sant Boi | Estudio Dental Catalunya",
+      "Clínica Dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Especialistas en implantología, ortodoncia, estética dental y odontología integral.",
+      "Clínica dental en Sant Boi especializada en implantes, ortodoncia, estética dental y odontología integral.",
 
     images: ["/images/og-image.jpg"],
   },
 
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      {
+        url: "/favicon.ico",
+      },
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
     ],
 
     apple: [
@@ -134,6 +135,7 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.ico"],
   },
 };
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,

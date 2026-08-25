@@ -112,6 +112,13 @@ export default function SeoSchema() {
         availableLanguage: ["es", "ca"],
         areaServed: "ES",
       },
+      {
+        "@type": "ContactPoint",
+        telephone: "+34 640317047",
+        contactType: "WhatsApp",
+        availableLanguage: ["es", "ca"],
+        areaServed: "ES",
+      },
     ],
 
     medicalSpecialty: [
@@ -152,8 +159,9 @@ export default function SeoSchema() {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Tratamientos Dentales",
+
       itemListElement: [
-        "Implantes dentales",
+        "Implantes Dentales",
         "Ortodoncia",
         "Ortodoncia Invisible",
         "Estética Dental",
