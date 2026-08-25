@@ -101,7 +101,7 @@ export default function Treatments() {
     <section className="bg-slate-50 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {/* Cabecera */}
+        {/* CABECERA */}
 
         <div className="mx-auto max-w-3xl text-center">
           <span className="font-semibold uppercase tracking-[0.25em] text-cyan-600 sm:tracking-[0.3em]">
@@ -119,7 +119,7 @@ export default function Treatments() {
           </p>
         </div>
 
-        {/* Tratamientos */}
+        {/* TRATAMIENTOS */}
 
         <div className="mt-12 grid gap-4 sm:mt-16 sm:gap-6 md:grid-cols-2 xl:mt-20 xl:grid-cols-3 xl:gap-8">
 
@@ -155,7 +155,7 @@ export default function Treatments() {
                 "
               >
 
-                {/* Decoración */}
+                {/* DECORACIÓN */}
 
                 <div
                   className="
@@ -176,41 +176,69 @@ export default function Treatments() {
 
                 <div className="relative z-10">
 
-                  {/* MÓVIL */}
+                  {/* =========================
+                      VERSIÓN MÓVIL
+                      ========================= */}
 
-                  <div className="flex items-start gap-4 sm:hidden">
+                  <div className="sm:hidden">
 
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100">
-                      <Icon
-                        size={23}
-                        className="text-cyan-600"
-                      />
-                    </div>
+                    {/* Cabecera */}
 
-                    <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-4">
 
-                      <div className="flex items-center justify-between gap-3">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100">
+                        <Icon
+                          size={23}
+                          className="text-cyan-600"
+                        />
+                      </div>
+
+                      <div className="min-w-0 flex-1">
 
                         <h3 className="text-lg font-bold leading-tight text-slate-900">
                           {treatment.title}
                         </h3>
 
-                        <ArrowRight
-                          size={20}
-                          className="mt-0.5 shrink-0 text-cyan-600"
-                        />
+                        <div className="mt-1 flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-cyan-600">
+                          Ver tratamiento
+                          <ArrowRight size={14} />
+                        </div>
 
                       </div>
 
-                      <p className="mt-2 pr-2 text-sm leading-6 text-slate-600">
-                        {treatment.description}
-                      </p>
+                    </div>
+
+                    {/* Separador */}
+
+                    <div className="my-4 h-px bg-slate-100" />
+
+                    {/* Descripción */}
+
+                    <p className="text-sm leading-6 text-slate-600">
+                      {treatment.description}
+                    </p>
+
+                    {/* Pequeña llamada final */}
+
+                    <div className="mt-4 flex items-center justify-between">
+
+                      <span className="text-xs font-medium text-slate-400">
+                        Estudio Dental Catalunya
+                      </span>
+
+                      <ArrowRight
+                        size={18}
+                        className="text-cyan-600 transition-transform duration-300 group-active:translate-x-1"
+                      />
 
                     </div>
 
                   </div>
 
-                  {/* TABLET / ORDENADOR */}
+
+                  {/* =========================
+                      VERSIÓN TABLET / PC
+                      ========================= */}
 
                   <div className="hidden sm:block">
 
@@ -251,6 +279,7 @@ export default function Treatments() {
           })}
 
         </div>
+
 
         {/* CTA */}
 
