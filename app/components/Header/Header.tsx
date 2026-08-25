@@ -6,13 +6,14 @@ import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="relative z-50 w-full">
       <TopBar />
 
       <div className="relative">
         <Navbar />
 
-        <div className="absolute right-8 top-1/2 -translate-y-1/2 xl:hidden">
+        {/* Menú móvil */}
+        <div className="absolute right-4 top-1/2 z-[60] -translate-y-1/2 sm:right-6 xl:hidden">
           <MobileMenu />
         </div>
       </div>
