@@ -95,28 +95,34 @@ const treatments = [
     href: "/tratamientos/odontopediatria",
   },
 ];
+
 export default function Treatments() {
   return (
-    <section className="bg-slate-50 py-28">
-      <div className="mx-auto max-w-7xl px-8">
+    <section className="bg-slate-50 py-20 sm:py-28">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        {/* Cabecera */}
 
         <div className="mx-auto max-w-3xl text-center">
-          <span className="font-semibold uppercase tracking-[0.3em] text-cyan-600">
+          <span className="font-semibold uppercase tracking-[0.25em] text-cyan-600 sm:tracking-[0.3em]">
             Tratamientos
           </span>
 
-          <h2 className="mt-5 text-5xl font-bold text-slate-900">
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-slate-900 sm:mt-5 sm:text-5xl">
             Todas las especialidades para cuidar de tu sonrisa
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-slate-600">
+          <p className="mt-5 text-base leading-7 text-slate-600 sm:mt-8 sm:text-lg sm:leading-8">
             Ponemos a tu disposición un equipo multidisciplinar y tecnología de
             vanguardia para ofrecer tratamientos personalizados adaptados a cada
             paciente.
           </p>
         </div>
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        {/* Tratamientos */}
+
+        <div className="mt-12 grid gap-4 sm:mt-16 sm:gap-6 md:grid-cols-2 xl:mt-20 xl:grid-cols-3 xl:gap-8">
+
           {treatments.map((treatment) => {
             const Icon = treatment.icon;
 
@@ -124,63 +130,169 @@ export default function Treatments() {
               <Link
                 key={treatment.title}
                 href={treatment.href}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-cyan-500 hover:shadow-2xl"
+                className="
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-2xl
+                  border
+                  border-slate-200
+                  bg-white
+                  p-5
+                  shadow-sm
+                  transition-all
+                  duration-300
+                  active:scale-[0.98]
+
+                  sm:rounded-3xl
+                  sm:p-7
+                  sm:shadow-lg
+                  sm:hover:-translate-y-3
+                  sm:hover:border-cyan-500
+                  sm:hover:shadow-2xl
+
+                  xl:p-8
+                "
               >
-                <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-cyan-100 opacity-0 blur-3xl transition duration-500 group-hover:opacity-100" />
+
+                {/* Decoración */}
+
+                <div
+                  className="
+                    absolute
+                    right-0
+                    top-0
+                    h-24
+                    w-24
+                    rounded-full
+                    bg-cyan-100
+                    opacity-0
+                    blur-3xl
+                    transition
+                    duration-500
+                    group-hover:opacity-100
+                  "
+                />
 
                 <div className="relative z-10">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-100 transition duration-300 group-hover:bg-cyan-600">
-                    <Icon
-                      size={30}
-                      className="text-cyan-600 transition duration-300 group-hover:text-white"
-                    />
+
+                  {/* MÓVIL */}
+
+                  <div className="flex items-start gap-4 sm:hidden">
+
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100">
+                      <Icon
+                        size={23}
+                        className="text-cyan-600"
+                      />
+                    </div>
+
+                    <div className="min-w-0 flex-1">
+
+                      <div className="flex items-center justify-between gap-3">
+
+                        <h3 className="text-lg font-bold leading-tight text-slate-900">
+                          {treatment.title}
+                        </h3>
+
+                        <ArrowRight
+                          size={20}
+                          className="mt-0.5 shrink-0 text-cyan-600"
+                        />
+
+                      </div>
+
+                      <p className="mt-2 pr-2 text-sm leading-6 text-slate-600">
+                        {treatment.description}
+                      </p>
+
+                    </div>
+
                   </div>
 
-                  <h3 className="mt-8 text-2xl font-bold text-slate-900">
-                    {treatment.title}
-                  </h3>
+                  {/* TABLET / ORDENADOR */}
 
-                  <p className="mt-5 leading-8 text-slate-600">
-                    {treatment.description}
-                  </p>
+                  <div className="hidden sm:block">
 
-                  <div className="mt-8 flex items-center justify-between">
-                    <span className="inline-flex rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700">
-                      Tratamiento especializado
-                    </span>
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-100 transition duration-300 group-hover:bg-cyan-600">
+                      <Icon
+                        size={30}
+                        className="text-cyan-600 transition duration-300 group-hover:text-white"
+                      />
+                    </div>
 
-                    <ArrowRight
-                      size={20}
-                      className="text-cyan-600 transition duration-300 group-hover:translate-x-2"
-                    />
+                    <h3 className="mt-8 text-2xl font-bold text-slate-900">
+                      {treatment.title}
+                    </h3>
+
+                    <p className="mt-5 leading-8 text-slate-600">
+                      {treatment.description}
+                    </p>
+
+                    <div className="mt-8 flex items-center justify-between">
+
+                      <span className="inline-flex rounded-full bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-700">
+                        Tratamiento especializado
+                      </span>
+
+                      <ArrowRight
+                        size={20}
+                        className="text-cyan-600 transition duration-300 group-hover:translate-x-2"
+                      />
+
+                    </div>
+
                   </div>
+
                 </div>
+
               </Link>
             );
           })}
+
         </div>
-                <div className="mt-20 rounded-[32px] bg-gradient-to-r from-cyan-600 via-cyan-700 to-slate-900 px-10 py-12 text-white shadow-2xl">
-          <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+
+        {/* CTA */}
+
+        <div className="mt-12 rounded-[28px] bg-gradient-to-r from-cyan-600 via-cyan-700 to-slate-900 px-5 py-8 text-white shadow-2xl sm:mt-20 sm:rounded-[32px] sm:px-10 sm:py-12">
+
+          <div className="flex flex-col items-center justify-between gap-7 lg:flex-row">
 
             <div className="max-w-3xl">
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-100">
+
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-100 sm:text-sm sm:tracking-[0.3em]">
                 Primera visita gratuita
               </span>
 
-              <h3 className="mt-4 text-4xl font-bold">
+              <h3 className="mt-3 text-2xl font-bold leading-tight sm:mt-4 sm:text-4xl">
                 Te ayudamos a encontrar el tratamiento más adecuado para ti.
               </h3>
 
-              <p className="mt-5 text-lg leading-8 text-cyan-50">
+              <p className="mt-4 text-base leading-7 text-cyan-50 sm:mt-5 sm:text-lg sm:leading-8">
                 Realizamos un diagnóstico completo y te explicamos todas las
                 opciones de tratamiento con un plan totalmente personalizado.
               </p>
+
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
 
               <AppointmentButton
-                className="rounded-full bg-white px-8 py-4 font-semibold text-cyan-700 transition duration-300 hover:scale-105 hover:bg-slate-100"
+                className="
+                  w-full
+                  rounded-full
+                  bg-white
+                  px-8
+                  py-4
+                  text-center
+                  font-semibold
+                  text-cyan-700
+                  transition
+                  duration-300
+                  hover:scale-105
+                  hover:bg-slate-100
+                  sm:w-auto
+                "
               >
                 Primera visita gratuita
               </AppointmentButton>
@@ -189,7 +301,22 @@ export default function Treatments() {
                 href="https://wa.me/34640317047?text=Hola,%20me%20gustaría%20pedir%20información."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-white/30 px-8 py-4 font-semibold text-white transition duration-300 hover:bg-white hover:text-slate-900"
+                className="
+                  w-full
+                  rounded-full
+                  border
+                  border-white/30
+                  px-8
+                  py-4
+                  text-center
+                  font-semibold
+                  text-white
+                  transition
+                  duration-300
+                  hover:bg-white
+                  hover:text-slate-900
+                  sm:w-auto
+                "
               >
                 Hablar por WhatsApp
               </Link>
@@ -197,6 +324,7 @@ export default function Treatments() {
             </div>
 
           </div>
+
         </div>
 
       </div>
