@@ -6,13 +6,14 @@ export default function SeoSchema() {
     "@id": "https://estudiodentalcatalunya.es/#dentist",
 
     name: "Estudio Dental Catalunya",
-
     legalName: "Estudio Dental Catalunya",
 
     url: "https://estudiodentalcatalunya.es",
 
-    logo:
-      "https://estudiodentalcatalunya.es/images/logo-header.png",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://estudiodentalcatalunya.es/images/logo-header.png",
+    },
 
     image: [
       "https://estudiodentalcatalunya.es/images/og-image.jpg",
@@ -33,6 +34,8 @@ export default function SeoSchema() {
 
     priceRange: "€€",
 
+    currenciesAccepted: "EUR",
+
     paymentAccepted: [
       "Cash",
       "Credit Card",
@@ -40,8 +43,7 @@ export default function SeoSchema() {
       "Financing",
     ],
 
-    currenciesAccepted: "EUR",
-        address: {
+    address: {
       "@type": "PostalAddress",
       streetAddress: "Carrer Mallorca 40, Local 2",
       postalCode: "08830",
@@ -55,6 +57,21 @@ export default function SeoSchema() {
       latitude: 41.3443,
       longitude: 2.0436,
     },
+
+    areaServed: [
+      "Sant Boi de Llobregat",
+      "Barcelona",
+      "Viladecans",
+      "Gavà",
+      "Castelldefels",
+      "Cornellà de Llobregat",
+      "Sant Joan Despí",
+      "Sant Feliu de Llobregat",
+      "Sant Vicenç dels Horts",
+      "El Prat de Llobregat",
+      "L'Hospitalet de Llobregat",
+      "Barcelona Provincia",
+    ],
 
     openingHoursSpecification: [
       {
@@ -95,27 +112,6 @@ export default function SeoSchema() {
         availableLanguage: ["es", "ca"],
         areaServed: "ES",
       },
-      {
-        "@type": "ContactPoint",
-        telephone: "+34 640317047",
-        contactType: "WhatsApp",
-        availableLanguage: ["es", "ca"],
-        areaServed: "ES",
-      },
-    ],
-        areaServed: [
-      "Sant Boi de Llobregat",
-      "Barcelona",
-      "Viladecans",
-      "Gavà",
-      "Castelldefels",
-      "Cornellà de Llobregat",
-      "Sant Joan Despí",
-      "Sant Feliu de Llobregat",
-      "Sant Vicenç dels Horts",
-      "El Prat de Llobregat",
-      "Hospitalet de Llobregat",
-      "Barcelona Provincia",
     ],
 
     medicalSpecialty: [
@@ -151,87 +147,33 @@ export default function SeoSchema() {
       "Odontopediatría",
       "Endodoncia",
       "Periodoncia",
-      "Primera visita gratuita",
-      "Radiografías incluidas",
     ],
 
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Tratamientos Dentales",
       itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Implantes dentales",
-          },
+        "Implantes dentales",
+        "Ortodoncia",
+        "Ortodoncia Invisible",
+        "Estética Dental",
+        "Carillas Dentales",
+        "Blanqueamiento Dental",
+        "Endodoncia",
+        "Periodoncia",
+        "Prótesis Dentales",
+        "Odontología General",
+        "Odontopediatría",
+      ].map((name) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name,
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Ortodoncia",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Ortodoncia Invisible",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Estética Dental",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Carillas Dentales",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Blanqueamiento Dental",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Endodoncia",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Periodoncia",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Odontología General",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "MedicalProcedure",
-            name: "Odontopediatría",
-          },
-        },
-      ],
+      })),
     },
-        sameAs: [
+
+    sameAs: [
       "https://www.instagram.com/edental.catalunya/",
     ],
   };
