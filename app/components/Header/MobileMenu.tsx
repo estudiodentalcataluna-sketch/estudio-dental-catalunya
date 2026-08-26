@@ -22,21 +22,28 @@ export default function MobileMenu() {
 
       <div className="flex w-full items-center justify-between">
 
-        {/* Logo */}
+        {/* Logo + nombre */}
 
         <Link
           href="/"
           onClick={closeMenu}
-          className="flex min-w-0 items-center"
+          className="flex min-w-0 items-center gap-3"
         >
           <Image
             src="/images/logo-header.png"
             alt="Estudio Dental Catalunya"
-            width={250}
-            height={70}
+            width={180}
+            height={50}
             priority
-            className="h-11 w-auto max-w-[200px] object-contain"
+            className="h-10 w-auto object-contain"
           />
+
+          <span className="text-sm font-bold leading-tight text-slate-800 sm:text-base">
+            Estudio Dental
+            <span className="block text-cyan-600">
+              Catalunya
+            </span>
+          </span>
         </Link>
 
 
@@ -88,15 +95,22 @@ export default function MobileMenu() {
           <Link
             href="/"
             onClick={closeMenu}
-            className="flex min-w-0 items-center"
+            className="flex min-w-0 items-center gap-3"
           >
             <Image
               src="/images/logo-header.png"
               alt="Estudio Dental Catalunya"
-              width={200}
-              height={60}
-              className="h-10 w-auto max-w-[190px] object-contain"
+              width={150}
+              height={45}
+              className="h-9 w-auto object-contain"
             />
+
+            <span className="text-sm font-bold leading-tight text-slate-800">
+              Estudio Dental
+              <span className="block text-cyan-600">
+                Catalunya
+              </span>
+            </span>
           </Link>
 
 
@@ -113,7 +127,7 @@ export default function MobileMenu() {
 
 
         {/* =====================================================
-            CONTENIDO
+            CONTENIDO DEL MENÚ
             ===================================================== */}
 
         <nav className="flex-1 overflow-y-auto bg-white px-5 py-5">
@@ -245,7 +259,6 @@ export default function MobileMenu() {
           {/* =================================================
               CONTACTO
               Abre el modal de cita.
-              NO lleva a /contacto.
               ================================================= */}
 
           <AppointmentButton
@@ -257,7 +270,7 @@ export default function MobileMenu() {
 
           {/* =================================================
               PRIMERA VISITA GRATUITA
-              Abre el mismo modal.
+              Abre el modal de cita.
               ================================================= */}
 
           <AppointmentButton
