@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AppointmentButton from "./AppointmentButton";
 
 interface TreatmentHeroProps {
   title: string;
@@ -20,8 +21,6 @@ export default function TreatmentHero({
 
       <div className="relative hidden min-h-[720px] overflow-hidden md:block">
 
-        {/* Imagen */}
-
         <Image
           src={image}
           alt={title}
@@ -32,19 +31,11 @@ export default function TreatmentHero({
           className="object-cover object-center"
         />
 
-        {/* Overlay */}
-
         <div className="absolute inset-0 bg-black/20" />
-
-        {/* Degradado */}
 
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-900/55 to-transparent" />
 
-        {/* Degradado inferior */}
-
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/70 to-transparent" />
-
-        {/* Contenido */}
 
         <div className="relative z-10 flex min-h-[720px] items-center">
 
@@ -52,25 +43,17 @@ export default function TreatmentHero({
 
             <div className="max-w-4xl">
 
-              {/* Etiqueta */}
-
               <span className="inline-flex items-center rounded-full border border-cyan-300/40 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-200 backdrop-blur-xl">
                 Tratamientos dentales
               </span>
-
-              {/* Título */}
 
               <h1 className="mt-8 text-5xl font-black leading-tight text-white md:text-7xl xl:text-8xl">
                 {title}
               </h1>
 
-              {/* Subtítulo */}
-
               <p className="mt-8 max-w-3xl text-xl leading-9 text-slate-100 md:text-2xl">
                 {subtitle}
               </p>
-
-              {/* Beneficios */}
 
               <div className="mt-10 flex flex-wrap gap-4">
 
@@ -96,12 +79,11 @@ export default function TreatmentHero({
 
               <div className="mt-14 flex flex-wrap gap-5">
 
-                <a
-                  href="#contacto"
+                <AppointmentButton
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-cyan-600 px-10 py-5 text-lg font-bold text-white shadow-2xl transition duration-300 hover:scale-105 hover:bg-cyan-700"
                 >
                   Primera visita gratuita
-                </a>
+                </AppointmentButton>
 
                 <a
                   href="tel:+34930067281"
@@ -136,8 +118,6 @@ export default function TreatmentHero({
 
       <div className="block bg-slate-50 md:hidden">
 
-        {/* Imagen */}
-
         <div className="relative h-[270px] w-full overflow-hidden">
 
           <Image
@@ -150,11 +130,7 @@ export default function TreatmentHero({
             className="object-cover object-center"
           />
 
-          {/* Overlay */}
-
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent" />
-
-          {/* Etiqueta sobre la imagen */}
 
           <div className="absolute bottom-5 left-5 right-5">
 
@@ -167,28 +143,18 @@ export default function TreatmentHero({
         </div>
 
 
-        {/* Contenido */}
-
         <div className="relative z-10 -mt-5 mx-4 rounded-3xl bg-white p-6 shadow-xl">
-
-          {/* Título */}
 
           <h1 className="text-4xl font-black leading-[1.05] text-slate-950">
             {title}
           </h1>
 
-          {/* Línea decorativa */}
-
           <div className="mt-5 h-1 w-16 rounded-full bg-cyan-500" />
-
-          {/* Subtítulo */}
 
           <p className="mt-5 text-base leading-7 text-slate-600">
             {subtitle}
           </p>
 
-
-          {/* Beneficios */}
 
           <div className="mt-7 grid grid-cols-2 gap-3">
 
@@ -196,6 +162,7 @@ export default function TreatmentHero({
               <div className="text-lg font-bold text-cyan-600">
                 ✓
               </div>
+
               <p className="mt-1 text-sm font-semibold leading-5 text-slate-700">
                 Primera visita gratuita
               </p>
@@ -205,6 +172,7 @@ export default function TreatmentHero({
               <div className="text-lg font-bold text-cyan-600">
                 ✓
               </div>
+
               <p className="mt-1 text-sm font-semibold leading-5 text-slate-700">
                 Radiografías incluidas
               </p>
@@ -214,6 +182,7 @@ export default function TreatmentHero({
               <div className="text-lg font-bold text-cyan-600">
                 ✓
               </div>
+
               <p className="mt-1 text-sm font-semibold leading-5 text-slate-700">
                 Planificación digital
               </p>
@@ -223,6 +192,7 @@ export default function TreatmentHero({
               <div className="text-lg font-bold text-cyan-600">
                 ✓
               </div>
+
               <p className="mt-1 text-sm font-semibold leading-5 text-slate-700">
                 Financiación hasta 24 meses sin intereses
               </p>
@@ -235,12 +205,11 @@ export default function TreatmentHero({
 
           <div className="mt-7 space-y-3">
 
-            <a
-              href="#contacto"
+            <AppointmentButton
               className="flex w-full items-center justify-center rounded-full bg-cyan-600 px-6 py-4 text-base font-bold text-white shadow-lg transition hover:bg-cyan-700"
             >
               Primera visita gratuita
-            </a>
+            </AppointmentButton>
 
             <a
               href="tel:+34930067281"
@@ -261,9 +230,6 @@ export default function TreatmentHero({
           </div>
 
         </div>
-
-
-        {/* Espacio inferior */}
 
         <div className="h-8" />
 
