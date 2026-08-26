@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -12,27 +14,72 @@ import {
 
 import AppointmentButton from "./AppointmentButton";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const treatments = [
   { name: "Implantes Dentales", href: "/tratamientos/implantes" },
   { name: "Ortodoncia", href: "/tratamientos/ortodoncia" },
-  { name: "Ortodoncia Invisible", href: "/tratamientos/ortodoncia-invisible" },
-  { name: "Estética Dental", href: "/tratamientos/estetica-dental" },
-  { name: "Carillas Dentales", href: "/tratamientos/carillas-dentales" },
-  { name: "Blanqueamiento Dental", href: "/tratamientos/blanqueamiento-dental" },
+  {
+    name: "Ortodoncia Invisible",
+    href: "/tratamientos/ortodoncia-invisible",
+  },
+  {
+    name: "Estética Dental",
+    href: "/tratamientos/estetica-dental",
+  },
+  {
+    name: "Carillas Dentales",
+    href: "/tratamientos/carillas-dentales",
+  },
+  {
+    name: "Blanqueamiento Dental",
+    href: "/tratamientos/blanqueamiento-dental",
+  },
   { name: "Endodoncia", href: "/tratamientos/endodoncia" },
   { name: "Periodoncia", href: "/tratamientos/periodoncia" },
-  { name: "Prótesis Dentales", href: "/tratamientos/protesis-dentales" },
-  { name: "Odontología General", href: "/tratamientos/odontologia-general" },
-  { name: "Odontopediatría", href: "/tratamientos/odontopediatria" },
+  {
+    name: "Prótesis Dentales",
+    href: "/tratamientos/protesis-dentales",
+  },
+  {
+    name: "Odontología General",
+    href: "/tratamientos/odontologia-general",
+  },
+  {
+    name: "Odontopediatría",
+    href: "/tratamientos/odontopediatria",
+  },
 ];
 
+const whatsappUrl =
+  "https://wa.me/34640317047?text=" +
+  encodeURIComponent(
+    "Hola, quiero solicitar información y una primera visita gratuita en Estudio Dental Catalunya."
+  );
+
 export default function Footer() {
+  const handlePhoneClick = (phoneLabel: string) => {
+    window.gtag?.("event", "phone_click", {
+      event_category: "lead",
+      event_label: phoneLabel,
+    });
+  };
+
+  const handleWhatsAppClick = (location: string) => {
+    window.gtag?.("event", "whatsapp_click", {
+      event_category: "lead",
+      event_label: location,
+    });
+  };
+
   return (
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto max-w-7xl px-8 py-24">
-
         <div className="grid gap-14 lg:grid-cols-4">
-
           {/* Columna 1 — Logo y cita */}
 
           <div>
@@ -45,17 +92,18 @@ export default function Footer() {
             />
 
             <p className="leading-8 text-slate-400">
-              Clínica dental privada en Sant Boi de Llobregat especializada en
-              implantología, ortodoncia, estética dental y odontología integral
-              para toda la familia.
+              Clínica dental privada en Sant Boi de Llobregat especializada
+              en implantología, ortodoncia, estética dental y odontología
+              integral para toda la familia.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-
               <Link
-                href="https://wa.me/34640317047"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => handleWhatsAppClick("WhatsApp Footer")}
+                aria-label="Contactar con Estudio Dental Catalunya por WhatsApp"
                 className="flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold transition hover:bg-green-600"
               >
                 <MessageCircle size={18} />
@@ -68,7 +116,6 @@ export default function Footer() {
                 <Calendar size={18} />
                 Primera visita
               </AppointmentButton>
-
             </div>
           </div>
 
@@ -94,11 +141,13 @@ export default function Footer() {
             <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
               <p className="text-sm leading-7 text-slate-400">
                 Tratamientos personalizados con diagnóstico digital,
-                planificación individualizada y tecnología de última generación.
+                planificación individualizada y tecnología de última
+                generación.
               </p>
             </div>
           </div>
-                    {/* Columna 3 — Contacto */}
+
+          {/* Columna 3 — Contacto */}
 
           <div>
             <h3 className="mb-7 text-xl font-bold">
@@ -106,7 +155,6 @@ export default function Footer() {
             </h3>
 
             <div className="space-y-6">
-
               {/* Dirección */}
 
               <div className="flex gap-4">
@@ -133,6 +181,10 @@ export default function Footer() {
                 <div className="space-y-1 text-slate-400">
                   <Link
                     href="tel:+34930067281"
+                    onClick={() =>
+                      handlePhoneClick("Teléfono principal Footer")
+                    }
+                    aria-label="Llamar al teléfono principal 930 067 281"
                     className="block transition hover:text-cyan-400"
                   >
                     930 067 281
@@ -140,6 +192,10 @@ export default function Footer() {
 
                   <Link
                     href="tel:+34640317047"
+                    onClick={() =>
+                      handlePhoneClick("Teléfono secundario Footer")
+                    }
+                    aria-label="Llamar al teléfono 640 31 70 47"
                     className="block transition hover:text-cyan-400"
                   >
                     640 31 70 47
@@ -157,6 +213,7 @@ export default function Footer() {
 
                 <Link
                   href="mailto:estudiodentalcataluna@gmail.com"
+                  aria-label="Enviar un email a Estudio Dental Catalunya"
                   className="break-all text-slate-400 transition hover:text-cyan-400"
                 >
                   estudiodentalcataluna@gmail.com
@@ -172,7 +229,6 @@ export default function Footer() {
                 />
 
                 <div className="leading-7 text-slate-400">
-
                   <strong className="text-white">
                     Lunes a Jueves
                   </strong>
@@ -191,13 +247,12 @@ export default function Footer() {
                   <br />
 
                   10:00 - 14:00
-
                 </div>
               </div>
-
             </div>
           </div>
-                    {/* Columna 4 — Redes y cita */}
+
+          {/* Columna 4 — Redes y cita */}
 
           <div>
             <h3 className="mb-7 text-xl font-bold">
@@ -205,16 +260,16 @@ export default function Footer() {
             </h3>
 
             <p className="leading-7 text-slate-400">
-              Comparte nuestro día a día y descubre consejos de salud bucodental,
-              novedades y algunos de nuestros tratamientos.
+              Comparte nuestro día a día y descubre consejos de salud
+              bucodental, novedades y algunos de nuestros tratamientos.
             </p>
 
             <div className="mt-8 space-y-4">
-
               <Link
                 href="https://instagram.com/edental.catalunya"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visitar Instagram de Estudio Dental Catalunya"
                 className="flex w-fit items-center gap-3 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 px-6 py-3 font-semibold transition duration-300 hover:scale-105"
               >
                 <Camera size={20} />
@@ -222,21 +277,23 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://wa.me/34640317047"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  handleWhatsAppClick("WhatsApp Footer Redes")
+                }
+                aria-label="Escribir por WhatsApp a Estudio Dental Catalunya"
                 className="flex w-fit items-center gap-3 rounded-full bg-green-500 px-6 py-3 font-semibold transition duration-300 hover:bg-green-600"
               >
                 <MessageCircle size={20} />
                 Escribir por WhatsApp
               </Link>
-
             </div>
 
             {/* Bloque de cita */}
 
             <div className="mt-10 rounded-2xl border border-cyan-900/40 bg-cyan-950/30 p-6">
-
               <h4 className="text-lg font-semibold text-white">
                 ¿Necesitas una cita?
               </h4>
@@ -252,21 +309,15 @@ export default function Footer() {
                 <Calendar size={18} />
                 Primera visita gratuita
               </AppointmentButton>
-
             </div>
-
           </div>
-
         </div>
 
         {/* Línea inferior */}
 
         <div className="mt-20 border-t border-slate-800 pt-10">
-
           <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
-
             <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400 lg:justify-start">
-
               <Link
                 href="/aviso-legal"
                 className="transition hover:text-cyan-400"
@@ -287,11 +338,9 @@ export default function Footer() {
               >
                 Política de Cookies
               </Link>
-
             </div>
 
             <div className="text-center lg:text-right">
-
               <p className="text-sm text-slate-500">
                 © {new Date().getFullYear()} Estudio Dental Catalunya
               </p>
@@ -299,15 +348,10 @@ export default function Footer() {
               <p className="mt-2 text-sm text-slate-600">
                 Clínica Dental Privada · Sant Boi de Llobregat
               </p>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </footer>
   );
 }

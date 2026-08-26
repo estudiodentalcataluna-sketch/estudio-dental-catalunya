@@ -4,8 +4,14 @@ import {
   createContext,
   useContext,
   useState,
-  ReactNode,
+  type ReactNode,
 } from "react";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 type AppointmentContextType = {
   open: boolean;
@@ -13,7 +19,8 @@ type AppointmentContextType = {
   closeModal: () => void;
 };
 
-const AppointmentContext = createContext<AppointmentContextType | null>(null);
+const AppointmentContext =
+  createContext<AppointmentContextType | null>(null);
 
 export function AppointmentProvider({
   children,
@@ -22,9 +29,19 @@ export function AppointmentProvider({
 }) {
   const [open, setOpen] = useState(false);
 
-  const openModal = () => setOpen(true);
+  const openModal = () => {
+    // Medimos la intención de solicitar una cita.
+    window.gtag?.("event", "appointment_open", {
+      event_category: "engagement",
+      event_label: "Formulario de cita",
+    });
 
-  const closeModal = () => setOpen(false);
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+  };
 
   return (
     <AppointmentContext.Provider
