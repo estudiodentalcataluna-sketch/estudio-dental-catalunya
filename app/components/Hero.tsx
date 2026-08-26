@@ -10,6 +10,7 @@ import {
   Star,
   ArrowRight,
   MapPin,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Hero() {
@@ -51,7 +52,6 @@ export default function Hero() {
       {/* Contenido */}
       <div className="relative z-10">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-
           <div
             className="
               flex
@@ -65,8 +65,7 @@ export default function Hero() {
             "
           >
             <div className="w-full max-w-4xl">
-
-              {/* Badge */}
+              {/* Ubicación */}
               <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-300/40 bg-white/10 px-4 py-2.5 backdrop-blur-xl sm:gap-3 sm:px-6 sm:py-3">
                 <MapPin className="h-4 w-4 shrink-0 text-cyan-300" />
 
@@ -75,7 +74,7 @@ export default function Hero() {
                 </span>
               </div>
 
-              {/* Título */}
+              {/* Título principal */}
               <h1
                 className="
                   mt-6
@@ -91,10 +90,9 @@ export default function Hero() {
                   xl:text-8xl
                 "
               >
-                Implantes Dentales,
-
+                Clínica Dental en Sant Boi
                 <span className="block text-cyan-300">
-                  Ortodoncia y Estética Dental
+                  Implantes, Ortodoncia y Estética Dental
                 </span>
               </h1>
 
@@ -114,16 +112,14 @@ export default function Hero() {
                   lg:leading-9
                 "
               >
-                En <strong>Estudio Dental Catalunya</strong> ayudamos a
-                recuperar la salud y la estética de tu sonrisa mediante
-                tratamientos personalizados de implantología, ortodoncia
-                invisible, odontología general y estética dental con
-                tecnología digital de última generación.
+                En <strong>Estudio Dental Catalunya</strong> cuidamos tu salud
+                y tu sonrisa con tratamientos personalizados de implantología,
+                ortodoncia invisible, odontología general y estética dental,
+                apoyados en tecnología digital avanzada.
               </p>
 
-              {/* Beneficios */}
+              {/* Beneficios principales */}
               <div className="mt-7 flex flex-wrap gap-2.5 sm:mt-9 sm:gap-3 lg:gap-4">
-
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
                   ✓ Primera visita gratuita + radiografías
                 </div>
@@ -139,7 +135,6 @@ export default function Hero() {
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
                   ✓ Tecnología digital avanzada
                 </div>
-
               </div>
 
               {/* Botones */}
@@ -187,6 +182,40 @@ export default function Hero() {
                 >
                   Reservar primera visita gratuita
                   <ArrowRight size={20} />
+                </a>
+
+                <a
+                  href="https://wa.me/34640317047"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    inline-flex
+                    w-full
+                    items-center
+                    justify-center
+                    gap-3
+                    rounded-full
+                    border
+                    border-white/30
+                    bg-white/10
+                    px-6
+                    py-4
+                    text-base
+                    font-semibold
+                    text-white
+                    backdrop-blur-xl
+                    transition
+                    hover:bg-white
+                    hover:text-slate-900
+                    sm:w-auto
+                    sm:px-8
+                    lg:px-10
+                    lg:py-5
+                    lg:text-lg
+                  "
+                >
+                  <MessageCircle size={20} />
+                  WhatsApp
                 </a>
 
                 <a
@@ -243,6 +272,7 @@ export default function Hero() {
                   <div className="text-4xl font-black text-cyan-300 sm:text-5xl">
                     +10
                   </div>
+
                   <p className="mt-1 text-sm text-slate-200 sm:mt-2 sm:text-base">
                     Años de experiencia
                   </p>
@@ -252,6 +282,7 @@ export default function Hero() {
                   <div className="text-4xl font-black text-cyan-300 sm:text-5xl">
                     7
                   </div>
+
                   <p className="mt-1 text-sm text-slate-200 sm:mt-2 sm:text-base">
                     Profesionales especializados
                   </p>
@@ -261,6 +292,7 @@ export default function Hero() {
                   <div className="text-4xl font-black text-cyan-300 sm:text-5xl">
                     24M
                   </div>
+
                   <p className="mt-1 text-sm text-slate-200 sm:mt-2 sm:text-base">
                     Financiación disponible
                   </p>
@@ -324,7 +356,7 @@ export default function Hero() {
 
                   <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base sm:leading-8">
                     Financiación flexible de hasta 24 meses para que puedas
-                    comenzar tu tratamiento sin preocupaciones.
+                    comenzar tu tratamiento con tranquilidad.
                   </p>
                 </div>
 
@@ -361,7 +393,6 @@ export default function Hero() {
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
