@@ -8,7 +8,7 @@ declare global {
   }
 }
 
-const WHATSAPP_NUMBER = "34930067281";
+const WHATSAPP_NUMBER = "34640317047";
 
 const WHATSAPP_MESSAGE =
   "Hola, quiero solicitar información y una primera visita gratuita en Estudio Dental Catalunya.";
