@@ -5,39 +5,43 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+import AppointmentButton from "../AppointmentButton";
+
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
 
-  const closeMenu = () => setOpen(false);
+  const closeMenu = () => {
+    setOpen(false);
+  };
 
   return (
     <>
-      {/* Cabecera móvil */}
+      {/* =========================================================
+          CABECERA MÓVIL
+          ========================================================= */}
+
       <div className="flex w-full items-center justify-between">
-        {/* Logo + nombre */}
+
+        {/* Logo */}
+
         <Link
           href="/"
           onClick={closeMenu}
-          className="flex items-center gap-3"
+          className="flex min-w-0 items-center"
         >
           <Image
             src="/images/logo-header.png"
             alt="Estudio Dental Catalunya"
-            width={180}
-            height={50}
+            width={250}
+            height={70}
             priority
-            className="h-10 w-auto object-contain"
+            className="h-11 w-auto max-w-[200px] object-contain"
           />
-
-          <span className="text-sm font-bold leading-tight text-slate-800 sm:text-base">
-            Estudio Dental
-            <span className="block text-cyan-600">
-              Catalunya
-            </span>
-          </span>
         </Link>
 
+
         {/* Botón hamburguesa */}
+
         <button
           type="button"
           onClick={() => setOpen(true)}
@@ -47,9 +51,14 @@ export default function MobileMenu() {
         >
           <Menu size={30} strokeWidth={2} />
         </button>
+
       </div>
 
-      {/* Fondo oscuro */}
+
+      {/* =========================================================
+          FONDO OSCURO
+          ========================================================= */}
+
       {open && (
         <div
           onClick={closeMenu}
@@ -58,48 +67,59 @@ export default function MobileMenu() {
         />
       )}
 
-      {/* Menú lateral */}
+
+      {/* =========================================================
+          MENÚ LATERAL
+          ========================================================= */}
+
       <aside
         className={`fixed right-0 top-0 z-[70] flex h-full w-[min(88vw,360px)] flex-col bg-white shadow-2xl transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!open}
       >
-        {/* Cabecera del menú */}
+
+        {/* =====================================================
+            CABECERA DEL MENÚ
+            ===================================================== */}
+
         <div className="flex items-center justify-between border-b border-slate-200 bg-white px-5 py-5">
+
           <Link
             href="/"
             onClick={closeMenu}
-            className="flex items-center gap-3"
+            className="flex min-w-0 items-center"
           >
             <Image
               src="/images/logo-header.png"
               alt="Estudio Dental Catalunya"
-              width={150}
-              height={45}
-              className="h-9 w-auto object-contain"
+              width={200}
+              height={60}
+              className="h-10 w-auto max-w-[190px] object-contain"
             />
-
-            <span className="text-sm font-bold leading-tight text-slate-800">
-              Estudio Dental
-              <span className="block text-cyan-600">
-                Catalunya
-              </span>
-            </span>
           </Link>
+
 
           <button
             type="button"
             onClick={closeMenu}
-            className="rounded-xl p-2 text-slate-700 transition hover:bg-slate-100"
+            className="ml-3 shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100"
             aria-label="Cerrar menú"
           >
             <X size={28} />
           </button>
+
         </div>
 
-        {/* Contenido */}
+
+        {/* =====================================================
+            CONTENIDO
+            ===================================================== */}
+
         <nav className="flex-1 overflow-y-auto bg-white px-5 py-5">
+
+          {/* Inicio */}
+
           <Link
             href="/"
             onClick={closeMenu}
@@ -108,11 +128,16 @@ export default function MobileMenu() {
             Inicio
           </Link>
 
+
           <div className="my-3 border-t border-slate-100" />
+
+
+          {/* Tratamientos */}
 
           <p className="px-4 pb-2 pt-1 text-xs font-bold uppercase tracking-wider text-slate-400">
             Tratamientos
           </p>
+
 
           <Link
             href="/tratamientos/implantes"
@@ -202,7 +227,11 @@ export default function MobileMenu() {
             Odontopediatría
           </Link>
 
+
           <div className="my-4 border-t border-slate-100" />
+
+
+          {/* Nosotros */}
 
           <Link
             href="/nosotros"
@@ -212,23 +241,33 @@ export default function MobileMenu() {
             Nosotros
           </Link>
 
-          <Link
-            href="/contacto"
-            onClick={closeMenu}
-            className="block rounded-xl px-4 py-3 text-lg font-medium text-slate-800 transition hover:bg-cyan-50 hover:text-cyan-700"
+
+          {/* =================================================
+              CONTACTO
+              Abre el modal de cita.
+              NO lleva a /contacto.
+              ================================================= */}
+
+          <AppointmentButton
+            className="mt-1 flex w-full items-center rounded-xl px-4 py-3 text-left text-lg font-medium text-slate-800 transition hover:bg-cyan-50 hover:text-cyan-700"
           >
             Contacto
-          </Link>
+          </AppointmentButton>
 
-          {/* Botón de cita */}
-          <Link
-            href="/contacto"
-            onClick={closeMenu}
-            className="mt-6 block rounded-full bg-cyan-600 px-6 py-4 text-center font-bold text-white shadow-lg transition hover:bg-cyan-700"
+
+          {/* =================================================
+              PRIMERA VISITA GRATUITA
+              Abre el mismo modal.
+              ================================================= */}
+
+          <AppointmentButton
+            className="mt-6 block w-full rounded-full bg-cyan-600 px-6 py-4 text-center font-bold text-white shadow-lg transition hover:bg-cyan-700"
           >
             Primera visita gratuita
-          </Link>
+          </AppointmentButton>
+
         </nav>
+
       </aside>
     </>
   );
