@@ -13,9 +13,12 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+import AppointmentButton from "./AppointmentButton";
+
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
+
       {/* Imagen principal */}
       <Image
         src="/images/clinic.jpg"
@@ -52,6 +55,7 @@ export default function Hero() {
       {/* Contenido */}
       <div className="relative z-10">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+
           <div
             className="
               flex
@@ -64,14 +68,18 @@ export default function Hero() {
               lg:py-28
             "
           >
+
             <div className="w-full max-w-4xl">
+
               {/* Ubicación */}
               <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-300/40 bg-white/10 px-4 py-2.5 backdrop-blur-xl sm:gap-3 sm:px-6 sm:py-3">
+
                 <MapPin className="h-4 w-4 shrink-0 text-cyan-300" />
 
                 <span className="text-xs font-semibold uppercase tracking-[0.12em] text-cyan-100 sm:text-sm sm:tracking-[0.18em]">
                   Clínica Dental en Sant Boi de Llobregat
                 </span>
+
               </div>
 
               {/* Título principal */}
@@ -120,6 +128,7 @@ export default function Hero() {
 
               {/* Beneficios principales */}
               <div className="mt-7 flex flex-wrap gap-2.5 sm:mt-9 sm:gap-3 lg:gap-4">
+
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
                   ✓ Primera visita gratuita + radiografías
                 </div>
@@ -135,9 +144,12 @@ export default function Hero() {
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
                   ✓ Tecnología digital avanzada
                 </div>
+
               </div>
 
-              {/* Botones */}
+              {/* =====================================================
+                  BOTONES
+                  ===================================================== */}
               <div
                 className="
                   mt-8
@@ -152,8 +164,9 @@ export default function Hero() {
                   lg:mt-14
                 "
               >
-                <a
-                  href="#contacto"
+
+                {/* CTA PRINCIPAL — ABRE EL FORMULARIO */}
+                <AppointmentButton
                   className="
                     inline-flex
                     w-full
@@ -182,8 +195,9 @@ export default function Hero() {
                 >
                   Reservar primera visita gratuita
                   <ArrowRight size={20} />
-                </a>
+                </AppointmentButton>
 
+                {/* WhatsApp */}
                 <a
                   href="https://wa.me/34640317047"
                   target="_blank"
@@ -218,6 +232,7 @@ export default function Hero() {
                   WhatsApp
                 </a>
 
+                {/* Teléfono */}
                 <a
                   href="tel:+34930067281"
                   className="
@@ -249,6 +264,7 @@ export default function Hero() {
                   <Phone size={20} />
                   930 067 281
                 </a>
+
               </div>
 
               {/* Estadísticas */}
@@ -268,6 +284,7 @@ export default function Hero() {
                   lg:gap-12
                 "
               >
+
                 <div>
                   <div className="text-4xl font-black text-cyan-300 sm:text-5xl">
                     +10
@@ -311,6 +328,7 @@ export default function Hero() {
                     Atención personalizada
                   </p>
                 </div>
+
               </div>
 
               {/* Tarjetas */}
@@ -328,8 +346,10 @@ export default function Hero() {
                   xl:gap-6
                 "
               >
+
                 {/* Tarjeta 1 */}
                 <div className="rounded-3xl border border-white/15 bg-white/10 p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15 sm:p-6 lg:p-7">
+
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/20">
                     <CalendarCheck className="text-cyan-300" size={30} />
                   </div>
@@ -342,10 +362,12 @@ export default function Hero() {
                     Incluye radiografías digitales, diagnóstico personalizado
                     y plan de tratamiento sin compromiso.
                   </p>
+
                 </div>
 
                 {/* Tarjeta 2 */}
                 <div className="rounded-3xl border border-white/15 bg-white/10 p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15 sm:p-6 lg:p-7">
+
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/20">
                     <CreditCard className="text-cyan-300" size={30} />
                   </div>
@@ -355,13 +377,15 @@ export default function Hero() {
                   </h2>
 
                   <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base sm:leading-8">
-                    Financiación flexible de hasta 24 meses sin intereses para que puedas
-                    comenzar tu tratamiento con tranquilidad.
+                    Financiación flexible de hasta 24 meses sin intereses para
+                    que puedas comenzar tu tratamiento con tranquilidad.
                   </p>
+
                 </div>
 
                 {/* Tarjeta 3 */}
                 <div className="rounded-3xl border border-white/15 bg-white/10 p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15 sm:p-6 lg:p-7">
+
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/20">
                     <ShieldCheck className="text-cyan-300" size={30} />
                   </div>
@@ -374,10 +398,12 @@ export default function Hero() {
                     Atención cercana, tiempos de espera reducidos y un mismo
                     equipo acompañándote durante todo el tratamiento.
                   </p>
+
                 </div>
 
                 {/* Tarjeta 4 */}
                 <div className="rounded-3xl border border-white/15 bg-white/10 p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:bg-white/15 sm:p-6 lg:p-7">
+
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/20">
                     <CheckCircle2 className="text-cyan-300" size={30} />
                   </div>
@@ -391,15 +417,21 @@ export default function Hero() {
                     dental, cirugía oral, endodoncia, periodoncia y
                     odontología general en un mismo centro.
                   </p>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
       </div>
 
       {/* Degradado inferior final */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent sm:h-32" />
+
     </section>
   );
 }
