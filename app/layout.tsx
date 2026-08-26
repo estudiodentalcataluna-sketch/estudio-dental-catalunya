@@ -7,6 +7,7 @@ import "./globals.css";
 import SeoSchema from "./components/SeoSchema";
 import { AppointmentProvider } from "./components/AppointmentProvider";
 import AppointmentModal from "./components/AppointmentModal";
+import CookieBanner from "./components/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -155,35 +156,44 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-white text-slate-900 antialiased">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-N23BCLM7XD"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-
-            gtag('js', new Date());
-
-            gtag('config', 'G-N23BCLM7XD', {
-              anonymize_ip: true,
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
-
         <AppointmentProvider>
           <SeoSchema />
 
           <AppointmentModal />
 
+          <CookieBanner />
+
           {children}
         </AppointmentProvider>
+
+        {/* Google Analytics se carga únicamente después del consentimiento */}
+        <Script id="google-analytics-consent" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+
+            window.addEventListener("cookie-consent-accepted", function () {
+              if (window.__gaLoaded) return;
+
+              window.__gaLoaded = true;
+
+              var script = document.createElement("script");
+              script.src = "https://www.googletagmanager.com/gtag/js?id=G-N23BCLM7XD";
+              script.async = true;
+              document.head.appendChild(script);
+
+              window.gtag = function () {
+                window.dataLayer.push(arguments);
+              };
+
+              window.gtag("js", new Date());
+
+              window.gtag("config", "G-N23BCLM7XD", {
+                anonymize_ip: true,
+                page_path: window.location.pathname,
+              });
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
