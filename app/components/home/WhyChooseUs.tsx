@@ -28,7 +28,7 @@ const items = [
   },
   {
     icon: CreditCard,
-    title: "Financiación a medida",
+    title: "Financiación a medida hasta 24 meses sin intereses",
     text: "Disponemos de financiación de hasta 24 meses sin intereses para que puedas comenzar tu tratamiento con total tranquilidad.",
   },
 ];

@@ -125,7 +125,7 @@ export default function Hero() {
                 </div>
 
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
-                  ✓ Financiación hasta 24 meses
+                  ✓ Financiación hasta 24 meses sin intereses
                 </div>
 
                 <div className="rounded-full bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-xl sm:px-5 sm:py-3">
@@ -294,7 +294,7 @@ export default function Hero() {
                   </div>
 
                   <p className="mt-1 text-sm text-slate-200 sm:mt-2 sm:text-base">
-                    Financiación disponible
+                    Financiación hasta 24 meses sin intereses
                   </p>
                 </div>
 
@@ -351,11 +351,11 @@ export default function Hero() {
                   </div>
 
                   <h2 className="mt-5 text-xl font-bold text-white sm:text-2xl">
-                    Financiación a medida
+                    Financiación hasta 24 meses sin intereses
                   </h2>
 
                   <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base sm:leading-8">
-                    Financiación flexible de hasta 24 meses para que puedas
+                    Financiación flexible de hasta 24 meses sin intereses para que puedas
                     comenzar tu tratamiento con tranquilidad.
                   </p>
                 </div>

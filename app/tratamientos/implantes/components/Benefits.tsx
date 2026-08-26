@@ -30,7 +30,7 @@ const benefits = [
   },
   {
     icon: Wallet,
-    title: "Financiación hasta 24 meses",
+    title: "Financiación hasta 24 meses sin intereses",
     text: "Disponemos de financiación sin intereses para que puedas realizar tu tratamiento con tranquilidad.",
   },
   {

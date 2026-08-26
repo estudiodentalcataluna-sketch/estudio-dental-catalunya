@@ -87,7 +87,7 @@ export default function TreatmentHero({
                 </div>
 
                 <div className="rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur-xl">
-                  ✓ Financiación hasta 24 meses
+                  ✓ Financiación hasta 24 meses sin intereses
                 </div>
 
               </div>
@@ -224,7 +224,7 @@ export default function TreatmentHero({
                 ✓
               </div>
               <p className="mt-1 text-sm font-semibold leading-5 text-slate-700">
-                Financiación hasta 24 meses
+                Financiación hasta 24 meses sin intereses
               </p>
             </div>
 
