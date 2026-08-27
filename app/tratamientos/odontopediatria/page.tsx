@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
+      "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
   },
 
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Tratamientos de odontopediatría para prevenir, diagnosticar y cuidar la salud bucodental infantil desde los primeros años.",
 
     url:
-      "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
+      "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
 
     images: [
       {

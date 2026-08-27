@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+      "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
   },
 
   openGraph: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Consigue una sonrisa más blanca y luminosa mediante un tratamiento profesional de blanqueamiento dental completamente personalizado.",
 
     url:
-      "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+      "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
 
     type: "article",
 

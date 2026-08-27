@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
+      "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
   },
 
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Tratamientos de endodoncia para eliminar la infección del nervio dental y conservar el diente natural siempre que sea posible.",
 
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
+    url: "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
 
     images: [
       {

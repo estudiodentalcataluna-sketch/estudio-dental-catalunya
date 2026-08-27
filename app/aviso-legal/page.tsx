@@ -99,7 +99,7 @@ export default function AvisoLegalPage() {
               <strong>Sitio web:</strong>
               <br />
               <span className="break-all">
-                https://www.estudiodentalcatalunya.es
+                https://estudiodentalcatalunya.es
               </span>
             </p>
           </div>

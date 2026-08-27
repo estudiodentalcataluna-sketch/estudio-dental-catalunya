@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/carillas-dentales",
+      "https://estudiodentalcatalunya.es/tratamientos/carillas-dentales",
   },
 
   openGraph: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Consigue una sonrisa natural mediante carillas dentales de porcelana y composite totalmente personalizadas.",
 
     url:
-      "https://www.estudiodentalcatalunya.es/tratamientos/carillas-dentales",
+      "https://estudiodentalcatalunya.es/tratamientos/carillas-dentales",
 
     type: "article",
 

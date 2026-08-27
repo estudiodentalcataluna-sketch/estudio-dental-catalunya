@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/periodoncia",
+      "https://estudiodentalcatalunya.es/tratamientos/periodoncia",
   },
 
   openGraph: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Tratamientos personalizados para prevenir y tratar la gingivitis y la periodontitis, manteniendo unas encías sanas y una sonrisa saludable.",
 
-    url: "https://www.estudiodentalcatalunya.es/tratamientos/periodoncia",
+    url: "https://estudiodentalcatalunya.es/tratamientos/periodoncia",
 
     images: [
       {

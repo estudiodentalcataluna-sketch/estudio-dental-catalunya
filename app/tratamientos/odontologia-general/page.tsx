@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
+      "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
   },
 
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Cuidamos la salud de tu boca mediante revisiones, prevención y tratamientos conservadores totalmente personalizados.",
 
     url:
-      "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
+      "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
 
     images: [
       {

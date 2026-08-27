@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+      "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
   },
 
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Recupera la funcionalidad y la estética de tu sonrisa mediante prótesis dentales personalizadas adaptadas a tus necesidades.",
 
     url:
-      "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+      "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
 
     images: [
       {
