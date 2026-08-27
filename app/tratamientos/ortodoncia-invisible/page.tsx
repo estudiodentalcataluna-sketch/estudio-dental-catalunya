@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -35,8 +35,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Ortodoncia Invisible en Sant Boi de Llobregat",
+    title: "Ortodoncia Invisible en Sant Boi de Llobregat",
 
     description:
       "Corrige la posición de tus dientes mediante alineadores transparentes personalizados con un tratamiento cómodo, discreto y totalmente planificado.",
@@ -75,7 +74,6 @@ export const metadata: Metadata = {
 export default function InvisiblePage() {
   return (
     <main>
-
       <TreatmentHero {...invisibleData.hero} />
 
       <TreatmentIntro {...invisibleData.intro} />
@@ -94,7 +92,6 @@ export default function InvisiblePage() {
       <TreatmentFAQ {...invisibleData.faq} />
 
       <TreatmentCTA {...invisibleData.cta} />
-
     </main>
   );
 }

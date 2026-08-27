@@ -12,7 +12,8 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { prostheticsData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
+  title:
+    "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
     "Especialistas en prótesis dentales en Sant Boi de Llobregat. Recupera la función y la estética de tu sonrisa mediante prótesis fijas y removibles totalmente personalizadas.",

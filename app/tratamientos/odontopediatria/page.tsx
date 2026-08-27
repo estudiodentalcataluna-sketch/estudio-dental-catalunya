@@ -12,7 +12,8 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { pediatricData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Odontopediatría en Sant Boi de Llobregat | Estudio Dental Catalunya",
+  title:
+    "Odontopediatría en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
     "Especialistas en odontopediatría en Sant Boi de Llobregat. Cuidamos la salud bucodental de bebés, niños y adolescentes mediante tratamientos preventivos y personalizados.",
@@ -65,8 +66,6 @@ export default function PediatricDentistryPage() {
         title="Nuestro proceso de tratamiento"
         subtitle="Comenzamos con una revisión adaptada a la edad del niño para valorar el desarrollo de su boca, detectar posibles problemas de forma precoz y establecer un plan preventivo totalmente personalizado."
       />
-
-      <TreatmentTechnology {...pediatricData.technology} />
 
       <TreatmentIndications {...pediatricData.indications} />
 

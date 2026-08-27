@@ -12,7 +12,8 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { generalDentistryData } from "./data";
 
 export const metadata: Metadata = {
-  title: "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
+  title:
+    "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
     "Especialistas en odontología general en Sant Boi de Llobregat. Prevención, revisiones, empastes y tratamientos personalizados para cuidar tu salud bucodental.",
@@ -65,8 +66,6 @@ export default function GeneralDentistryPage() {
         title="Nuestro proceso de tratamiento"
         subtitle="Comenzamos con una revisión completa y un diagnóstico personalizado para detectar cualquier problema de forma precoz y diseñar el tratamiento más adecuado para mantener tu salud bucodental."
       />
-
-      <TreatmentTechnology {...generalDentistryData.technology} />
 
       <TreatmentIndications {...generalDentistryData.indications} />
 
