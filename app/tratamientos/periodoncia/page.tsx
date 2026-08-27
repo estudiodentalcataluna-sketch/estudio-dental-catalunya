@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 export default function PeriodonticsPage() {
   return (
     <main>
-            <TreatmentHero {...periodonticsData.hero} />
+      <TreatmentHero {...periodonticsData.hero} />
 
       <TreatmentIntro {...periodonticsData.intro} />
 
@@ -55,10 +55,10 @@ export default function PeriodonticsPage() {
       <TreatmentTechnology {...periodonticsData.technology} />
 
       <TreatmentIndications {...periodonticsData.indications} />
-            <TreatmentFAQ {...periodonticsData.faq} />
+
+      <TreatmentFAQ {...periodonticsData.faq} />
 
       <TreatmentCTA {...periodonticsData.cta} />
-
     </main>
   );
 }

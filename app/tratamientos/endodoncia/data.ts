@@ -1,18 +1,14 @@
 export const endodonticsData = {
-
   hero: {
-
     title: "Endodoncia en Sant Boi de Llobregat",
 
     subtitle:
       "Elimina el dolor, conserva tu diente natural y evita la extracción mediante un tratamiento de endodoncia realizado con tecnología moderna y máxima precisión.",
 
     image: "/images/tratamientos/endodoncia/hero-endodoncia.jpg",
-
   },
 
   intro: {
-
     badge: "Endodoncia",
 
     title: "Salvamos dientes que antes era necesario extraer",
@@ -24,37 +20,31 @@ export const endodonticsData = {
       "En Estudio Dental Catalunya realizamos tratamientos de endodoncia mediante un diagnóstico preciso y tecnología digital para ofrecer procedimientos más cómodos, seguros y eficaces.",
 
     image: "/images/tratamientos/endodoncia/intro-endodoncia.jpg",
-
   },
 
   benefits: {
-
     title: "Beneficios de la endodoncia",
 
     description:
       "La endodoncia permite conservar el diente natural y eliminar la infección evitando tratamientos más complejos.",
 
     benefits: [
-
       "Elimina el dolor dental.",
       "Conserva el diente natural.",
       "Evita la extracción.",
       "Elimina la infección interna.",
       "Recupera la función masticatoria.",
       "Mantiene la estética de la sonrisa.",
-
     ],
-
   },
-    technology: {
 
+  technology: {
     title: "Tecnología para una endodoncia más precisa",
 
     subtitle:
       "Utilizamos tecnología de diagnóstico y planificación que nos permite localizar el problema con mayor precisión y realizar tratamientos más seguros y conservadores.",
 
     items: [
-
       {
         title: "Diagnóstico preciso",
         description:
@@ -78,39 +68,32 @@ export const endodonticsData = {
         description:
           "Tras la endodoncia realizamos revisiones para comprobar la correcta evolución del tratamiento y la recuperación del diente.",
       },
-
     ],
-
   },
 
   indications: {
-
     title: "¿Cuándo está indicada una endodoncia?",
 
     subtitle:
       "La endodoncia está indicada cuando la pulpa del diente se encuentra dañada o infectada y es posible conservar la pieza dental.",
 
     items: [
-
       "Dolor intenso o persistente.",
       "Caries profundas.",
       "Infección del nervio dental.",
       "Traumatismos o fracturas dentales.",
       "Sensibilidad prolongada al frío o al calor.",
       "Inflamación o abscesos de origen dental.",
-
     ],
-
   },
-    faq: {
 
+  faq: {
     title: "Preguntas frecuentes sobre endodoncia",
 
     subtitle:
       "Estas son algunas de las dudas más habituales de nuestros pacientes antes de realizar un tratamiento de endodoncia.",
 
     faqs: [
-
       {
         question: "¿La endodoncia duele?",
         answer:
@@ -134,18 +117,13 @@ export const endodonticsData = {
         answer:
           "No siempre. Dependerá del estado del diente y de la cantidad de estructura que conserve. Tras finalizar el tratamiento te recomendaremos la mejor opción para proteger la pieza dental.",
       },
-
     ],
-
   },
 
   cta: {
-
     title: "No dejes que el dolor avance",
 
     description:
       "Solicita tu primera visita y estudiaremos tu caso para ofrecerte el tratamiento más adecuado y conservar tu diente natural siempre que sea posible.",
-
   },
-
 };
