@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     url:
       "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
 
-    type: "article",
+    type: "website",
 
     images: [
       {
