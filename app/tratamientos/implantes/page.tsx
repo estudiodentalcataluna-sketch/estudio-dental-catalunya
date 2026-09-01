@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Implantes Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en implantes dentales en Sant Boi de Llobregat. Recupera uno o varios dientes con implantes de máxima calidad, planificación digital y un tratamiento totalmente personalizado. Primera visita gratuita con radiografías.",
+    "Especialistas en implantes dentales en Sant Boi de Llobregat. Recupera uno o varios dientes con implantes de máxima calidad, planificación digital y un tratamiento totalmente personalizado. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "implantes dentales Sant Boi",
@@ -35,7 +35,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Implantes Dentales en Sant Boi de Llobregat",
+    title:
+      "Implantes Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
       "Recupera tu sonrisa mediante implantes dentales con planificación digital, cirugía guiada y un tratamiento completamente personalizado.",
@@ -59,10 +60,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Implantes Dentales | Estudio Dental Catalunya",
+      "Implantes Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Especialistas en implantología oral en Sant Boi de Llobregat.",
+      "Especialistas en implantología oral en Sant Boi de Llobregat mediante planificación digital y un tratamiento personalizado.",
 
     images: [
       "/images/tratamientos/implantes/hero-implantes.jpg",
