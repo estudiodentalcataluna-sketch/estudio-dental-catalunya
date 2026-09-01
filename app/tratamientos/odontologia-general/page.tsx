@@ -16,7 +16,18 @@ export const metadata: Metadata = {
     "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en odontología general en Sant Boi de Llobregat. Prevención, revisiones, empastes y tratamientos personalizados para cuidar tu salud bucodental.",
+    "Especialistas en odontología general en Sant Boi de Llobregat. Prevención, revisiones, empastes y tratamientos personalizados para cuidar tu salud bucodental. Primera visita gratuita con radiografías y diagnóstico.",
+
+  keywords: [
+    "odontología general Sant Boi",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
+    "revisión dental Sant Boi",
+    "empastes Sant Boi",
+    "prevención dental Sant Boi",
+    "salud bucodental Sant Boi",
+    "odontología general Barcelona",
+  ],
 
   alternates: {
     canonical:
@@ -24,7 +35,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Odontología General en Sant Boi de Llobregat",
+    title:
+      "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
       "Cuidamos la salud de tu boca mediante revisiones, prevención y tratamientos conservadores totalmente personalizados.",
@@ -32,9 +44,14 @@ export const metadata: Metadata = {
     url:
       "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
 
+    type: "article",
+
     images: [
       {
         url: "/images/tratamientos/odontologia-general/hero-odontologia-general.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Odontología General en Sant Boi de Llobregat",
       },
     ],
   },
@@ -42,7 +59,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Odontología General en Sant Boi de Llobregat",
+    title:
+      "Odontología General en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
       "Prevención, revisiones y tratamientos conservadores para mantener una sonrisa sana durante toda la vida.",
@@ -66,6 +84,8 @@ export default function GeneralDentistryPage() {
         title="Nuestro proceso de tratamiento"
         subtitle="Comenzamos con una revisión completa y un diagnóstico personalizado para detectar cualquier problema de forma precoz y diseñar el tratamiento más adecuado para mantener tu salud bucodental."
       />
+
+      <TreatmentTechnology {...generalDentistryData.technology} />
 
       <TreatmentIndications {...generalDentistryData.indications} />
 
