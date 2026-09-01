@@ -11,6 +11,12 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 
 import { prostheticsData } from "./data";
 
+const canonicalUrl =
+  "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales";
+
+const heroImage =
+  "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg";
+
 export const metadata: Metadata = {
   title:
     "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
@@ -18,23 +24,40 @@ export const metadata: Metadata = {
   description:
     "Especialistas en prótesis dentales en Sant Boi de Llobregat. Recupera la función y la estética de tu sonrisa mediante prótesis fijas y removibles totalmente personalizadas.",
 
+  keywords: [
+    "prótesis dentales Sant Boi",
+    "prótesis dental fija Sant Boi",
+    "prótesis dental removible Sant Boi",
+    "dentadura postiza Sant Boi",
+    "rehabilitación dental Sant Boi",
+    "prótesis sobre implantes",
+    "restauración dental",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
+    "prótesis dentales Barcelona",
+  ],
+
   alternates: {
-    canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+    canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Prótesis Dentales en Sant Boi de Llobregat",
+    title:
+      "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
       "Recupera la funcionalidad y la estética de tu sonrisa mediante prótesis dentales personalizadas adaptadas a tus necesidades.",
 
-    url:
-      "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+    url: canonicalUrl,
+
+    type: "article",
 
     images: [
       {
-        url: "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
+        url: heroImage,
+        width: 1200,
+        height: 630,
+        alt: "Prótesis dentales en Sant Boi de Llobregat",
       },
     ],
   },
@@ -42,14 +65,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Prótesis Dentales en Sant Boi de Llobregat",
+    title:
+      "Prótesis Dentales en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
       "Prótesis fijas y removibles diseñadas para recuperar la función, la comodidad y la estética de tu sonrisa.",
 
-    images: [
-      "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg",
-    ],
+    images: [heroImage],
   },
 };
 
