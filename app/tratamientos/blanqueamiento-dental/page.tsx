@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url:
       "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
 
-    type: "article",
+    type: "website",
 
     images: [
       {
