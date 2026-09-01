@@ -1,8 +1,54 @@
 export default function SeoSchema() {
+  const treatments = [
+    {
+      name: "Implantes Dentales",
+      url: "https://estudiodentalcatalunya.es/tratamientos/implantes",
+    },
+    {
+      name: "Ortodoncia",
+      url: "https://estudiodentalcatalunya.es/tratamientos/ortodoncia",
+    },
+    {
+      name: "Ortodoncia Invisible",
+      url: "https://estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
+    },
+    {
+      name: "Estética Dental",
+      url: "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
+    },
+    {
+      name: "Carillas Dentales",
+      url: "https://estudiodentalcatalunya.es/tratamientos/carillas-dentales",
+    },
+    {
+      name: "Blanqueamiento Dental",
+      url: "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+    },
+    {
+      name: "Endodoncia",
+      url: "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
+    },
+    {
+      name: "Periodoncia",
+      url: "https://estudiodentalcatalunya.es/tratamientos/periodoncia",
+    },
+    {
+      name: "Prótesis Dentales",
+      url: "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+    },
+    {
+      name: "Odontología General",
+      url: "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
+    },
+    {
+      name: "Odontopediatría",
+      url: "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
+    },
+  ];
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Dentist",
-
     "@id": "https://estudiodentalcatalunya.es/#dentist",
 
     name: "Estudio Dental Catalunya",
@@ -121,19 +167,7 @@ export default function SeoSchema() {
       },
     ],
 
-    medicalSpecialty: [
-      "Implantología",
-      "Ortodoncia",
-      "Ortodoncia Invisible",
-      "Estética Dental",
-      "Carillas Dentales",
-      "Blanqueamiento Dental",
-      "Endodoncia",
-      "Periodoncia",
-      "Prótesis Dentales",
-      "Odontología General",
-      "Odontopediatría",
-    ],
+    medicalSpecialty: "Dentistry",
 
     knowsAbout: [
       "Implantes Dentales",
@@ -160,23 +194,12 @@ export default function SeoSchema() {
       "@type": "OfferCatalog",
       name: "Tratamientos Dentales",
 
-      itemListElement: [
-        "Implantes Dentales",
-        "Ortodoncia",
-        "Ortodoncia Invisible",
-        "Estética Dental",
-        "Carillas Dentales",
-        "Blanqueamiento Dental",
-        "Endodoncia",
-        "Periodoncia",
-        "Prótesis Dentales",
-        "Odontología General",
-        "Odontopediatría",
-      ].map((name) => ({
+      itemListElement: treatments.map((treatment) => ({
         "@type": "Offer",
         itemOffered: {
           "@type": "MedicalProcedure",
-          name,
+          name: treatment.name,
+          url: treatment.url,
         },
       })),
     },
