@@ -16,19 +16,23 @@ export const metadata: Metadata = {
     "Ortodoncia en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en ortodoncia en Sant Boi de Llobregat. Corregimos la posición de los dientes mediante brackets metálicos y estéticos con tratamientos totalmente personalizados. Primera visita gratuita con radiografías y diagnóstico incluidos.",
+    "Especialistas en ortodoncia en Sant Boi de Llobregat. Corregimos la posición de los dientes y problemas de mordida mediante brackets metálicos y estéticos con tratamientos personalizados. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "ortodoncia Sant Boi",
     "ortodoncista Sant Boi",
-    "brackets Sant Boi",
-    "brackets metálicos",
-    "brackets estéticos",
-    "alineación dental",
-    "mordida",
     "clínica de ortodoncia Sant Boi",
+    "brackets Sant Boi",
+    "brackets metálicos Sant Boi",
+    "brackets estéticos Sant Boi",
+    "ortodoncia para adultos Sant Boi",
+    "ortodoncia para niños Sant Boi",
+    "alineación dental Sant Boi",
+    "corregir mordida Sant Boi",
+    "tratamiento de ortodoncia",
     "ortodoncia Barcelona",
-    "Estudio Dental Catalunya",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
   ],
 
   alternates: {
@@ -41,12 +45,12 @@ export const metadata: Metadata = {
       "Ortodoncia en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Tratamientos de ortodoncia personalizados mediante brackets metálicos y estéticos para conseguir una sonrisa sana, funcional y perfectamente alineada.",
+      "Tratamientos de ortodoncia personalizados mediante brackets metálicos y estéticos para mejorar la alineación dental, la mordida y la función de la sonrisa.",
 
     url:
       "https://estudiodentalcatalunya.es/tratamientos/ortodoncia",
 
-    type: "website",
+    type: "article",
 
     images: [
       {
@@ -62,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Ortodoncia en Sant Boi de Llobregat | Estudio Dental Catalunya",
+      "Ortodoncia | Estudio Dental Catalunya",
 
     description:
       "Especialistas en ortodoncia con brackets metálicos y estéticos en Sant Boi de Llobregat.",
