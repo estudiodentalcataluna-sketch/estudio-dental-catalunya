@@ -4,7 +4,6 @@ import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
 import TreatmentBenefits from "@/app/components/TreatmentBenefits";
 import TreatmentProcess from "@/app/components/TreatmentProcess";
-import TreatmentTechnology from "@/app/components/TreatmentTechnology";
 import TreatmentIndications from "@/app/components/TreatmentIndications";
 import TreatmentFAQ from "@/app/components/TreatmentFAQ";
 import TreatmentCTA from "@/app/components/TreatmentCTA";
@@ -16,7 +15,23 @@ export const metadata: Metadata = {
     "Odontopediatría en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en odontopediatría en Sant Boi de Llobregat. Cuidamos la salud bucodental de bebés, niños y adolescentes mediante tratamientos preventivos y personalizados.",
+    "Especialistas en odontopediatría en Sant Boi de Llobregat. Cuidamos la salud bucodental de bebés, niños y adolescentes con revisiones, prevención y tratamientos adaptados a cada etapa.",
+
+  keywords: [
+    "odontopediatría Sant Boi",
+    "dentista infantil Sant Boi",
+    "dentista para niños Sant Boi",
+    "odontopediatra Sant Boi",
+    "clínica dental infantil Sant Boi",
+    "dentista bebés Sant Boi",
+    "dentista adolescentes Sant Boi",
+    "revisión dental infantil",
+    "prevención dental infantil",
+    "salud bucodental infantil",
+    "odontopediatría Barcelona",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
+  ],
 
   alternates: {
     canonical:
@@ -24,17 +39,24 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Odontopediatría en Sant Boi de Llobregat",
+    title:
+      "Odontopediatría en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Tratamientos de odontopediatría para prevenir, diagnosticar y cuidar la salud bucodental infantil desde los primeros años.",
+      "Cuidamos la salud bucodental de bebés, niños y adolescentes mediante revisiones, prevención y tratamientos adaptados a cada etapa.",
 
     url:
       "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
 
+    type: "article",
+
     images: [
       {
-        url: "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
+        url:
+          "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Odontopediatría en Sant Boi de Llobregat",
       },
     ],
   },
@@ -42,10 +64,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Odontopediatría en Sant Boi de Llobregat",
+    title:
+      "Odontopediatría | Estudio Dental Catalunya",
 
     description:
-      "Prevención, revisiones y tratamientos adaptados para cuidar la sonrisa de los más pequeños.",
+      "Odontopediatría en Sant Boi de Llobregat con prevención, revisiones y tratamientos adaptados para niños y adolescentes.",
 
     images: [
       "/images/tratamientos/odontopediatria/hero-odontopediatria.jpg",
