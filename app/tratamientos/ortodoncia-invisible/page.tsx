@@ -16,16 +16,22 @@ export const metadata: Metadata = {
     "Ortodoncia Invisible en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en ortodoncia invisible en Sant Boi de Llobregat. Corrige la posición de tus dientes mediante alineadores transparentes personalizados con planificación digital. Primera visita gratuita con radiografías.",
+    "Especialistas en ortodoncia invisible en Sant Boi de Llobregat. Corrige la posición de tus dientes mediante alineadores transparentes personalizados y planificación digital. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "ortodoncia invisible Sant Boi",
+    "ortodoncia invisible en Sant Boi",
+    "alineadores transparentes Sant Boi",
+    "alineadores dentales Sant Boi",
+    "ortodoncia con alineadores Sant Boi",
+    "tratamiento ortodoncia invisible",
+    "ortodoncia invisible Barcelona",
+    "alineación dental Sant Boi",
+    "ortodoncia para adultos Sant Boi",
+    "ortodoncia estética Sant Boi",
     "alineadores transparentes",
     "alineadores dentales",
-    "ortodoncia invisible Barcelona",
-    "alineación dental",
-    "ortodoncia adultos",
-    "ortodoncia estética",
+    "dentista Sant Boi",
     "clínica dental Sant Boi",
   ],
 
@@ -35,10 +41,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Ortodoncia Invisible en Sant Boi de Llobregat",
+    title:
+      "Ortodoncia Invisible en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Corrige la posición de tus dientes mediante alineadores transparentes personalizados con un tratamiento cómodo, discreto y totalmente planificado.",
+      "Corrige la posición de tus dientes mediante alineadores transparentes personalizados con un tratamiento discreto, cómodo y planificado digitalmente.",
 
     url:
       "https://estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
@@ -51,7 +58,7 @@ export const metadata: Metadata = {
           "/images/tratamientos/ortodoncia-invisible/hero-ortodoncia-invisible.jpg",
         width: 1200,
         height: 630,
-        alt: "Ortodoncia Invisible en Sant Boi de Llobregat",
+        alt: "Ortodoncia invisible en Sant Boi de Llobregat",
       },
     ],
   },
@@ -63,7 +70,7 @@ export const metadata: Metadata = {
       "Ortodoncia Invisible | Estudio Dental Catalunya",
 
     description:
-      "Especialistas en ortodoncia invisible mediante alineadores transparentes.",
+      "Especialistas en ortodoncia invisible mediante alineadores transparentes en Sant Boi de Llobregat.",
 
     images: [
       "/images/tratamientos/ortodoncia-invisible/hero-ortodoncia-invisible.jpg",
