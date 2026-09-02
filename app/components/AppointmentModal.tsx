@@ -89,7 +89,7 @@ export default function AppointmentModal() {
       }
 
       // Lead confirmado: la solicitud ha sido aceptada correctamente.
-      window.gtag?.("event", "appointment_submit", {
+      window.gtag?.("event", "generate_lead", {
         event_category: "lead",
         event_label: "Formulario de cita",
       });
