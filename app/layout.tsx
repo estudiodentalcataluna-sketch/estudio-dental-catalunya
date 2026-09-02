@@ -170,7 +170,7 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
 
-            window.addEventListener("cookie-consent-accepted", function () {
+            function loadGoogleAnalytics() {
               if (window.__gaLoaded) return;
 
               window.__gaLoaded = true;
@@ -190,7 +190,16 @@ export default function RootLayout({
                 anonymize_ip: true,
                 page_path: window.location.pathname,
               });
-            });
+            }
+
+            if (localStorage.getItem("cookie_consent") === "accepted") {
+              loadGoogleAnalytics();
+            }
+
+            window.addEventListener(
+              "cookie-consent-accepted",
+              loadGoogleAnalytics
+            );
           `}
         </Script>
       </body>
