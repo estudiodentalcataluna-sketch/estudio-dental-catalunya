@@ -1,51 +1,51 @@
 const treatments = [
   {
     name: "Implantes Dentales",
-    url: "https://estudiodentalcatalunya.es/tratamientos/implantes",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/implantes",
   },
   {
     name: "Ortodoncia",
-    url: "https://estudiodentalcatalunya.es/tratamientos/ortodoncia",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia",
   },
   {
     name: "Ortodoncia Invisible",
-    url: "https://estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
   },
   {
     name: "Estética Dental",
-    url: "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/estetica-dental",
   },
   {
     name: "Carillas Dentales",
-    url: "https://estudiodentalcatalunya.es/tratamientos/carillas-dentales",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/carillas-dentales",
   },
   {
     name: "Blanqueamiento Dental",
-    url: "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
   },
   {
     name: "Endodoncia",
-    url: "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
   },
   {
     name: "Periodoncia",
-    url: "https://estudiodentalcatalunya.es/tratamientos/periodoncia",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/periodoncia",
   },
   {
     name: "Prótesis Dentales",
-    url: "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales",
   },
   {
     name: "Odontología General",
-    url: "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
   },
   {
     name: "Odontopediatría",
-    url: "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
+    url: "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
   },
 ];
 
-const dentistId = "https://estudiodentalcatalunya.es/#dentist";
+const dentistId = "https://www.estudiodentalcatalunya.es/#dentist";
 
 const schema = {
   "@context": "https://schema.org",
@@ -54,18 +54,18 @@ const schema = {
 
   name: "Estudio Dental Catalunya",
 
-  url: "https://estudiodentalcatalunya.es",
+  url: "https://www.estudiodentalcatalunya.es",
 
   logo: {
     "@type": "ImageObject",
-    url: "https://estudiodentalcatalunya.es/images/logo-header.png",
+    url: "https://www.estudiodentalcatalunya.es/images/logo-header.png",
   },
 
   image: [
-    "https://estudiodentalcatalunya.es/images/og-image.jpg",
-    "https://estudiodentalcatalunya.es/images/clinica/fachada.jpg",
-    "https://estudiodentalcatalunya.es/images/clinic.jpg",
-    "https://estudiodentalcatalunya.es/images/recep.jpg",
+    "https://www.estudiodentalcatalunya.es/images/og-image.jpg",
+    "https://www.estudiodentalcatalunya.es/images/clinica/fachada.jpg",
+    "https://www.estudiodentalcatalunya.es/images/clinic.jpg",
+    "https://www.estudiodentalcatalunya.es/images/recep.jpg",
   ],
 
   description:
@@ -205,7 +205,7 @@ const schema = {
     "Implantes Neodent",
     "Ortodoncia",
     "Ortodoncia Invisible",
-    "Invisalign",
+    "Ortodoncia Invisible",
     "Carillas Dentales",
     "Blanqueamiento Dental",
     "Estética Dental",
@@ -230,7 +230,7 @@ const schema = {
       name: treatment.name,
     },
     isPartOf: {
-      "@id": "https://estudiodentalcatalunya.es/#website",
+      "@id": "https://www.estudiodentalcatalunya.es/#website",
     },
   })),
 

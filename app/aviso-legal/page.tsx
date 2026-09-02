@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -99,7 +99,7 @@ export default function AvisoLegalPage() {
               <strong>Sitio web:</strong>
               <br />
               <span className="break-all">
-                https://estudiodentalcatalunya.es
+                https://www.estudiodentalcatalunya.es
               </span>
             </p>
           </div>

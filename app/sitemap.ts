@@ -1,6 +1,6 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 
-const baseUrl = "https://estudiodentalcatalunya.es";
+const baseUrl = "https://www.estudiodentalcatalunya.es";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

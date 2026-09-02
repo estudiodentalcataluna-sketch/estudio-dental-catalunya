@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
+      "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
   },
 
   openGraph: {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Corrige la posición de tus dientes mediante alineadores transparentes personalizados con un tratamiento discreto, cómodo y planificado digitalmente.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
+      "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia-invisible",
 
     type: "article",
 

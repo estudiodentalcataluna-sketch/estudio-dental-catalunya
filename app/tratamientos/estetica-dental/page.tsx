@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
+      "https://www.estudiodentalcatalunya.es/tratamientos/estetica-dental",
   },
 
   openGraph: {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Diseñamos sonrisas naturales y armónicas mediante tratamientos personalizados de estética dental adaptados a cada paciente.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
+      "https://www.estudiodentalcatalunya.es/tratamientos/estetica-dental",
 
     type: "article",
 

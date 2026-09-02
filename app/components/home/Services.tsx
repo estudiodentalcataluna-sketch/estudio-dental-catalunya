@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const services = [
   {
@@ -10,7 +10,7 @@ const services = [
   {
     title: "Ortodoncia",
     description:
-      "Brackets e Invisalign para alinear tu sonrisa con tratamientos personalizados.",
+      "Brackets y ortodoncia invisible para alinear tu sonrisa con tratamientos personalizados.",
     href: "/tratamientos/ortodoncia",
   },
   {

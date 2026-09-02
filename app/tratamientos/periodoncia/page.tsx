@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -12,7 +12,7 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { periodonticsData } from "./data";
 
 const canonicalUrl =
-  "https://estudiodentalcatalunya.es/tratamientos/periodoncia";
+  "https://www.estudiodentalcatalunya.es/tratamientos/periodoncia";
 
 const heroImage =
   "/images/tratamientos/periodoncia/hero-periodoncia.jpg";

@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://estudiodentalcatalunya.es"),
+  metadataBase: new URL("https://www.estudiodentalcatalunya.es"),
 
   applicationName: "Estudio Dental Catalunya",
 
@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "implantes dentales Sant Boi",
     "ortodoncia Sant Boi",
     "ortodoncia invisible Sant Boi",
-    "Invisalign Sant Boi",
     "estética dental Sant Boi",
     "carillas dentales Sant Boi",
     "blanqueamiento dental Sant Boi",
@@ -53,7 +52,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Estudio Dental Catalunya",
-      url: "https://estudiodentalcatalunya.es",
+      url: "https://www.estudiodentalcatalunya.es",
     },
   ],
 
@@ -65,7 +64,7 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
 
   alternates: {
-    canonical: "https://estudiodentalcatalunya.es",
+    canonical: "https://www.estudiodentalcatalunya.es",
   },
 
   robots: {
@@ -85,7 +84,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://estudiodentalcatalunya.es",
+    url: "https://www.estudiodentalcatalunya.es",
     siteName: "Estudio Dental Catalunya",
 
     title:

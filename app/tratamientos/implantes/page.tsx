@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/implantes",
+      "https://www.estudiodentalcatalunya.es/tratamientos/implantes",
   },
 
   openGraph: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Recupera tu sonrisa mediante implantes dentales con planificación digital, cirugía guiada y un tratamiento completamente personalizado.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/implantes",
+      "https://www.estudiodentalcatalunya.es/tratamientos/implantes",
 
     type: "article",
 

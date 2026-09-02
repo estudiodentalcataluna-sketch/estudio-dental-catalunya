@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -12,7 +12,7 @@ import TreatmentCTA from "@/app/components/TreatmentCTA";
 import { prostheticsData } from "./data";
 
 const canonicalUrl =
-  "https://estudiodentalcatalunya.es/tratamientos/protesis-dentales";
+  "https://www.estudiodentalcatalunya.es/tratamientos/protesis-dentales";
 
 const heroImage =
   "/images/tratamientos/protesis-dentales/hero-protesis-dentales.jpg";

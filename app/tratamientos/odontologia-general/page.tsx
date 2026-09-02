@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
   },
 
   openGraph: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Cuidamos la salud de tu boca mediante revisiones, prevención y tratamientos conservadores totalmente personalizados.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/odontologia-general",
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontologia-general",
 
     type: "article",
 

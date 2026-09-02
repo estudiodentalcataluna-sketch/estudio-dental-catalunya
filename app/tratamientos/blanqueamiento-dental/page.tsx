@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+      "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
   },
 
   openGraph: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Consigue una sonrisa más blanca y luminosa mediante un tratamiento profesional de blanqueamiento dental completamente personalizado.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
+      "https://www.estudiodentalcatalunya.es/tratamientos/blanqueamiento-dental",
 
     type: "website",
 

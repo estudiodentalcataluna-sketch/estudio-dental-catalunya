@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
+      "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
   },
 
   openGraph: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       "Tratamientos de endodoncia para eliminar la infección del nervio dental, aliviar el dolor y conservar el diente natural siempre que sea posible.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/endodoncia",
+      "https://www.estudiodentalcatalunya.es/tratamientos/endodoncia",
 
     type: "article",
 

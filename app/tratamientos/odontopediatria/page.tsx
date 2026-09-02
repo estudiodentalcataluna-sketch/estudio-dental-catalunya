@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
   },
 
   openGraph: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Cuidamos la salud bucodental de bebés, niños y adolescentes mediante revisiones, prevención y tratamientos adaptados a cada etapa.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/odontopediatria",
+      "https://www.estudiodentalcatalunya.es/tratamientos/odontopediatria",
 
     type: "article",
 

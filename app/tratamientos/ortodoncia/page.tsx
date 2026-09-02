@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import TreatmentHero from "@/app/components/TreatmentHero";
 import TreatmentIntro from "@/app/components/TreatmentIntro";
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical:
-      "https://estudiodentalcatalunya.es/tratamientos/ortodoncia",
+      "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia",
   },
 
   openGraph: {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Tratamientos de ortodoncia personalizados mediante brackets metálicos y estéticos para mejorar la alineación dental, la mordida y la función de la sonrisa.",
 
     url:
-      "https://estudiodentalcatalunya.es/tratamientos/ortodoncia",
+      "https://www.estudiodentalcatalunya.es/tratamientos/ortodoncia",
 
     type: "article",
 

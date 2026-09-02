@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import {
@@ -413,7 +413,7 @@ export default function Hero() {
                   </h2>
 
                   <p className="mt-3 text-sm leading-7 text-slate-200 sm:text-base sm:leading-8">
-                    Implantes dentales, ortodoncia, Invisalign®, estética
+                    Implantes dentales, ortodoncia, ortodoncia invisible, estética
                     dental, cirugía oral, endodoncia, periodoncia y
                     odontología general en un mismo centro.
                   </p>
