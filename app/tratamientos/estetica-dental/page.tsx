@@ -16,17 +16,23 @@ export const metadata: Metadata = {
     "Estética Dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
   description:
-    "Especialistas en estética dental en Sant Boi de Llobregat. Mejora la armonía de tu sonrisa mediante tratamientos personalizados como diseño de sonrisa, carillas dentales y blanqueamiento dental. Primera visita gratuita con radiografías.",
+    "Especialistas en estética dental en Sant Boi de Llobregat. Mejora la armonía de tu sonrisa con tratamientos personalizados como diseño de sonrisa, carillas y blanqueamiento dental. Primera visita gratuita con radiografías y diagnóstico.",
 
   keywords: [
     "estética dental Sant Boi",
+    "dentista estética dental Sant Boi",
+    "diseño de sonrisa Sant Boi",
+    "carillas dentales Sant Boi",
+    "blanqueamiento dental Sant Boi",
+    "rehabilitación estética dental Sant Boi",
+    "mejorar sonrisa Sant Boi",
+    "sonrisa estética",
     "diseño de sonrisa",
-    "sonrisa perfecta",
     "carillas dentales",
     "blanqueamiento dental",
-    "dentista estético",
-    "mejorar sonrisa",
     "estética dental Barcelona",
+    "dentista Sant Boi",
+    "clínica dental Sant Boi",
   ],
 
   alternates: {
@@ -36,15 +42,15 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Estética Dental en Sant Boi de Llobregat",
+      "Estética Dental en Sant Boi de Llobregat | Estudio Dental Catalunya",
 
     description:
-      "Diseñamos sonrisas naturales mediante tratamientos personalizados de estética dental adaptados a cada paciente.",
+      "Diseñamos sonrisas naturales y armónicas mediante tratamientos personalizados de estética dental adaptados a cada paciente.",
 
     url:
       "https://estudiodentalcatalunya.es/tratamientos/estetica-dental",
 
-    type: "website",
+    type: "article",
 
     images: [
       {
@@ -52,7 +58,7 @@ export const metadata: Metadata = {
           "/images/tratamientos/estetica-dental/hero-estetica-dental.jpg",
         width: 1200,
         height: 630,
-        alt: "Estética Dental en Sant Boi de Llobregat",
+        alt: "Estética dental en Sant Boi de Llobregat",
       },
     ],
   },
@@ -64,7 +70,7 @@ export const metadata: Metadata = {
       "Estética Dental | Estudio Dental Catalunya",
 
     description:
-      "Especialistas en tratamientos de estética dental en Sant Boi de Llobregat.",
+      "Especialistas en estética dental en Sant Boi de Llobregat. Tratamientos personalizados para mejorar la armonía y estética de tu sonrisa.",
 
     images: [
       "/images/tratamientos/estetica-dental/hero-estetica-dental.jpg",
@@ -75,7 +81,6 @@ export const metadata: Metadata = {
 export default function AestheticPage() {
   return (
     <main>
-
       <TreatmentHero {...aestheticData.hero} />
 
       <TreatmentIntro {...aestheticData.intro} />
@@ -94,7 +99,6 @@ export default function AestheticPage() {
       <TreatmentFAQ {...aestheticData.faq} />
 
       <TreatmentCTA {...aestheticData.cta} />
-
     </main>
   );
 }
